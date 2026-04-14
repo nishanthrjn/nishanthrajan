@@ -16,17 +16,16 @@ app.add_middleware(
 
 class ChatRequest(BaseModel):
     message: str
+    history: list[dict] = []
 
-# 🆕 THIS PART IS NEW: It serves your HTML file directly
 @app.get("/")
 async def get_index():
-    # This looks for index.html inside your templates folder
     return FileResponse('templates/index.html')
 
 @app.post("/chat")
 async def chat_endpoint(request: ChatRequest):
     try:
-        response = ask_talent_bot(request.message)
+        response = ask_talent_bot(request.message, request.history)
         return {"reply": response}
     except Exception as e:
         return {"reply": f"Error: {str(e)}"}

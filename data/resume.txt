@@ -1,266 +1,202 @@
-# Nishanth Rajan - Software Engineer
+# NISHANTH RAJAN — AI & Software Engineer
 
-## Contact & Links
-- **Email:** nishanthrajandev@gmail.com
-- **Phone:** +49 1638332675
-- **LinkedIn:** linkedin.com/in/nishanthrajan
-- **GitHub:** github.com/nishanthrjn
-- **Location:** Germany (Hannover)
-- **Work Status:** EU Blue Card Holder | Immediately Available
+## Contact
+- Email: nishanthrajandev@gmail.com
+- Phone: +49 163 833 2675
+- LinkedIn: linkedin.com/in/nishanthrajan
+- GitHub: github.com/nishanthrjn
+- Location: Hannover, Germany
+- EU Blue Card Holder | Immediately Available
 
 ---
 
-## Profile Summary
+## Professional Summary
 
-Nishanth is a Software Engineer with over 15 years of hands-on experience spanning backend services, desktop applications, CAD-integrated engineering systems, and multi-tenant SaaS platforms. His core strength is C#/.NET-based development, with a strong track record in modernizing legacy systems, building SQL-backed workflows, and developing CAD-integrated solutions using AutoCAD and SOLIDWORKS APIs. He has worked across India, Germany, and remote markets (USA, UAE), and is based in Hannover, Germany on an EU Blue Card. He is immediately available for long-term full-time roles.
+Software Engineer with 16+ years of experience (since 2007) in C#/.NET backend systems, now specialising in AI engineering. Over the past 2 years I have built production-grade RAG systems, LLM-powered applications, and autonomous agentic systems.
 
-He is currently expanding his modern tech stack — actively working with TypeScript, NestJS, Next.js, Node.js, React, Angular, and AI/ML tooling — evidenced by his recent GitHub projects.
+Key highlights:
+- 4th place at ANAC 2026 (Automated Negotiation Agents Competition, IJCAI 2026) — competing solo as a student of Leibniz Universität Hannover
+- Built DocuMind — a full-stack NotebookLM-style RAG platform in C#/.NET 10
+- Built NexusAI — a multi-agent orchestration platform using Microsoft Semantic Kernel
+- Built TalentBot — an AI-powered portfolio chatbot using RAG, FastAPI, LangChain, FAISS, and Groq
 
 ---
 
 ## Technical Skills
 
-### Primary Expertise (Production Experience)
-- **Languages:** C#, SQL, C++, VB6, Python, C, MATLAB
-- **Frameworks & Platforms:** .NET Core, .NET Framework, ASP.NET Core, Blazor, WPF, WinForms, XAML (MVVM)
-- **APIs & Integration:** REST APIs, SOLIDWORKS API, AutoCAD API (ObjectARX), COM Interoperability, P/Invoke, TCP/IP client-server
-- **Databases:** MS SQL Server, PostgreSQL, MongoDB
-- **DevOps & Tooling:** Docker, Git, GitHub, Jenkins, Visual Studio, Linux debugging
-- **Architecture:** SOLID principles, Design Patterns, Microservices concepts, CI/CD pipelines
+### Programming Languages
+- C# — expert, 16+ years
+- Python — proficient, AI/ML projects
+- TypeScript, JavaScript
+- SQL
 
-### Legacy & Interoperability
-- C++ and VB6 legacy maintenance and modernization
-- Managed/Unmanaged code integration (P/Invoke)
-- Migration from C++/VB6 to .NET
-- COM interoperability
+### AI & Machine Learning
+- Large Language Models (LLM) integration
+- Retrieval-Augmented Generation (RAG)
+- Prompt Engineering
+- LangChain
+- Microsoft Semantic Kernel
+- Agentic AI and Multi-Agent Systems
+- Automated Negotiation (NegMAS framework)
+- Deep Learning — Neural Networks, CNN, RNN, LSTM, Transformers
+- Attention Mechanisms
+- Generative AI — GANs, VAEs
+- Natural Language Processing (NLP)
+- Text Mining
+- Fine-tuning LLMs
+- Vector databases — FAISS, pgvector
 
-### Actively Expanding (Recent Projects & Study)
-- **Languages:** TypeScript, JavaScript
-- **Frameworks:** NestJS, Next.js, Node.js, React, Angular
-- **AI/ML:** Python-based ML, LLM integration, AI-assisted development workflows
-- **Other:** GraphQL, SignalR, Redis, GitHub OAuth, n8n automation, Web GIS (Leaflet, GeoJSON, PostGIS), ArcGIS
+### MLOps & AI Tools
+- Groq API
+- Ollama (local LLM hosting)
+- HuggingFace (nomic-embed-text, all-MiniLM-L6-v2)
+- FAISS
+- pgvector
+- Jupyter / Google Colab
 
-### Academic Exposure (MSc coursework)
-- 3D Image Processing, Photogrammetric Computer Vision, Web GIS, Geodetic Data Analysis, AI/ML with Python
+### Backend & Infrastructure
+- ASP.NET Core / .NET 10 Minimal API
+- FastAPI (Python)
+- Blazor Server
+- Entity Framework Core 9
+- PostgreSQL, SQL Server
+- Docker, GitHub Actions, Jenkins, AWS, Linux
+
+---
+
+## AI Projects
+
+### TalentBot
+AI-powered portfolio chatbot. Recruiters can have a real conversation with an AI grounded in my 16+ years of engineering experience. Built with Python, FastAPI, LangChain, FAISS, HuggingFace embeddings, and Groq Llama 3. Uses semantic chunking and cosine similarity search for accurate, grounded answers.
+
+### DocuMind
+NotebookLM-inspired document intelligence platform built in C#/.NET 10. Upload PDFs, chat with them using AI, and get answers with inline numbered citations showing the exact source text. Features: pgvector similarity search, Groq for fast responses, Blazor Server UI with conversation history, time-based themes, citation popups, and markdown export.
+
+### NexusAI
+Multi-agent orchestration platform built in C#/.NET 10 with Microsoft Semantic Kernel. Five specialist agents — Coordinator, WebSearch, Document, Analysis, and Report — collaborate to answer complex research questions. Includes a Blazor live pipeline visualization, real web search via Tavily API, OpenTelemetry distributed tracing, and integration tests with Testcontainers.
+
+### Agent-Nexus — ANAC 2026 Competition
+Autonomous negotiation agent built for the Automated Negotiation Agents Competition (ANAC 2026) at IJCAI 2026. Achieved 4th place overall, competing solo as a student. Built in Python using the NegMAS framework with Bayesian opponent modeling, type-specific concession strategies, and Pareto-optimal late-game bidding.
+
+### AutoFlow
+IoT workflow automation platform with MQTT messaging. Built in C#/.NET.
+
+### JobRadar
+Multi-source job aggregator built in Python. Aggregates job listings from multiple sources automatically.
 
 ---
 
 ## Work Experience
 
 ### Continuing Studies & Software Development (Part-time)
-**Self-employed / Freelance | Hannover, Germany | December 2023 – Present**
-- Continued MSc coursework in 3D image processing, photogrammetric computer vision, Web GIS, geodetic data analysis, and AI/ML using Python.
-- Freelance maintenance, bug fixing, and small extensions for AutoPlan modules and other software projects.
-- Strengthened modern C#/.NET skills: REST integration, SQL/PostgreSQL workflows, Docker-based local development, Git workflows.
-- Expanded web development exposure in TypeScript, Angular, React, and Node.js.
-- Explored self-hosted automation workflows using n8n in local prototype setups.
-- Experimented with AI-assisted development workflows and published prototypes on GitHub.
-- Completed German integration language training up to B1 level.
+Hannover, Germany | December 2023 – Present
+- Building AI engineering portfolio: TalentBot, DocuMind, NexusAI, AutoFlow, JobRadar
+- Competed at ANAC 2026 (IJCAI), 4th place with autonomous negotiation agent
+- Structured learning in Deep Learning, LLMs, RAG, Agentic AI
+- Freelance C#/.NET maintenance
 
 ### Software Engineer
-**Kauschke Engineering Services GmbH | Munich, Germany | September 2023 – November 2023**
-*(Project concluded due to internal budget restructuring)*
-- Developed a SOLIDWORKS add-in in C# and initiated a WPF companion client linked to the correct SOLIDWORKS instance and version.
-- Implemented reconnect workflows and assembly context handover between SOLIDWORKS and companion components.
-- Developed companion actions for opening and editing selected components.
-- Improved API stability using thread locking and explicit resource cleanup.
-
-### Relocation to Germany & MSc Studies
-**Hannover, Germany | May 2022 – August 2023**
-- Relocated to Germany and continued MSc coursework in geodesy and geoinformatics: 3D image processing, Web GIS, geodesy fundamentals, geodetic data analysis.
-- Applied Python, MATLAB, and C++ in academic assignments and technical exercises.
+Kauschke Engineering Services GmbH, Munich | Sep 2023 – Nov 2023
+- SOLIDWORKS add-in in C# with WPF companion client
+- Thread locking and explicit resource cleanup for API stability
 
 ### Principal Software Engineer
-**Greenway Health India Pvt. Ltd. | India, Remote (US Market) | November 2021 – April 2022**
-*Role equivalent to Senior Software Engineer; hands-on backend and full-stack development in a SAFe/Scrum environment.*
-- Developed data-driven product features using C#/.NET and SQL Server.
-- Contributed to UI implementation using Blazor, Angular, HTML, CSS, TypeScript, and JavaScript.
+Greenway Health India Pvt. Ltd., Remote US Market | Nov 2021 – Apr 2022
+- Technical lead in SAFe-Scrum team
+- C#/.NET and SQL Server backend features
+- Angular, TypeScript, Blazor UI development
 
-### Project Manager (RPA)
-**FourNxt Technologies LLP | India, Remote (UAE Market) | May 2021 – November 2021**
-*Technically oriented role with hands-on development support in Python and C#.*
-- Delivered RPA projects through solution design coordination and agile execution.
-- Provided programming support in Python and C# for automation utilities.
-- Worked with UiPath, Blue Prism, and Automation Anywhere.
+### Technical Project Manager
+Smartdale Technologies LLP, India | Mar 2020 – May 2021
+- Multi-tenant SaaS platform with C#/.NET Core, Blazor, PostgreSQL
+- CI/CD with Docker, Jenkins, Git on AWS/Linux
 
-### Technical Project Manager (Backend / Full-Stack)
-**Smartdale Technologies LLP | India | March 2020 – May 2021**
-*Role equivalent to Senior Software Engineer with architecture and delivery ownership.*
-- Contributed to development of a multi-tenant SaaS platform using C#/.NET Core, ASP.NET Core, Blazor, and PostgreSQL.
-- Implemented CI/CD workflows using Docker, Jenkins, and Git in an AWS and Linux environment.
-- Led and coordinated a small agile development team.
+### Senior Software Engineer
+IDSi Technologies India Pvt. Ltd., India | Feb 2015 – Mar 2020
+- AutoPlan system — CAD scrutiny and permit workflow automation using AutoCAD API
+- SQL-backed workflow services, WPF/WinForms enterprise desktop apps
 
-### Senior Software Engineer (ATPM)
-**IDSi Technologies India Pvt. Ltd. | India | February 2015 – March 2020**
-*Role equivalent to Senior Software Engineer with product ownership.*
-- Developed CAD scrutiny and permit workflow modules in the AutoPlan system to automate validation of CAD drawings against regulatory rules using rule-based configuration and inference logic.
-- Implemented complex geometric computation algorithms and validation routines using the AutoCAD API for high-precision spatial and plan-checking logic.
-- Designed and optimized SQL-backed workflow services supporting complex administrative approval processes with intricate data flows and state transitions.
-- Expanded and maintained enterprise desktop applications in WPF and WinForms, focusing on stability and performance in production.
-- Developed an ArcGIS prototype for land management and geospatial workflow integration.
-- Maintained and modernized legacy C++ and VB6 components within .NET ecosystems.
-- **Tech stack:** C#, .NET Framework 4.8, WinForms, WPF (MVVM), MS SQL Server, REST API, AutoCAD API, ArcGIS, ObjectARX, C++, VB6.
-
-### Career Break – Upskilling
-**Cochin, India | August 2014 – January 2015**
-- Intensive .NET skill refresh; built a small .NET game as a self-learning project (200+ users).
-
-### Software Engineer (Project Team Lead)
-**Seven Seas Hi-Tech Systems India Pvt. Ltd. | India | August 2011 – July 2014**
-- Implemented and stabilized enterprise software modules using C#, ASP.NET, WinForms, VB.NET, and SQL.
-- Developed enterprise business applications including POS, ERP, CRM, financial accounting, and hospitality management systems (restaurant and hotel).
-- Performed debugging, testing, release stabilization, and production support.
-- Contributed to integrations including serial communication in embedded-related modules.
+### Software Engineer — Project Team Lead
+Seven Seas Hi-Tech Systems India Pvt. Ltd., India | Aug 2011 – Jul 2014
+- POS, ERP, CRM, financial accounting, hospitality management systems in C#, ASP.NET, SQL
 
 ### Software Engineer
-**Visionics India Pvt. Ltd. | India | November 2008 – August 2011**
-- Enhanced a desktop EDA/CAD/CAE software suite through performance optimization, debugging, and release support.
-- Implemented TCP/IP client-server integration for a license manager.
-- Contributed to partial migration toward .NET technologies using C++, C#, WinForms, and VB.NET.
+Visionics India Pvt. Ltd., India | Nov 2008 – Aug 2011
+- EDA/CAD/CAE desktop suite performance optimization and TCP/IP integration
 
-### Trainee (R&D)
-**iSET (Industry Standard Embedded Technologies) | India | August 2007 – November 2008**
-- Contributed to CIM systems and a cross-platform 3D CAD/CAM tool using C/C++, Qt, and OpenGL.
-- Built foundations in Linux debugging, testing, embedded C, and microcontroller programming.
+### Trainee R&D
+iSET, India | Aug 2007 – Nov 2008
+- CIM systems and 3D CAD/CAM tools in C/C++, Qt, OpenGL
 
 ---
 
 ## Education
 
-### MSc Geodesy and Geoinformatics *(not completed)*
-**Leibniz Universität Hannover, Germany | April 2022 – March 2026**
-- Coursework includes: 3D image processing, photogrammetric computer vision, Web GIS, geodetic data analysis, AI/ML with Python.
+- MSc Geodesy and Geoinformatics — Leibniz Universität Hannover, Germany (2022–ongoing)
+  Coursework includes AI/ML, Deep Learning, Text Mining, LLMs, 3D image processing, Web GIS
+- German Integration Course A1–B1 — Sprachakademie Hannover (2024)
+- B.Tech Electronics and Communications Engineering — Mahatma Gandhi University, Kerala, India (2003–2007)
 
-### Deutsch Integrationskurs (A1–B1)
-**Sprachakademie Hannover, Germany | May 2024 – November 2024**
-- Completed official German integration course; passed B1 exam (Deutsch-Test für Zuwanderer, g.a.s.t.).
-- Overall result: B1 | Speaking: B1 sehr gut erfüllt | Listening & Reading: B1 erfüllt
+---
 
-### Bachelor in Electronics and Communications Engineering
-**Mahatma Gandhi University Kerala, India | August 2003 – July 2007**
+## Competition
+
+- ANAC 2026 — 4th Place overall
+  Automated Negotiation Agents Competition at IJCAI 2026
+  Competing solo as a student at Leibniz Universität Hannover
+  Built autonomous negotiation agent with Bayesian opponent modeling
 
 ---
 
 ## Languages
-
-| Language | Level |
-|---|---|
-| English | C1 (Professional) |
-| German | B1 (Certified, actively improving) |
-| Malayalam | Native |
-| Hindi | Conversational |
-| Tamil | Conversational |
+- English: C1 Professional
+- German: B1 actively improving toward B2
 
 ---
 
-## GitHub Projects (Own Projects)
+## Frequently Asked Questions
 
-### CareerForge
-- **URL:** github.com/nishanthrjn/CareerForge
-- **Language:** TypeScript
-- **Topics:** NestJS, Next.js, TypeScript, LLM, LaTeX, Full-Stack
-- **Description:** A long-term system design project exploring modular NestJS backend services, a Next.js frontend, and an AI provider abstraction layer to build reliable, auditable tooling for professional job applications. Demonstrates understanding of modern full-stack architecture, LLM integration patterns, and provider abstraction design.
+Q: What is your primary tech stack?
+A: C#/.NET 10 for backend and Blazor for UI. Python for AI projects. PostgreSQL with pgvector for vector storage. Groq API for fast LLM inference. Microsoft Semantic Kernel for LLM orchestration in .NET.
 
-### CodeArena
-- **URL:** github.com/nishanthrjn/codearena
-- **Language:** C# / TypeScript
-- **Topics:** ASP.NET Core, .NET 8, Docker, Redis, SignalR, GitHub OAuth, Code Execution
-- **Description:** A self-hosted, Docker-isolated code execution sandbox with GitHub login, multi-language support, code snippets, test running, and live output streaming. Showcases advanced real-time backend capabilities using SignalR, Redis, and secure Docker-based sandboxing. MIT licensed.
+Q: What AI projects have you built?
+A: TalentBot (RAG portfolio chatbot), DocuMind (NotebookLM-style document intelligence), NexusAI (multi-agent orchestration platform), and Agent-Nexus (4th place at ANAC 2026 international competition).
 
-### SmartOps
-- **URL:** github.com/nishanthrjn/SmartOps
-- **Language:** C#
-- **Description:** A multi-tenant management platform featuring a .NET Identity Service and an Angular dashboard. Demonstrates SaaS architecture patterns with identity management and modern Angular frontend.
+Q: What is your biggest achievement?
+A: 4th place at ANAC 2026, the Automated Negotiation Agents Competition held at IJCAI 2026. I competed solo as a student and built an autonomous negotiation agent from scratch using Bayesian opponent modeling.
 
-### Go_Phish_game
-- **URL:** github.com/nishanthrjn/Go_Phish_game
-- **Language:** Python
-- **Description:** A modern, web-based implementation of the classic "Go Fish" card game with a Python Flask backend and Vanilla JavaScript frontend, styled as a high-end "Casino Royale" experience. Demonstrates Python web backend skills and full-stack delivery.
+Q: Are you available immediately?
+A: Yes, I am immediately available for full-time roles.
 
-### webgis-leaflet-fundamentals
-- **URL:** github.com/nishanthrjn/webgis-leaflet-fundamentals
-- **Language:** HTML / JavaScript
-- **Topics:** GIS, Leaflet, WebGIS, GeoJSON
-- **Description:** Foundations of WebGIS development using HTML5, JavaScript, Leaflet, GeoJSON, XML, and PostGIS. Built as part of MSc Web GIS coursework.
+Q: Do you have EU work authorization?
+A: Yes, I hold an EU Blue Card in Germany.
 
-### graphql-mongodb-api
-- **URL:** github.com/nishanthrjn/graphql-mongodb-api
-- **Language:** JavaScript
-- **Description:** An introductory GraphQL API server demonstrating schema design, resolvers, queries, and mutations with MongoDB persistence. Built to learn and demonstrate GraphQL fundamentals.
+Q: Are you open to relocation?
+A: Yes, open to relocation within Germany.
 
-### node-rest-api-sample
-- **URL:** github.com/nishanthrjn/node-rest-api-sample
-- **Language:** JavaScript
-- **Description:** A Node.js REST API project demonstrating core backend concepts including routing, controllers, and MongoDB integration. A reference project for Node.js backend learning.
+Q: What is your German level?
+A: B1, actively improving toward B2.
 
-### react-timer-app
-- **URL:** github.com/nishanthrjn/react-timer-app
-- **Language:** JavaScript
-- **Description:** A timer application built using React, demonstrating React component structure and state management.
+Q: What makes you different from other .NET developers?
+A: I combine 16+ years of deep .NET/C# expertise with hands-on AI engineering — RAG systems, LLM integration, multi-agent architectures, and a competition placing at ANAC 2026. I can build both the AI layer and the production backend around it.
 
----
+Q: What is DocuMind?
+A: DocuMind is a full-stack RAG platform I built in C#/.NET 10 — inspired by NotebookLM. It parses PDFs, embeds them with nomic-embed-text via Ollama, stores vectors in PostgreSQL with pgvector, and uses Groq for fast cited answers. The Blazor UI has conversation history, citation popups, time-based themes, and markdown export.
 
-## Certifications
+Q: What is NexusAI?
+A: NexusAI is a multi-agent orchestration platform in C#/.NET 10 using Microsoft Semantic Kernel. Five specialist agents collaborate to answer research questions. The Blazor UI shows a live pipeline. Includes Tavily web search, OpenTelemetry tracing, and Testcontainers integration tests.
 
-- **Deutsch-Test für Zuwanderer (DTZ) – B1** | g.a.s.t. / BAMF | November 2024
-  - Overall Level: B1
-  - Speaking: 100/100 — B1 sehr gut erfüllt
-  - Listening & Reading: 36/45 — B1 erfüllt
-  - Writing: 14/20 — A2 sehr gut erfüllt
+Q: What is ANAC 2026?
+A: ANAC is the Automated Negotiation Agents Competition held at IJCAI 2026. I built an autonomous agent in Python using NegMAS, with Bayesian opponent classification and Pareto-optimal bidding. I finished 4th overall competing solo.
 
----
+Q: What is your experience with Microsoft Semantic Kernel?
+A: I used Semantic Kernel v1.x on .NET 10 in both DocuMind and NexusAI — for LLM orchestration, chat completion with Groq and Ollama, embedding generation, and multi-agent coordination.
 
-## Interests & Learning
+Q: What is your experience with cloud platforms?
+A: Practical AWS experience with Docker, Jenkins, CI/CD on Linux. Familiar with Azure concepts and can transfer quickly. I use GitHub Actions for CI/CD pipelines.
 
-- Continuous learning in modern technologies (NestJS, Next.js, TypeScript, React)
-- AI and ML experimentation with Python
-- System architecture and scalable design
-- Web GIS and geospatial data systems
-- Self-hosted automation workflows (n8n)
-- AI-assisted software development workflows
+Q: Can you work in German?
+A: I can handle basic professional communication in German (B1). I work fluently in English at C1 level and am actively improving my German.
 
----
-
-## FAQ for Chatbot
-
-**Q: What is your primary tech stack?**
-A: My core expertise is C#/.NET (Core and Framework), ASP.NET Core, WPF/WinForms, SQL Server, and PostgreSQL. I also have production experience with Docker, Git, Jenkins, REST APIs, Blazor, Angular, and TypeScript. Currently I'm actively building with NestJS, Next.js, React, and Python.
-
-**Q: How many years of experience do you have?**
-A: I have over 15 years of professional software development experience, starting from 2007 as a trainee and progressing to senior and principal engineer roles.
-
-**Q: Are you available to work?**
-A: Yes, I am immediately available for full-time, long-term roles. I am based in Hannover, Germany and hold an EU Blue Card.
-
-**Q: Do you have experience with CAD systems?**
-A: Yes, I have deep experience with CAD integrations — specifically AutoCAD API (ObjectARX) and SOLIDWORKS API in C#. I built the AutoPlan system at IDSi for automating CAD drawing validation, and developed a SOLIDWORKS add-in at Kauschke Engineering Services.
-
-**Q: What is the AutoPlan project?**
-A: AutoPlan is a system I developed at IDSi Technologies (2015–2020) that automates validation of CAD drawings against regulatory rules. It uses a rule-based configuration and inference engine, geometric computation algorithms via the AutoCAD API, and SQL-backed workflow services to manage complex administrative approval processes for technical drawings.
-
-**Q: Can you work with modern web frameworks?**
-A: Yes. Beyond my .NET backend background, I have production exposure to Angular, Blazor, TypeScript, and JavaScript. I'm actively building with NestJS and Next.js (CareerForge project) and have also worked with React, Node.js, and GraphQL in personal projects.
-
-**Q: Tell me about CareerForge.**
-A: CareerForge is my flagship ongoing personal project — a modular full-stack system built with NestJS (backend), Next.js (frontend), and an AI provider abstraction layer. It explores building reliable, auditable tooling for professional job applications. It demonstrates my ability to design modern, scalable architectures and work with LLM integrations.
-
-**Q: Tell me about CodeArena.**
-A: CodeArena is a self-hosted code execution sandbox I built using ASP.NET Core / .NET 8. It features Docker-isolated code execution for multiple languages, GitHub OAuth login, real-time output streaming via SignalR, Redis for state management, and snippet/test support. It showcases advanced real-time backend and containerization skills.
-
-**Q: What is your German language level?**
-A: I completed the official Deutsch Integrationskurs and passed the Deutsch-Test für Zuwanderer (DTZ) at B1 level in November 2024. My speaking score was 100/100 (B1 sehr gut erfüllt). I am actively continuing to improve my German.
-
-**Q: Why are you looking for a new role?**
-A: My last contract at Kauschke Engineering Services concluded in November 2023 due to internal budget restructuring — not performance-related. Since then, I have been continuing my MSc studies, doing freelance work, and actively building my modern tech stack through personal projects published on GitHub.
-
-**Q: What kind of roles are you targeting?**
-A: I am primarily targeting Software Engineer or Senior Software Engineer roles, ideally in C#/.NET backend, full-stack development, or engineering software. I am open to roles in Germany (on-site, hybrid, or remote) and have immediate availability.
-
-**Q: Do you have experience with CI/CD and DevOps?**
-A: Yes. I implemented CI/CD pipelines using Docker, Jenkins, and Git at Smartdale Technologies, including deployment in AWS/Linux environments. I also use Docker locally for development and have exposure to GitHub Actions.
-
-**Q: Have you worked in agile environments?**
-A: Yes, extensively. I have worked in Scrum teams, SAFe (Scaled Agile Framework) environments, and led small agile development teams as a technical project manager.
-
-**Q: What makes you unique as a candidate?**
-A: I bring a rare combination of deep legacy expertise (C++, VB6, COM interop, CAD APIs) alongside modern stack development (NestJS, Next.js, TypeScript, Docker, AI tooling). I have worked across embedded systems, desktop applications, SaaS platforms, and engineering software — giving me a broad perspective that helps me build robust, production-stable systems. I am also based in Germany with an EU Blue Card, eliminating visa complexity for European employers.
+Q: What is your salary expectation?
+A: I am open to discussing based on the role and company. Please reach out directly at nishanthrajandev@gmail.com.

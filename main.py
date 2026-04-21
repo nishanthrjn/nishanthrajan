@@ -2,6 +2,7 @@ import os
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from engine import ask_talent_bot
 
@@ -14,13 +15,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.mount("/static", StaticFiles(directory="templates"), name="static")
+
 class ChatRequest(BaseModel):
     message: str
     history: list[dict] = []
 
 @app.get("/")
 async def get_index():
-    return FileResponse('templates/index.html')
+    return FileResponse('templates/portfolio.html')
 
 @app.post("/chat")
 async def chat_endpoint(request: ChatRequest):

@@ -12,7 +12,7 @@
 
 ## 📸 Screenshot
 
-![TalentBot UI](./templates/Screenshot.png)
+![TalentBot UI](./static/Screenshot.png)
 
 ---
 
@@ -118,14 +118,29 @@ Visit `http://127.0.0.1:8000` in your browser.
 
 ```
 TalentBot/
-├── main.py                  # FastAPI app entry point
-├── ingest.py                # Ingestion pipeline (chunking + FAISS indexing)
-├── engine.py                # RAG query engine (retrieval + generation logic)
+├── main.py                  # FastAPI app entry point (thin, delegates to app/)
+├── ingest.py                # CLI entry point for the ingestion pipeline
+├── app/
+│   ├── config.py             # Settings (env-driven)
+│   ├── models.py              # Pydantic request/response models
+│   ├── rag/                   # Embeddings, LLM client, vector store, prompt
+│   ├── services/
+│   │   └── chat_service.py    # Retrieval-augmented answer generation
+│   ├── api/
+│   │   └── routes.py          # FastAPI routes ("/", "/chat")
+│   └── ingestion/
+│       └── build_index.py     # Chunk resume.txt → FAISS index
 ├── data/
 │   └── resume.txt           # Resume & FAQ knowledge base
 ├── faiss_index/             # Generated vector index (auto-created)
 ├── templates/
-│   └── index.html           # Frontend UI (Tailwind CSS)
+│   └── portfolio.html       # Portfolio page (markup only)
+├── static/
+│   ├── css/portfolio.css     # Extracted styles
+│   ├── js/                   # ES modules (chat, modal, tabs, charts, ...)
+│   ├── photo.jpeg
+│   ├── Screenshot.png
+│   └── Nishanth_Rajan_CV.pdf
 ├── .env                     # API keys (never committed)
 ├── .gitignore
 ├── requirements.txt

@@ -16,7 +16,8 @@ class Settings(BaseSettings):
     llm_temperature: float = 0.1
     embedding_model_name: str = "all-MiniLM-L6-v2"
 
-    resume_path: Path = BASE_DIR / "data" / "resume.txt"
+    data_dir: Path = BASE_DIR / "data"
+    data_glob_patterns: tuple[str, ...] = ("*.txt", "*.md")
     faiss_index_dir: Path = BASE_DIR / "faiss_index"
     static_dir: Path = BASE_DIR / "static"
     templates_dir: Path = BASE_DIR / "templates"

@@ -56,8 +56,8 @@
 <nav>
   <a class="nav-logo" href="#hero">
     <div class="nav-dot"></div>
-    <img class="nav-photo" src="/static/photo.jpeg" alt="NR">
-    <div class="nav-id"><span class="nav-name">Nishanth Rajan</span><span class="nav-role">AI Engineer · Hannover</span></div>
+    <img class="nav-photo" id="navPhoto" src="/static/photo.jpeg" alt="NR">
+    <div class="nav-id"><span class="nav-name" id="navName"></span><span class="nav-role" id="navRole"></span></div>
   </a>
   <ul class="nav-links">
     <li><a href="#about">ABOUT</a></li>
@@ -66,13 +66,7 @@
     <li><a href="#chatbot"><svg class="ic"><use href="#i-chat"/></svg>ASK NR</a></li>
     <li><a href="#contact">CONTACT</a></li>
   </ul>
-  <div class="nav-strip">
-    <a class="nav-icon" href="tel:+491638332675" title="Phone"><svg class="ic"><use href="#i-phone"/></svg></a>
-    <a class="nav-icon" href="mailto:nishanthrajandev@gmail.com" title="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
-    <a class="nav-icon" href="https://linkedin.com/in/nishanthrajan" target="_blank" title="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
-    <a class="nav-icon" href="https://github.com/nishanthrjn" target="_blank" title="GitHub"><svg class="ic"><use href="#i-github"/></svg></a>
-    <a class="nav-icon" href="#contact" title="Hannover, Germany"><svg class="ic"><use href="#i-location"/></svg></a>
-  </div>
+  <div class="nav-strip" id="navStrip"></div>
 </nav>
 
 <!-- ═══════════ HERO ═══════════ -->
@@ -81,38 +75,20 @@
     <div class="panel hero-panel rv">
       <div class="hero-grid">
         <div class="hero-left">
-          <div class="hero-status"><div class="hero-status-dot"></div>AVAILABLE · EU BLUE CARD · HANNOVER, DE</div>
-          <h1 class="hero-h1">Architecting the future of agentic &amp; document intelligence</h1>
-          <p class="hero-sub">Focus: Python, C#, LLM architectures, RAG pipelines, agentic systems, document intelligence.<br>Over a Decade of experience building backend, desktop, and SQL workflow solutions — now engineering AI-first systems.</p>
-          <div class="hero-pills">
-            <span class="pill">LLM ARCHITECTURES</span>
-            <span class="pill">RAG PIPELINES</span>
-            <span class="pill">AGENTIC SYSTEMS</span>
-            <span class="pill y">C# / .NET</span>
-            <span class="pill y">PYTHON</span>
-            <span class="pill g">ANAC 2026 · 4th PLACE</span>
-          </div>
+          <div class="hero-status"><div class="hero-status-dot"></div><span id="heroStatusText"></span></div>
+          <h1 class="hero-h1" id="heroH1"></h1>
+          <p class="hero-sub" id="heroSub"></p>
+          <div class="hero-pills" id="heroPills"></div>
           <div class="hero-btns">
             <a href="#projects" class="btn-fill">Explore projects</a>
             <a href="#chatbot" class="btn-ghost"><svg class="ic" style="width:14px;height:14px"><use href="#i-chat"/></svg>Ask my AI</a>
           </div>
-          <div class="hero-contacts">
-            <a class="hc-item" href="mailto:nishanthrajandev@gmail.com"><svg class="ic"><use href="#i-mail"/></svg>nishanthrajandev@gmail.com</a>
-            <a class="hc-item" href="https://linkedin.com/in/nishanthrajan" target="_blank"><svg class="ic"><use href="#i-linkedin"/></svg>LinkedIn</a>
-            <a class="hc-item" href="https://github.com/nishanthrjn" target="_blank"><svg class="ic"><use href="#i-github"/></svg>GitHub</a>
-          </div>
+          <div class="hero-contacts" id="heroContacts"></div>
         </div>
         <div class="hero-illust">
           <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
-          <img class="hero-photo" src="/static/photo.jpeg" alt="Nishanth Rajan">
-          <div class="t-node tn1"><svg class="ic"><use href="#i-python"/></svg>Python<br>AI/ML</div>
-          <div class="t-node tn2"><svg class="ic"><use href="#i-dotnet"/></svg>C# / .NET<br>16yr</div>
-          <div class="t-node tn3"><svg class="ic"><use href="#i-llm"/></svg>LLM<br>Groq</div>
-          <div class="t-node tn4"><svg class="ic"><use href="#i-vector"/></svg>pgvector<br>FAISS</div>
-          <div class="t-node tn5"><svg class="ic"><use href="#i-agent"/></svg>RAG</div>
-          <div class="t-node tn6"><svg class="ic"><use href="#i-docker"/></svg>Docker<br>AWS</div>
-          <div class="t-node tn7"><svg class="ic"><use href="#i-trophy"/></svg>Agents<br>NegMAS</div>
-          <div class="t-node tn8"><svg class="ic"><use href="#i-llm"/></svg>Deep<br>Learn</div>
+          <img class="hero-photo" id="heroPhoto" src="/static/photo.jpeg" alt="Nishanth Rajan">
+          <div id="heroTechNodes"></div>
         </div>
       </div>
     </div>
@@ -126,25 +102,13 @@
       <div class="eyebrow">01 · ABOUT</div>
       <div class="p-h2">Detailed Professional Bio</div>
       <div class="about-top">
-        <img class="about-photo" src="/static/photo.jpeg" alt="Nishanth Rajan">
-        <p class="about-bio">Over a decade of engineering precision spanning backend systems, desktop applications, and enterprise SQL workflows — now focused full-time on agentic and document-intelligence systems: LLM architectures, RAG pipelines, and multi-agent orchestration. Competed solo as an MSc student at ANAC 2026 (IJCAI), placing 4th against multi-person research teams with a Bayesian opponent-modeling negotiation agent.</p>
+        <img class="about-photo" id="aboutPhoto" src="/static/photo.jpeg" alt="Nishanth Rajan">
+        <p class="about-bio" id="aboutBio"></p>
       </div>
 
       <div class="about-quickrow" style="margin-top:22px">
-        <div class="edu-row">
-          <div class="edu-icon"><svg class="ic"><use href="#i-grad"/></svg></div>
-          <div><div class="edu-name">Leibniz Universität Hannover</div><div class="edu-sub">MSc Computer Science (ongoing)</div></div>
-        </div>
-        <div class="lang-row" style="flex-direction:row;gap:20px">
-          <div class="lang-item">
-            <div class="lang-code" style="background:rgba(37,99,235,0.14);color:#60a5fa">EN</div>
-            <div><div class="lang-name">English</div><div class="lang-level">C1 — Advanced</div></div>
-          </div>
-          <div class="lang-item">
-            <div class="lang-code" style="background:rgba(251,191,36,0.14);color:var(--yellow)">DE</div>
-            <div><div class="lang-name">German</div><div class="lang-level">B1 — Intermediate</div></div>
-          </div>
-        </div>
+        <div class="edu-row" id="eduRow"></div>
+        <div class="lang-row" id="langRow" style="flex-direction:row;gap:20px"></div>
       </div>
 
       <button class="expand-toggle" onclick="toggleExpand(this,'about-more')">
@@ -153,23 +117,10 @@
       </button>
       <div class="expand-body" id="about-more">
         <div class="block-title" style="margin-top:6px">Career Timeline</div>
-        <div class="timeline">
-          <div class="t-row"><div class="t-dotcol"><div class="t-mark"></div><div class="t-line"></div></div>
-            <div><div class="t-co">Visionics</div><div class="t-role">Software Engineer</div><div class="t-desc">EDA/CAD/CAE desktop suite — C++ / C# interop, TCP/IP license manager, 30%+ performance gains.</div></div></div>
-          <div class="t-row"><div class="t-dotcol"><div class="t-mark"></div><div class="t-line"></div></div>
-            <div><div class="t-co">Seven Seas</div><div class="t-role">Team Lead</div><div class="t-desc">ERP / CRM / POS / hospitality suite — 5-developer team, Crystal Reports financial reporting.</div></div></div>
-          <div class="t-row"><div class="t-dotcol"><div class="t-mark"></div><div class="t-line"></div></div>
-            <div><div class="t-co">IDSi</div><div class="t-role">Sr. Engineer → Associate PM</div><div class="t-desc">AutoCAD API permit-automation platform; migrated legacy VBA macros to C# / .NET.</div></div></div>
-          <div class="t-row"><div class="t-dotcol"><div class="t-mark"></div><div class="t-line"></div></div>
-            <div><div class="t-co">Kauschke</div><div class="t-role">Engineering — SOLIDWORKS Add-in</div><div class="t-desc">C#/.NET SOLIDWORKS add-in with WPF client, reconnect-safe COM interop.</div></div></div>
-          <div class="t-row"><div class="t-dotcol"><div class="t-mark"></div><div class="t-line"></div></div>
-            <div><div class="t-co">Smartdale</div><div class="t-role">Technical Project Manager</div><div class="t-desc">Multi-tenant SaaS — C#/.NET Core, Blazor, PostgreSQL, Docker + Jenkins + AWS CI/CD.</div></div></div>
-          <div class="t-row"><div class="t-dotcol"><div class="t-mark"></div></div>
-            <div><div class="t-co">Greenway Health</div><div class="t-role">Principal Engineer</div><div class="t-desc">EHR platform for the US healthcare market — SAFe-Scrum, C#/.NET, Angular, Blazor.</div></div></div>
-        </div>
+        <div class="timeline" id="timeline"></div>
 
         <div class="block-title">Philosophy</div>
-        <p class="about-phil">Each project is built to demonstrate a distinct engineering capability — retrieval-augmented generation, document intelligence with verifiable citations, multi-agent coordination, and competitive autonomous negotiation. The throughline is production-grade AI systems, not demos.</p>
+        <p class="about-phil" id="aboutPhil"></p>
       </div>
     </div>
   </div>
@@ -183,84 +134,19 @@
       <div class="p-h2">Categories</div>
       <p class="p-sub">Expertise spectrum at a glance — expand for the full breakdown by category.</p>
 
-      <div class="spectrum-grid">
-        <div class="spectrum-card"><div class="spectrum-icon-badge" style="background:rgba(59,130,246,0.12);color:#3b82f6"><svg class="ic"><use href="#i-python"/></svg></div><div class="spectrum-label">Python</div></div>
-        <div class="spectrum-card"><div class="spectrum-icon-badge" style="background:rgba(167,139,250,0.12);color:#a78bfa"><svg class="ic"><use href="#i-dotnet"/></svg></div><div class="spectrum-label">C# / .NET</div></div>
-        <div class="spectrum-card"><div class="spectrum-icon-badge" style="background:rgba(96,165,250,0.12);color:#60a5fa"><svg class="ic"><use href="#i-llm"/></svg></div><div class="spectrum-label">LLM</div></div>
-        <div class="spectrum-card"><div class="spectrum-icon-badge" style="background:rgba(192,132,252,0.12);color:#c084fc"><svg class="ic"><use href="#i-agent"/></svg></div><div class="spectrum-label">Agentic AI</div></div>
-        <div class="spectrum-card"><div class="spectrum-icon-badge" style="background:rgba(56,189,248,0.12);color:#38bdf8"><svg class="ic"><use href="#i-doc"/></svg></div><div class="spectrum-label">Document Intelligence</div></div>
-        <div class="spectrum-card"><div class="spectrum-icon-badge" style="background:rgba(52,211,153,0.12);color:#34d399"><svg class="ic"><use href="#i-vector"/></svg></div><div class="spectrum-label">Vector DBs</div></div>
-        <div class="spectrum-card"><div class="spectrum-icon-badge" style="background:rgba(147,197,253,0.12);color:#93c5fd"><svg class="ic"><use href="#i-cloud"/></svg></div><div class="spectrum-label">Cloud</div></div>
-        <div class="spectrum-card"><div class="spectrum-icon-badge" style="background:rgba(251,146,60,0.12);color:var(--orange)"><svg class="ic"><use href="#i-cad"/></svg></div><div class="spectrum-label">CAD Add-ins</div></div>
-      </div>
+      <div class="spectrum-grid" id="spectrumGrid"></div>
 
       <button class="expand-toggle" onclick="toggleExpand(this,'skills-more')">
         <svg class="ic"><use href="#i-chevron"/></svg>
         <span class="toggle-label">View full skill breakdown &amp; radar</span>
       </button>
       <div class="expand-body" id="skills-more">
-        <div class="skills-grid" style="margin-top:6px">
-          <div class="skill-card wide">
-            <div class="skill-card-title">Python &amp; Applied AI</div>
-            <ul class="skill-list">
-              <li>PyTorch, LangChain, Transformers</li><li>FastAPI, Hugging Face</li>
-              <li>RAG pipeline design &amp; tuning</li><li>Semantic chunking strategies</li>
-              <li>Groq Llama 3, Ollama local inference</li><li>Prompt engineering &amp; fine-tuning</li>
-              <li>Semantic Kernel integration</li><li>Structured output pipelines</li>
-              <li>Multi-agent orchestration (NegMAS)</li><li>Bayesian opponent modeling</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-title">C# / .NET Stack</div>
-            <div class="tag-row">
-              <span class="tag b">ASP.NET Core</span><span class="tag b">.NET 10</span><span class="tag b">Blazor</span>
-              <span class="tag">EF Core 9</span><span class="tag">Multi-tenant</span><span class="tag">WPF</span><span class="tag">WinForms</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-title">Data &amp; Databases</div>
-            <div class="icon-grid">
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(96,165,250,0.14);color:#60a5fa"><svg class="ic"><use href="#i-vector"/></svg></div>PostgreSQL</div>
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(248,113,113,0.14);color:#f87171"><svg class="ic"><use href="#i-vector"/></svg></div>SQL Server</div>
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(52,211,153,0.14);color:#34d399"><svg class="ic"><use href="#i-vector"/></svg></div>pgvector</div>
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(192,132,252,0.14);color:#c084fc"><svg class="ic"><use href="#i-search"/></svg></div>FAISS</div>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-title">DevOps &amp; Tooling</div>
-            <div class="icon-grid">
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(251,146,60,0.14);color:var(--orange)"><svg class="ic"><use href="#i-git"/></svg></div>Git</div>
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(96,165,250,0.14);color:#60a5fa"><svg class="ic"><use href="#i-docker"/></svg></div>Docker</div>
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(248,113,113,0.14);color:#f87171"><svg class="ic"><use href="#i-jenkins"/></svg></div>Jenkins</div>
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(251,191,36,0.14);color:var(--yellow)"><svg class="ic"><use href="#i-aws"/></svg></div>AWS</div>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-card-title">Engineering Software</div>
-            <div class="icon-grid" style="grid-template-columns:1fr 1fr">
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(248,113,113,0.14);color:#f87171"><svg class="ic"><use href="#i-pencil"/></svg></div>AutoCAD API</div>
-              <div class="icon-cell"><div class="icon-cell-badge" style="background:rgba(248,113,113,0.14);color:#f87171"><svg class="ic"><use href="#i-cube"/></svg></div>SOLIDWORKS API</div>
-            </div>
-          </div>
-          <div class="skill-card wide">
-            <div class="skill-card-title">General SE</div>
-            <div class="tag-row">
-              <span class="tag">SOLID</span><span class="tag">Design patterns</span><span class="tag">Legacy modernization</span><span class="tag">SAFe-Scrum delivery</span>
-            </div>
-          </div>
-        </div>
+        <div class="skills-grid" id="skillsGrid" style="margin-top:6px"></div>
 
         <div class="radar-panel">
           <h4>SKILL DENSITY VISUALIZATION</h4>
           <canvas id="radarChart" width="320" height="320"></canvas>
-          <div class="radar-legend">
-            <div class="rl"><div class="rl-dot" style="background:#2563EB"></div>AI / ML / RAG</div>
-            <div class="rl"><div class="rl-dot" style="background:#FBBF24"></div>C# / .NET</div>
-            <div class="rl"><div class="rl-dot" style="background:#7E22CE"></div>Agentic Systems</div>
-            <div class="rl"><div class="rl-dot" style="background:#00FF88"></div>Vector / Data</div>
-            <div class="rl"><div class="rl-dot" style="background:#f97316"></div>DevOps / Cloud</div>
-            <div class="rl"><div class="rl-dot" style="background:#a78bfa"></div>Architecture</div>
-          </div>
+          <div class="radar-legend" id="radarLegend"></div>
         </div>
       </div>
     </div>
@@ -275,26 +161,7 @@
       <div class="p-h2">Built to Production Standard</div>
       <p class="p-sub">Featured highlights below — expand for the full catalog, or click any card for full architecture and stack.</p>
 
-      <div class="feat-grid">
-        <div class="feat-card" onclick="openModal('talentbot')">
-          <div class="ibadge sm" style="background:rgba(59,130,246,0.14);color:#60a5fa"><svg class="ic"><use href="#i-agent"/></svg></div>
-          <div class="feat-title">TalentBot</div>
-          <div class="feat-desc">RAG-powered portfolio chatbot grounded in over a decade of engineering knowledge.</div>
-          <div class="feat-link">DETAILS →</div>
-        </div>
-        <div class="feat-card" onclick="openModal('documind')">
-          <div class="ibadge sm" style="background:rgba(56,189,248,0.14);color:#38bdf8"><svg class="ic"><use href="#i-doc"/></svg></div>
-          <div class="feat-title">DocuMind</div>
-          <div class="feat-desc">NotebookLM-inspired RAG platform with inline [1][2] citations on every answer.</div>
-          <div class="feat-link">DETAILS →</div>
-        </div>
-        <div class="feat-card" onclick="openModal('agentnexus')">
-          <div class="ibadge sm" style="background:rgba(251,191,36,0.14);color:var(--yellow)"><svg class="ic"><use href="#i-trophy"/></svg></div>
-          <div class="feat-title">Agent-Nexus — ANAC 2026</div>
-          <div class="feat-desc">4th place at ANAC 2026 (IJCAI) — solo, Bayesian negotiation agent.</div>
-          <div class="feat-link">DETAILS →</div>
-        </div>
-      </div>
+      <div class="feat-grid" id="featGrid"></div>
 
       <div class="agent-teaser">
         <div class="agent-teaser-text"><svg class="ic" style="color:var(--yellow)"><use href="#i-chat"/></svg><b>Ask NR — Personal AI</b> — chat live with TalentBot, a RAG agent grounded in the projects above.</div>
@@ -303,7 +170,7 @@
 
       <button class="expand-toggle" onclick="toggleExpand(this,'projects-more')">
         <svg class="ic"><use href="#i-chevron"/></svg>
-        <span class="toggle-label">View all 12 projects</span>
+        <span class="toggle-label" id="projectsToggleLabel">View all 12 projects</span>
       </button>
       <div class="expand-body" id="projects-more">
         <div class="block-title" style="margin-top:6px">Filter by Category</div>
@@ -314,123 +181,19 @@
         </div>
 
         <div class="proj-section active" id="tab-ai">
-          <div class="proj-grid">
-            <div class="proj-card" onclick="openModal('talentbot')">
-              <div class="proj-card-num">01 / AI · RAG</div>
-              <div class="ibadge" style="background:rgba(59,130,246,0.14);color:#60a5fa"><svg class="ic"><use href="#i-agent"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">TalentBot</div>
-              <div class="proj-card-desc">RAG-powered AI portfolio chatbot. Recruiters converse with an LLM grounded in over a decade of engineering knowledge.</div>
-              <div class="tag-row"><span class="tag b">Python</span><span class="tag b">FastAPI</span><span class="tag b">LangChain</span><span class="tag">FAISS</span><span class="tag">Groq</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('documind')">
-              <div class="proj-card-num">02 / AI · DOCUMENT INTEL</div>
-              <div class="ibadge" style="background:rgba(56,189,248,0.14);color:#38bdf8"><svg class="ic"><use href="#i-doc"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">DocuMind</div>
-              <div class="proj-card-desc">NotebookLM-inspired RAG platform. Upload PDFs, chat with inline [1][2] citations showing exact source chunks.</div>
-              <div class="tag-row"><span class="tag b">C# .NET 10</span><span class="tag b">Blazor</span><span class="tag">Semantic Kernel</span><span class="tag">pgvector</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('nexusai')">
-              <div class="proj-card-num">03 / AI · MULTI-AGENT</div>
-              <div class="ibadge" style="background:rgba(192,132,252,0.14);color:#c084fc"><svg class="ic"><use href="#i-llm"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">NexusAI</div>
-              <div class="proj-card-desc">5 specialist AI agents collaborating in real-time. Live Blazor pipeline visualization with distributed tracing.</div>
-              <div class="tag-row"><span class="tag b">C# .NET 10</span><span class="tag">Semantic Kernel</span><span class="tag">Tavily</span><span class="tag">OpenTelemetry</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('agentnexus')">
-              <div class="proj-card-num">04 / AI · AUTONOMOUS NEGOTIATION</div>
-              <div class="ibadge" style="background:rgba(251,191,36,0.14);color:var(--yellow)"><svg class="ic"><use href="#i-trophy"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">Agent-Nexus — ANAC 2026</div>
-              <div class="proj-card-desc">4th place at ANAC 2026 (IJCAI). Bayesian opponent modeling, Pareto-optimal bidding. Competed solo as a student.</div>
-              <div class="tag-row"><span class="tag b">Python</span><span class="tag b">NegMAS</span><span class="tag">Bayesian AI</span><span class="tag">Game Theory</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('autoflow')">
-              <div class="proj-card-num">05 / AI · AUTOMATION</div>
-              <div class="ibadge" style="background:rgba(96,165,250,0.14);color:#60a5fa"><svg class="ic"><use href="#i-bolt"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">AutoFlow</div>
-              <div class="proj-card-desc">n8n-based AI automation workflow platform with LLM-powered decision routing and document processing pipelines.</div>
-              <div class="tag-row"><span class="tag b">n8n</span><span class="tag">Python</span><span class="tag">LLM</span><span class="tag">REST APIs</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('jobradar')">
-              <div class="proj-card-num">06 / AI · JOB INTELLIGENCE</div>
-              <div class="ibadge" style="background:rgba(52,211,153,0.14);color:#34d399"><svg class="ic"><use href="#i-target"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">JobRadar</div>
-              <div class="proj-card-desc">AI-driven job market intelligence tool. Scrapes, classifies, and ranks job postings using NLP and semantic matching.</div>
-              <div class="tag-row"><span class="tag b">Python</span><span class="tag">NLP</span><span class="tag">FastAPI</span><span class="tag">Semantic Search</span></div>
-            </div>
-          </div>
+          <div class="proj-grid" id="projGrid-ai"></div>
         </div>
 
         <div class="proj-section" id="tab-net">
-          <div class="proj-grid">
-            <div class="proj-card" onclick="openModal('greenway')">
-              <div class="proj-card-num">01 / ENTERPRISE · EHR / US MARKET</div>
-              <div class="ibadge" style="background:rgba(248,113,113,0.14);color:#f87171"><svg class="ic"><use href="#i-hospital"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">Greenway Health — EHR Platform</div>
-              <div class="proj-card-desc">Principal engineer on a SAFe-Scrum team building EHR product features for the US healthcare market.</div>
-              <div class="tag-row"><span class="tag b">C# .NET</span><span class="tag">Angular</span><span class="tag">TypeScript</span><span class="tag">SQL Server</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('smartdale')">
-              <div class="proj-card-num">02 / SAAS · MULTI-TENANT</div>
-              <div class="ibadge" style="background:rgba(147,197,253,0.14);color:#93c5fd"><svg class="ic"><use href="#i-cloud"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">Smartdale SaaS Platform</div>
-              <div class="proj-card-desc">Multi-tenant SaaS platform with C#/.NET Core, Blazor, and PostgreSQL. CI/CD via Docker, Jenkins, AWS.</div>
-              <div class="tag-row"><span class="tag b">C# .NET Core</span><span class="tag">Blazor</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('sevenseas')">
-              <div class="proj-card-num">03 / ERP · HOSPITALITY / FINANCE</div>
-              <div class="ibadge" style="background:rgba(251,146,60,0.14);color:var(--orange)"><svg class="ic"><use href="#i-hotel"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">Seven Seas ERP / POS Suite</div>
-              <div class="proj-card-desc">Full ERP, CRM, POS, financial accounting, and hospitality management system. Team lead, 5 developers.</div>
-              <div class="tag-row"><span class="tag b">C# ASP.NET</span><span class="tag">WinForms</span><span class="tag">SQL Server</span></div>
-            </div>
-          </div>
+          <div class="proj-grid" id="projGrid-net"></div>
         </div>
 
         <div class="proj-section" id="tab-cad">
-          <div class="proj-grid">
-            <div class="proj-card" onclick="openModal('kauschke')">
-              <div class="proj-card-num">01 / CAD · SOLIDWORKS ADD-IN</div>
-              <div class="ibadge" style="background:rgba(248,113,113,0.14);color:#f87171"><svg class="ic"><use href="#i-cube"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">Kauschke SOLIDWORKS Add-in</div>
-              <div class="proj-card-desc">C#/.NET SOLIDWORKS add-in with companion WPF client. Reconnect workflows and API reliability improvements.</div>
-              <div class="tag-row"><span class="tag b">C# .NET</span><span class="tag">WPF</span><span class="tag">SOLIDWORKS API</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('idsi')">
-              <div class="proj-card-num">02 / CAD · WORKFLOW AUTOMATION</div>
-              <div class="ibadge" style="background:rgba(251,146,60,0.14);color:var(--orange)"><svg class="ic"><use href="#i-cad"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">IDSi AutoPlan CAD System</div>
-              <div class="proj-card-desc">AutoCAD API-based CAD scrutiny and permit workflow automation. Rule-based validation, WPF and WinForms UI.</div>
-              <div class="tag-row"><span class="tag b">C# .NET</span><span class="tag">AutoCAD API</span><span class="tag">WPF</span></div>
-            </div>
-            <div class="proj-card" onclick="openModal('visionics')">
-              <div class="proj-card-num">03 / EDA · DESKTOP SUITE</div>
-              <div class="ibadge" style="background:rgba(167,139,250,0.14);color:#a78bfa"><svg class="ic"><use href="#i-microscope"/></svg></div>
-              <div class="proj-card-arrow"><svg class="ic"><use href="#i-arrow-right"/></svg></div>
-              <div class="proj-card-title">Visionics EDA/CAD/CAE Suite</div>
-              <div class="proj-card-desc">EDA/CAD/CAE desktop suite. TCP/IP license manager integration, performance optimization, cross-compilation.</div>
-              <div class="tag-row"><span class="tag b">C++ / C#</span><span class="tag">VB.NET</span><span class="tag">TCP/IP</span></div>
-            </div>
-          </div>
+          <div class="proj-grid" id="projGrid-cad"></div>
         </div>
 
         <div class="hist-title">ALL HISTORICAL PROJECTS</div>
-        <div class="hist-grid">
-          <div class="hist-card" onclick="openModal('idsi')"><div class="ibadge sm" style="margin:0 auto;background:rgba(251,146,60,0.14);color:var(--orange)"><svg class="ic"><use href="#i-cad"/></svg></div><div class="hist-name">IDSi</div></div>
-          <div class="hist-card" onclick="openModal('visionics')"><div class="ibadge sm" style="margin:0 auto;background:rgba(167,139,250,0.14);color:#a78bfa"><svg class="ic"><use href="#i-microscope"/></svg></div><div class="hist-name">Visionics</div></div>
-          <div class="hist-card" onclick="openModal('sevenseas')"><div class="ibadge sm" style="margin:0 auto;background:rgba(251,146,60,0.14);color:var(--orange)"><svg class="ic"><use href="#i-hotel"/></svg></div><div class="hist-name">Seven Seas</div></div>
-          <div class="hist-card" onclick="openModal('kauschke')"><div class="ibadge sm" style="margin:0 auto;background:rgba(248,113,113,0.14);color:#f87171"><svg class="ic"><use href="#i-cube"/></svg></div><div class="hist-name">Kauschke</div></div>
-        </div>
+        <div class="hist-grid" id="histGrid"></div>
       </div>
     </div>
   </div>
@@ -489,29 +252,18 @@
 
       <div class="contact-layout">
         <div>
-          <div class="contact-info-list">
-            <div class="cdetail"><div class="cicon"><svg class="ic"><use href="#i-mail"/></svg></div><div><div class="clabel">Email</div><div class="cval">nishanthrajandev@gmail.com</div></div></div>
-            <div class="cdetail"><div class="cicon"><svg class="ic"><use href="#i-phone"/></svg></div><div><div class="clabel">Phone</div><div class="cval">+49 163 833 2675</div></div></div>
-            <div class="cdetail"><div class="cicon"><svg class="ic"><use href="#i-location"/></svg></div><div><div class="clabel">Location</div><div class="cval">Hannover, Germany · EU Blue Card</div></div></div>
-          </div>
-          <div class="social-list" style="margin-bottom:10px">
-            <a href="https://linkedin.com/in/nishanthrajan" target="_blank"><svg class="ic"><use href="#i-linkedin"/></svg>linkedin.com/in/nishanthrajan</a>
-            <a href="https://github.com/nishanthrjn" target="_blank"><svg class="ic"><use href="#i-github"/></svg>github.com/nishanthrjn</a>
-            <a href="/static/Nishanth_Rajan_CV.pdf" download><svg class="ic"><use href="#i-download"/></svg>Download CV</a>
-          </div>
+          <div class="contact-info-list" id="contactInfoList"></div>
+          <div class="social-list" id="socialList" style="margin-bottom:10px"></div>
 
           <button class="expand-toggle" onclick="toggleExpand(this,'contact-more')">
             <svg class="ic"><use href="#i-chevron"/></svg>
             <span class="toggle-label">More ways to connect</span>
           </button>
           <div class="expand-body" id="contact-more">
-            <div class="local-row" style="margin-top:6px">
-              <div class="local-card"><div class="ibadge sm" style="background:rgba(37,99,235,0.14);color:#60a5fa"><svg class="ic"><use href="#i-location"/></svg></div><div><div class="local-name">Hannover</div><div class="local-sub">Based here · AI Engineer</div></div></div>
-              <div class="local-card"><div class="ibadge sm" style="background:rgba(0,255,136,0.12);color:var(--green)"><svg class="ic"><use href="#i-card"/></svg></div><div><div class="local-name">EU Blue Card</div><div class="local-sub">Holder · Available immediately</div></div></div>
-            </div>
+            <div class="local-row" id="localRow" style="margin-top:6px"></div>
             <div class="block-title">Booking Calendar</div>
             <div class="cal-widget">
-              <div class="cal-head">July 2026</div>
+              <div class="cal-head">August 2026</div>
               <div class="cal-grid" id="calGrid"></div>
             </div>
           </div>
@@ -531,13 +283,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2026 Nishanth Rajan · AI Engineer · Hannover, Germany</span>
-  <div class="footer-links">
-    <a href="https://github.com/nishanthrjn" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/nishanthrajan" target="_blank">LinkedIn</a>
-    <a href="/static/Nishanth_Rajan_CV.pdf" download>Download CV</a>
-    <a href="#hero">Back to top ↑</a>
-  </div>
+  <span id="footerCopyright"></span>
+  <div class="footer-links" id="footerLinks"></div>
 </footer>
 
 <!-- PROJECT MODAL -->
@@ -591,14 +338,8 @@
       <a class="side-chat-jump" href="#chatbot" onclick="toggleSidePanel(false)">Jump to full Ask NR section →</a>
     </div>
     <div class="side-tab-content" id="side-contact">
-      <div class="side-cdetail"><div class="side-cicon"><svg class="ic"><use href="#i-mail"/></svg></div><div><div class="side-clabel">Email</div><div class="side-cval">nishanthrajandev@gmail.com</div></div></div>
-      <div class="side-cdetail"><div class="side-cicon"><svg class="ic"><use href="#i-phone"/></svg></div><div><div class="side-clabel">Phone</div><div class="side-cval">+49 163 833 2675</div></div></div>
-      <div class="side-cdetail"><div class="side-cicon"><svg class="ic"><use href="#i-location"/></svg></div><div><div class="side-clabel">Location</div><div class="side-cval">Hannover, Germany · EU Blue Card</div></div></div>
-      <div class="side-quick-row">
-        <a class="side-quick-btn" href="mailto:nishanthrajandev@gmail.com"><svg class="ic"><use href="#i-mail"/></svg>Email</a>
-        <a class="side-quick-btn" href="https://linkedin.com/in/nishanthrajan" target="_blank"><svg class="ic"><use href="#i-linkedin"/></svg>LinkedIn</a>
-        <a class="side-quick-btn" href="https://github.com/nishanthrjn" target="_blank"><svg class="ic"><use href="#i-github"/></svg>GitHub</a>
-      </div>
+      <div id="sideContactList"></div>
+      <div class="side-quick-row" id="sideQuickRow"></div>
       <a class="side-contact-jump" href="#contact" onclick="toggleSidePanel(false)">Jump to full Contact section →</a>
     </div>
   </div>

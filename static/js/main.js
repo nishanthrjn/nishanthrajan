@@ -7,6 +7,10 @@ import { initRadarChart } from './modules/radarChart.js';
 import { initBookingCalendar } from './modules/bookingCalendar.js';
 import { initScrollReveal } from './modules/scrollReveal.js';
 import { handleForm } from './modules/contactForm.js';
+import { renderProfile } from './modules/renderProfile.js';
+import { renderProjects } from './modules/renderProjects.js';
+import { CONTACT, PROFILE, TIMELINE, SKILLS } from './data/content.js';
+import { PROJECTS } from './data/projects.js';
 
 // portfolio.html still wires these up via inline `onclick`/`onsubmit` attributes,
 // so they need to be reachable on the global object.
@@ -23,8 +27,11 @@ Object.assign(window, {
   handleForm,
 });
 
+renderProfile(CONTACT, PROFILE, TIMELINE, SKILLS);
+renderProjects(PROJECTS);
+
 initModalKeyboardDismiss();
 initChatInputs();
-initRadarChart();
+initRadarChart(SKILLS.radar);
 initBookingCalendar();
 initScrollReveal();

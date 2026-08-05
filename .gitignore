@@ -15,7 +15,7 @@ __pycache__/
 *$py.class
 
 # --- Machine Learning / Vector DB ---
-# We ignore the local FAISS folder because it's generated from the resume.txt.
+# We ignore the local FAISS folder because it's generated from the files in data/.
 # This forces the user (or your deployment) to run ingest.py.
 faiss_index/
 .ipynb_checkpoints/

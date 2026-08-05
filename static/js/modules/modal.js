@@ -1,7 +1,7 @@
-import { PROJECTS } from '../data/projects.js';
+import { findProject } from '../data/projects.js';
 
 export function openModal(id) {
-  const project = PROJECTS[id];
+  const project = findProject(id);
   if (!project) return;
 
   const iconWrap = document.getElementById('mIconWrap');

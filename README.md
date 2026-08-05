@@ -102,7 +102,7 @@ pip install -r requirements.txt
 python ingest.py
 ```
 
-This reads `data/resume.txt`, chunks it, generates embeddings, and saves the FAISS index locally.
+This reads every `.txt`/`.md` file under `data/` (recursively), chunks them, generates embeddings, and saves the FAISS index locally. Drop additional resume/notes files into `data/` and re-run this to grow the chatbot's knowledge — no code changes needed.
 
 ### 5. Run the application
 
@@ -129,15 +129,19 @@ TalentBot/
 │   ├── api/
 │   │   └── routes.py          # FastAPI routes ("/", "/chat")
 │   └── ingestion/
-│       └── build_index.py     # Chunk resume.txt → FAISS index
+│       └── build_index.py     # Chunks every .txt/.md file under data/ → FAISS index
 ├── data/
-│   └── resume.txt           # Resume & FAQ knowledge base
+│   └── *.txt, *.md          # Resume, CV, and notes — drop in more files freely
 ├── faiss_index/             # Generated vector index (auto-created)
 ├── templates/
 │   └── portfolio.html       # Portfolio page (markup only)
 ├── static/
 │   ├── css/portfolio.css     # Extracted styles
-│   ├── js/                   # ES modules (chat, modal, tabs, charts, ...)
+│   ├── js/
+│   │   ├── data/              # content.js (profile/contact/skills), projects.js
+│   │   │                      # (project catalog, per-project enabled/featured flags)
+│   │   ├── modules/            # renderProfile.js, renderProjects.js, chat, modal, ...
+│   │   └── main.js
 │   ├── photo.jpeg
 │   ├── Screenshot.png
 │   └── Nishanth_Rajan_CV.pdf

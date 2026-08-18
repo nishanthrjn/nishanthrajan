@@ -155,7 +155,7 @@ Classification: professional development, continuing studies, personal projects,
 - Completed German integration-language training through B1.
 
 ### Software Engineer
-Kauschke Engineering Services GmbH | Munich, Germany, remote | August 2023–November 2023
+Kauschke Engineering Services GmbH | Munich, Germany, remote | September 2023–November 2023
 
 - Developed a C#/.NET SOLIDWORKS add-in and initiated a WPF companion client linked to the correct SOLIDWORKS instance and version.
 - Implemented reconnect workflows, active-assembly context handover, component actions, thread locking, and explicit resource cleanup.
@@ -244,7 +244,7 @@ iSET, Industry Standard Embedded Technologies | India | August 2007–November 2
 ## Education and Continuing Learning
 
 ### MSc Studies in Geodesy and Geoinformatics, without degree
-Leibniz Universität Hannover, Germany | April 2022–August 2026
+Leibniz Universität Hannover, Germany | April 2022–September 2026
 
 Relevant studies included geodetic data analysis, Web GIS, 3D image processing, photogrammetric computer vision, recursive state estimation, AI/ML and deep-learning foundations, text mining, LLM-related and Agentic AI topics, and selected Computer Science subjects. Applied Python, MATLAB, and C++ to algorithm development, data analysis, scientific computing, and AI/ML-focused technical exercises.
 
@@ -316,7 +316,7 @@ Yes. I am open to relocation. Work authorization outside Germany depends on the 
 
 ### What happened between December 2023 and the present?
 
-Since December 2023, I have combined continuing studies, structured upskilling, personal software projects, AI/ML and LLM/RAG work, German-language development, and limited freelance developments. It was not continuous full-time employment or continuous full-time freelance work.
+Since December 2023, I have combined continuing studies, structured upskilling, personal software projects, AI/ML and LLM/RAG work, German-language development, and limited intermittent AutoPlan maintenance support. It was not continuous full-time employment or continuous full-time freelance work.
 
 ### Why are you moving toward Python and AI now?
 

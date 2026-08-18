@@ -13,14 +13,14 @@ export const CONTACT = {
 
 export const PROFILE = {
   name: 'Nishanth Rajan',
-  role: 'AI Engineer · Hannover',
+  role: 'Software Engineer | Applied AI | Agentic Systems · Hannover',
   photo: '/static/photo.jpeg',
 
   heroStatus: 'AVAILABLE · EU BLUE CARD · HANNOVER, DE',
-  heroHeadline: 'Architecting the future of agentic & document intelligence',
+  heroHeadline: 'Engineering software for an AI-native future',
   heroSub: 'Focus: Python, C#, LLM architectures, RAG pipelines, agentic systems, document intelligence.<br>Over a Decade of experience building backend, desktop, and SQL workflow solutions — now engineering AI-first systems.',
   heroPills: [
-    { text: 'LLM ARCHITECTURES' },
+    { text: 'LLM ORCHESTRATION' },
     { text: 'RAG PIPELINES' },
     { text: 'AGENTIC SYSTEMS' },
     { text: 'C# / .NET', variant: 'y' },
@@ -29,13 +29,13 @@ export const PROFILE = {
   ],
   techNodes: [
     { icon: 'i-python', label: 'Python<br>AI/ML' },
-    { icon: 'i-dotnet', label: 'C# / .NET<br>16yr' },
+    { icon: 'i-dotnet', label: 'C# / .NET<br>Primary Stack' },
     { icon: 'i-llm', label: 'LLM<br>Groq' },
     { icon: 'i-vector', label: 'pgvector<br>FAISS' },
     { icon: 'i-agent', label: 'RAG' },
-    { icon: 'i-docker', label: 'Docker<br>AWS' },
+    { icon: 'i-docker', label: 'Docker / DevOps<br>AWS exposure' },
     { icon: 'i-trophy', label: 'Agents<br>NegMAS' },
-    { icon: 'i-llm', label: 'Deep<br>Learn' },
+    { icon: 'i-llm', label: 'Deep Learning<br>Neural Networks' },
   ],
 
   aboutBio: "Over a decade of engineering precision spanning backend systems, desktop applications, and enterprise SQL workflows — now focused full-time on agentic and document-intelligence systems: LLM architectures, RAG pipelines, and multi-agent orchestration. Competed solo as an MSc student at ANAC 2026 (IJCAI), placing 4th against multi-person research teams with a Bayesian opponent-modeling negotiation agent.",
@@ -46,7 +46,7 @@ export const PROFILE = {
   ],
   philosophy: "Each project is built to demonstrate a distinct engineering capability — retrieval-augmented generation, document intelligence with verifiable citations, multi-agent coordination, and competitive autonomous negotiation. The throughline is production-grade AI systems, not demos.",
 
-  footerCopyright: '© 2026 Nishanth Rajan · AI Engineer · Hannover, Germany',
+  footerCopyright: '© 2026 Nishanth Rajan · Software Engineer | Applied AI | Agentic System · Hannover, Germany',
 };
 
 export const TIMELINE = [

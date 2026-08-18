@@ -1,11 +1,11 @@
 # Canonical Skills and Evidence Boundaries
 
 Status: source of truth for technical-skill wording and evidence level  
-Updated: 4 August 2026
+Updated: 17 August 2026
 
 ## Programming Languages
 
-### Professional or historically professional
+### Established professional / historical professional
 
 - C#
 - C
@@ -16,7 +16,7 @@ Updated: 4 August 2026
 - VB.NET
 - VB6 (legacy maintenance/migration context)
 
-### Developing / academic / project-based
+### Current project / academic / developing
 
 - Python
 - MATLAB
@@ -25,11 +25,9 @@ Preferred compact portfolio list:
 
 > C#, Python, C, C++, TypeScript, JavaScript, SQL
 
-## Core professional application-development skills
+## Core Professional Application Development
 
-These may be used without an exposure qualifier when relevant.
-
-### .NET and backend
+### C#/.NET and backend
 
 - .NET Framework
 - .NET Core
@@ -38,48 +36,44 @@ These may be used without an exposure qualifier when relevant.
 - REST APIs
 - Backend services and workflow components
 - Application integration
-- Data-driven application features
-- SQL-backed workflow processing
-
-### Desktop and engineering software
-
-- WPF
-- XAML
-- WinForms
-- SOLIDWORKS API
-- AutoCAD API
-- CAD add-in/plugin development
-- Desktop application development and maintenance
-- Geometry computation and validation
-- CAD scrutiny and regulatory/domain-rule validation
-- Rule-driven configuration and inference logic
-- Engineering-workflow integration
-- COM interoperability
-- Resource-lifecycle handling
-- TCP/IP client-server integration
+- Data-driven product features
+- SQL-backed workflow/state processing
+- WPF / XAML / WinForms
 
 ### Databases and persistence
 
 - Microsoft SQL Server
 - PostgreSQL
+- SQL
 - SQL-backed workflow systems
-- Data modelling
-- Query/workflow handling in documented application contexts
+- Data modelling in documented application contexts
 
-### Software engineering, modernization, and delivery
+### Engineering software / CAD / CAE
+
+- SOLIDWORKS API
+- AutoCAD API
+- CAD add-ins/plugins
+- Companion-client integration
+- Geometry computation and validation
+- CAD scrutiny
+- Rule-based regulatory/domain validation
+- COM interoperability
+- Resource-lifecycle handling
+- TCP/IP client-server integration
+- EDA/CAD/CAE and CAD/CAM systems
+- Qt and OpenGL
+
+### Engineering, modernization, quality, and delivery
 
 - Software architecture
 - SOLID principles
 - Design patterns
 - Modular application design
-- C++ and VB6 to .NET modernization
-- Long-lived codebase maintenance
-- Debugging
-- Defect analysis
+- C++/VB6 to .NET modernization
+- Debugging and defect analysis
 - Application stabilization
 - Testing
-- Production support
-- Release support
+- Production and release support
 - Git
 - Docker
 - Jenkins
@@ -88,23 +82,21 @@ These may be used without an exposure qualifier when relevant.
 - Scrum
 - SAFe Scrum
 
-## Professional but context-limited skills
+## Professional but Context-Limited
 
-Use with accurate context rather than as a specialist identity.
-
-- C++: historical professional use in CAD, CAE, simulation, cross-platform CAD/CAM, and modernization; not a current modern-C++ specialization
+- C++: historical professional use in engineering software, CAD/CAE, cross-platform CAD/CAM, and modernization; not a current modern-C++ specialization
 - Angular: professional contribution at Greenway Health; not dedicated frontend specialization
-- TypeScript: professional Angular/UI work plus recent project exposure
-- Blazor: professional contribution/exposure at Greenway Health and Smartdale
-- JavaScript, HTML, CSS: professional full-stack/UI contribution
-- AWS: hosted/delivery-environment exposure, not cloud-architecture expertise
-- Linux: professional delivery and engineering-software environment
-- UiPath, Blue Prism, Automation Anywhere: professional RPA delivery context without certification/advanced bot-specialist claim
-- Technical leadership/coordination: technical lead, architecture, delivery, stakeholder, and small-team coordination while remaining hands-on
+- TypeScript: professional Angular/UI work and recent project exposure
+- Blazor: professional contribution/exposure at Greenway and Smartdale
+- Vue.js: professional project exposure at Smartdale
+- JavaScript/HTML/CSS: professional UI/full-stack contribution
+- AWS/Linux: hosted/delivery-environment exposure, not cloud-architecture expertise
+- UiPath/Blue Prism/Automation Anywhere: professional RPA delivery context without certification/advanced bot-specialist claims
+- Technical leadership/coordination: architecture, delivery, stakeholder, and small-team coordination while remaining hands-on
 
-## Python and applied-AI skills
+## Python and Applied AI
 
-Classification: current personal-project, academic, competition, or limited professional-support context unless otherwise stated.
+Classification: current personal-project, academic, competition, and limited professional-support context unless otherwise stated.
 
 ### Python ecosystem
 
@@ -112,9 +104,9 @@ Classification: current personal-project, academic, competition, or limited prof
 - FastAPI
 - PyTorch exposure
 - PyQt5 exposure
-- pytest exposure where used in current project/competition work
+- pytest exposure where used in project/competition work
 
-### LLM, RAG, and GenAI
+### LLM / RAG / GenAI application development
 
 - LLM integration
 - Retrieval-Augmented Generation (RAG)
@@ -127,17 +119,15 @@ Classification: current personal-project, academic, competition, or limited prof
 - FAISS
 - Llama-family models
 - Groq
-- OpenAI-compatible API concepts/integration where used
 - Grounded question answering
 
-### Agentic AI
+### Agentic systems
 
 - Agentic workflows
 - Multi-agent concepts
 - NegMAS
 - Automated negotiation
-- Agent strategy and opponent-interaction logic
-- Tool/workflow orchestration concepts
+- Agent strategy and opponent-interaction concepts
 
 ### Automation
 
@@ -145,9 +135,9 @@ Classification: current personal-project, academic, competition, or limited prof
 - Python/C# automation support
 - RPA delivery context
 
-## Frontend and full-stack
+## Frontend and Full-Stack
 
-### Professional contribution
+Professional contribution/exposure:
 
 - Angular
 - TypeScript
@@ -155,19 +145,16 @@ Classification: current personal-project, academic, competition, or limited prof
 - HTML
 - CSS
 - Blazor
+- Vue.js
 
-### Personal-project / exposure
+Personal-project/exposure:
 
 - React
 - Node.js
 - Next.js
 - NestJS
 
-Boundary:
-
-- Do not position Nishanth as a dedicated frontend architect or senior React specialist.
-
-## Scientific, AI/ML, and academic skills
+## Academic / Scientific / AI-ML Topics
 
 - AI/ML foundations
 - Deep-learning foundations
@@ -175,32 +162,22 @@ Boundary:
 - Computer vision
 - 3D image processing
 - Photogrammetric computer vision
-- Text mining
-- BERT/MRPC-related academic work
+- NLP/text mining
+- BERT/MRPC-related exercises
 - Recursive state estimation
-- Kalman Filter
-- EKF
-- IEKF
-- UKF
-- EnKF
-- Particle Filter
+- Kalman Filter, EKF, IEKF, UKF, EnKF, Particle Filter
 - Web GIS
 - Leaflet
 - Geodetic data analysis
 
-Boundary:
-
-- Academic/project experience, not professional research or production ML engineering.
-
-## RPA and workflow automation
+## RPA and Workflow Automation
 
 Professional FourNxt context:
 
 - UiPath
 - Blue Prism
 - Automation Anywhere
-- Python automation support
-- C# automation support
+- Python/C# automation support
 - Agile RPA delivery
 - Solution-design and stakeholder coordination
 - UAE-market delivery, including Emaar and DAMAC client engagements
@@ -209,26 +186,9 @@ Current project/prototype context:
 
 - n8n self-hosted workflow experimentation
 
-## CAD / CAE / engineering software
+## DevOps and Tooling
 
-- SOLIDWORKS API
-- AutoCAD API
-- WPF / WinForms engineering applications
-- CAD add-ins and companion clients
-- CAD scrutiny
-- Geometry computation
-- Geometry validation
-- Rule-based domain validation
-- EDA / CAD / CAE
-- CAD/CAM
-- Qt
-- OpenGL
-- TCP/IP integration
-- Legacy C++/VB6 modernization
-
-## DevOps and tooling
-
-### Professional / supported
+Established/supported:
 
 - Git
 - Docker
@@ -237,27 +197,26 @@ Current project/prototype context:
 - Visual Studio
 - Linux
 
-### Exposure / developing
+Exposure/developing:
 
 - GitHub
 - GitHub Actions
-- AWS hosted-environment exposure
+- AWS hosted/delivery environments
 
-## Skills to omit unless new evidence is added
+## Do Not Claim Without New Evidence
 
+- C# expert with a precise 16+ year duration
+- production-grade AI/RAG/agent systems
+- LLM fine-tuning
+- advanced MLOps
 - Kubernetes
-- Azure cloud architecture
-- Azure Functions
-- Azure DevOps/Azure Pipelines as hands-on experience
-- Advanced MLOps
-- Production-grade deep-learning model development
-- Production microservices architecture as a delivered specialist capability
-- Event-driven architecture as a delivered professional capability
+- Azure cloud architecture / Azure Functions / Azure DevOps hands-on experience
+- production deep-learning model development
+- senior AI/ML engineering expertise
 - GraphQL
-- WebForms
-- P/Invoke
-- Unsupported SOAP claims
-- Unverified certifications
+- event-driven architecture as a delivered professional capability
+- production microservices-specialist expertise
+- unsupported certifications or quantitative impact metrics
 
 ## Languages
 

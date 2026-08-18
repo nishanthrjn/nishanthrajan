@@ -1,7 +1,7 @@
 # Canonical Profile Statements
 
-Status: reusable profile, About, headline, transition, and market statements  
-Updated: 4 August 2026
+Status: reusable portfolio, CV, recruiter, interview, and application statements  
+Updated: 17 August 2026
 
 ## Identity and header facts
 
@@ -16,43 +16,39 @@ Updated: 4 August 2026
 - Preferred direction: hands-on individual-contributor software-development roles
 - English: C1
 - German: B1, speaking actively improving
-- Open to relocation; work authorization must be checked for destinations outside Germany
+- Open to relocation; work authorization outside Germany must be assessed separately
 
-## Preferred current positioning
+## Preferred headlines
 
-### Portfolio headline
+### Portfolio / AI transition
 
 > Software Engineer | Python, C#/.NET | Backend & AI Applications | LLM, RAG, Agentic AI
 
-### Alternative balanced headline
+### Balanced
 
 > Software Engineer | C#/.NET, Python | Backend, Full-Stack & AI Applications
 
-### .NET-focused headline
+### .NET-focused
 
 > Software Engineer | C#/.NET | Backend, Desktop & Application Integration
 
-### CAD-focused headline
+### CAD-focused
 
 > C#/.NET Software Engineer | CAD/Engineering Software | SOLIDWORKS, AutoCAD, WPF
 
-## English profile statements
+## English Profiles
 
 ### Website About / balanced
 
-> Software engineer with more than a decade of professional experience across backend systems, desktop applications, CAD-integrated engineering software, SQL-backed workflows, enterprise applications, integration, modernization, debugging, and production support. Most of my commercial experience is in C#/.NET and SQL. More recently, I have been extending this foundation into Python and applied AI through structured study and personal projects involving FastAPI, RAG, LLM integration, vector retrieval, and agentic systems.
+> Software engineer with more than a decade of professional experience across backend systems, desktop applications, CAD-integrated engineering software, SQL-backed workflows, enterprise applications, integration, modernization, debugging, and production support. Most commercial experience is in C#/.NET and SQL. More recently, I have been extending this foundation into Python and applied AI through structured study, personal projects, and competition work involving FastAPI, RAG, LLM integration, vector retrieval, Microsoft Semantic Kernel, LangChain, and agentic systems.
 
-### Short balanced profile
+### Short balanced
 
 > Experienced software engineer with a strong C#/.NET, backend, SQL, integration, and engineering-software foundation, now developing hands-on capability in Python-based Applied AI, LLM/RAG, and agentic applications.
 
 ### Python / Applied AI
 
-> Software engineer transitioning into Python-based applied AI application engineering, combining recent hands-on work with FastAPI, RAG, LLM integration, LangChain, Semantic Kernel, vector search, and agentic systems with an established background in backend development, APIs, databases, integration, testing, and production software.
-
-### AI/ML transition
-
-> Software engineer with a strong C#/.NET foundation, developing hands-on capability in Python, machine-learning and deep-learning concepts, RAG, LLM integration, computer vision, and agentic application workflows through coursework, personal projects, and competition work.
+> Software engineer transitioning into Python-based applied AI application engineering, combining recent hands-on work with FastAPI, RAG, LLM integration, LangChain, Microsoft Semantic Kernel, vector search, and agentic systems with an established background in backend development, APIs, databases, integration, testing, and production software.
 
 ### Python backend
 
@@ -68,9 +64,9 @@ Updated: 4 August 2026
 
 ### Full-stack
 
-> C#/.NET engineer with professional full-stack contribution using Angular, TypeScript, SQL Server, Blazor, JavaScript, HTML, CSS, and API-driven backend systems.
+> C#/.NET engineer with professional full-stack contribution using Angular, TypeScript, SQL Server, Blazor, Vue.js, JavaScript, HTML, CSS, and API-driven backend systems.
 
-### CAD and engineering software
+### CAD / Engineering software
 
 > C#/.NET engineering-software developer with professional experience in SOLIDWORKS and AutoCAD integrations, WPF/WinForms applications, CAD scrutiny, geometry computation and validation, engineering workflows, debugging, and legacy modernization.
 
@@ -78,17 +74,13 @@ Updated: 4 August 2026
 
 > C#/.NET developer with historical professional C++ engineering-software experience and hands-on modernization of C++ and VB6 components into .NET environments.
 
-### RPA / Automation / UAE
+### RPA / UAE
 
 > Software engineer and technically oriented RPA project manager with UAE-market delivery experience, including client engagements for Emaar and DAMAC, hands-on Python/C# automation support, and delivery contexts involving UiPath, Blue Prism, and Automation Anywhere.
 
 ### Technical leadership
 
 > Hands-on software engineer with documented technical-lead, architecture, delivery, stakeholder-coordination, and small-team-coordination responsibilities across product and project environments.
-
-### Test and validation
-
-> Software engineer experienced in rule-based validation, geometry checks, debugging, defect isolation, application stabilization, release support, testing, and production reliability.
 
 ### GIS-adjacent
 
@@ -98,15 +90,19 @@ Updated: 4 August 2026
 
 > Since December 2023, I have combined continuing studies, structured technical upskilling, personal software projects, AI/ML and LLM/RAG work, and limited intermittent software maintenance support. This has not been continuous full-time freelance employment.
 
-## Learning / inquisitiveness / adaptability
+## Learning / curiosity / adaptability
 
-Preferred factual wording:
+Preferred evidence-based wording:
 
 > I work systematically through unfamiliar technologies and apply them pragmatically to real software problems. My recent transition into Python, FastAPI, RAG, LLM integration, and agentic systems reflects how I approach new technical areas: learn them, build with them, test them, and evaluate where they add practical value.
 
 Short version:
 
 > I learn new technologies quickly and apply them pragmatically to concrete project requirements, as reflected in my recent work with Python, FastAPI, RAG, LLM integration, and agentic systems.
+
+## Career transition narrative
+
+> My professional foundation is software engineering, primarily C#/.NET, backend systems, SQL, desktop/engineering software, integration, modernization, debugging, and production support. Since relocating to Germany and during my recent development period, I have deliberately expanded into Python and applied AI through university study, structured learning, and hands-on projects in FastAPI, RAG, LLM integration, vector retrieval, and agentic systems. I am looking for a hands-on software role where I can contribute my established engineering experience while continuing to deepen these newer capabilities.
 
 ## Availability and authorization
 
@@ -118,11 +114,9 @@ UAE-facing:
 
 > Based in Germany and open to software-engineering opportunities in the UAE. Previous UAE-market project experience includes FourNxt RPA delivery for clients including Emaar and DAMAC.
 
-Boundary:
+Boundary: do not imply current UAE work authorization unless separately verified.
 
-- Do not imply current UAE work authorization unless separately verified.
-
-## German profile statements
+## German Profiles
 
 ### Allgemein / ausgewogen
 
@@ -140,10 +134,6 @@ Boundary:
 
 > C#/.NET-Softwareentwickler mit Berufserfahrung in SOLIDWORKS- und AutoCAD-Integrationen, WPF/WinForms-Anwendungen, CAD-Prüfung, Geometrievalidierung und Legacy-Modernisierung.
 
-### Full-Stack
-
-> C#/.NET-Entwickler mit professioneller Full-Stack-Mitarbeit unter Einsatz von Angular, TypeScript, SQL Server, Blazor und API-basierten Backend-Systemen.
-
 ### Lernfähigkeit / Anpassungsfähigkeit
 
 > Ich arbeite mich gerne strukturiert in neue Technologien ein und setze sie pragmatisch für konkrete Projektanforderungen ein. Das zeigt sich auch in meiner aktuellen Arbeit mit Python, FastAPI, RAG, LLM-Integration und agentischen Systemen.
@@ -152,11 +142,7 @@ Boundary:
 
 > Seit Dezember 2023 verbinde ich fortlaufendes Studium, strukturierte Weiterbildung, persönliche Softwareprojekte und gelegentliche, begrenzte Softwareunterstützung. Dieser Zeitraum war keine durchgehende Vollzeit-Freelance-Tätigkeit.
 
-### Verfügbarkeit und Arbeitserlaubnis
-
-> Wohnhaft in Hannover, mit EU Blue Card zur Beschäftigung in Deutschland berechtigt, sofort verfügbar und umzugsbereit.
-
-## Locked English scope lines
+## Locked role-scope lines
 
 - Greenway: Technical lead in a SAFe Scrum team, contributing hands-on to backend and full-stack development.
 - FourNxt: Technically oriented project management with hands-on Python and C# automation development.
@@ -164,18 +150,10 @@ Boundary:
 - IDSi: Hands-on software engineer responsible for system architecture, product development, and technical coordination.
 - Seven Seas: Software engineer responsible for product development and technical coordination of a small team.
 
-## Semantically aligned German scope lines
-
-- Greenway: Technischer Lead in einem SAFe-Scrum-Team mit aktiver Mitarbeit an der Backend- und Full-Stack-Entwicklung.
-- FourNxt: Technisch ausgerichtetes Projektmanagement mit praktischer Python- und C#-Automatisierungsentwicklung.
-- Smartdale: Senior-Softwareentwickler mit Architektur- und Delivery-Verantwortung sowie Leitung eines kleinen agilen Teams.
-- IDSi: Praxisorientierter Softwareentwickler mit Verantwortung für Systemarchitektur, Produktentwicklung und technische Koordination.
-- Seven Seas: Softwareentwickler mit Verantwortung für Produktentwicklung und technische Koordination eines kleinen Teams.
-
 ## Positioning boundaries
 
 - Do not present Nishanth as a long-term commercial Python, AI, ML, RAG, or LLM specialist.
-- Do not claim senior AI/ML engineering expertise without new evidence.
+- Do not claim senior AI/ML engineer or AI architect identity without new evidence.
 - Keep C#/.NET as an established professional strength.
 - Current Python/AI positioning should be hands-on, developing, project-based, academic, or transition-focused.
 - Do not exaggerate German beyond B1.

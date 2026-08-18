@@ -1,106 +1,99 @@
 # Canonical Projects
 
 Status: source of truth for project names, categories, public-safe descriptions, and claim boundaries  
-Updated: 4 August 2026
+Updated: 17 August 2026
 
-## Publication rule
+## Publication and ingestion rules
 
-- Client and product names recorded below may be used conservatively as text.
-- Do not publish proprietary source code, screenshots, internal architecture, customer data, confidential workflows, credentials, or assets without permission.
-- Clearly distinguish professional products, personal projects, coursework, competition work, and planned ideas.
-- Do not convert prototypes into production deployments without evidence.
+- Distinguish professional products, personal projects, coursework, competition work, and exploratory ideas.
+- Do not convert prototypes or personal projects into production deployments without evidence.
+- Do not publish confidential source code, screenshots, internal architecture, customer data, credentials, or proprietary workflows without permission.
+- Default featured AI projects: TalentBot, DocuMind, Agent-Nexus.
 
-# Featured Portfolio Projects
-
-These are the preferred three AI/application projects for current Python, Applied AI, LLM/RAG, and Agentic AI positioning.
+# Featured AI / Application Projects
 
 ## TalentBot
 
 Category: personal AI/backend project  
-Primary stack: Python, FastAPI, LangChain, FAISS, Groq/Llama 3  
+Stack: Python, FastAPI, LangChain, FAISS, Groq/Llama 3  
 Portfolio priority: high
 
 Public-safe description:
 
-> RAG chatbot prototype combining LLM orchestration with vector retrieval and a FastAPI backend for context-aware question answering.
+> RAG chatbot project combining LLM orchestration with vector retrieval and a FastAPI backend for context-aware question answering.
 
-Supported technical themes:
+Supported themes:
 
 - Python backend development
 - FastAPI
 - LangChain
-- FAISS vector retrieval
+- FAISS
 - Groq/Llama integration
-- RAG workflow
+- Retrieval-Augmented Generation
 - Context-aware question answering
 - API-oriented AI application design
 
-Boundaries:
+Boundary:
 
-- Do not claim long-term commercial Python/AI experience from this project.
-- Do not claim production scale, user numbers, SLA, or deployment metrics without evidence.
+- Do not claim long-term commercial Python/AI experience, production scale, SLA, user metrics, or business impact from this personal project.
+- Specific claims such as semantic chunking or exact HuggingFace embedding models should be added only after repository verification.
 
 ## DocuMind
 
 Category: personal AI/document-intelligence project  
-Primary stack: C#/.NET 10, Microsoft Semantic Kernel, pgvector, local Llama 3.2  
+Stack: C#/.NET 10, Microsoft Semantic Kernel, pgvector, local Llama 3.2  
 Portfolio priority: high
 
 Public-safe description:
 
-> Document-intelligence and RAG application exploring document ingestion, vector retrieval, LLM integration, and grounded question answering using .NET and Microsoft Semantic Kernel.
+> Document-intelligence and RAG project exploring document ingestion, vector retrieval, LLM integration, and grounded question answering inside a modern .NET application architecture.
 
-Supported technical themes:
+Supported themes:
 
-- Modern C#/.NET
+- C#/.NET 10 project work
 - Microsoft Semantic Kernel
 - pgvector
-- Local Llama integration
-- Document ingestion
-- Embeddings/vector retrieval
-- Grounded question answering
-- AI integration inside a .NET application architecture
+- local Llama integration
+- document ingestion
+- vector retrieval
+- grounded question answering
+- AI integration in a .NET application
 
-Additional implementation details previously discussed:
+Boundary:
 
-- PdfPig used in the document-processing context
-- Local-model workflow through Ollama/Llama-family tooling has been discussed
-
-Boundaries:
-
-- Do not claim production deployment, user scale, or fully local/no-external-API operation unless the current repository is checked and confirms it.
+- Do not claim production scale or fully local/no-external-API operation unless the current repository is checked and confirms it.
+- Exact UI features, Groq usage, specific embedding models, citation-popup behaviour, and export/theme features should be added only after repository verification.
 
 ## Agent-Nexus
 
 Category: competition / multi-agent project  
-Primary stack: Python, NegMAS  
+Stack: Python, NegMAS  
 Repository: github.com/nishanthrjn/Agent-Nexus  
 Portfolio priority: high
 
 Public-safe description:
 
-> Automated negotiation agent and negotiation-strategy project built in Python using NegMAS for the ANAC 2026 automated-negotiation competition.
+> Automated negotiation agent and negotiation-strategy project developed in Python using NegMAS for the ANAC 2026 automated-negotiation competition.
 
 Verified current achievement:
 
-- Agent-Nexus placed 4th in the competition ranking presented at the event.
+- Agent-Nexus placed 4th in the competition.
 
-Supported technical themes:
+Supported themes:
 
 - Python
 - NegMAS
 - Multi-agent systems
 - Automated negotiation
 - Negotiation strategy
-- Opponent interaction
 - Agent evaluation/competition workflow
 
 Boundary:
 
-- Use the public name exactly as `Agent-Nexus`.
-- Do not use `AgentNexus_2.0` as the project display name.
-- Do not call it an LLM-based agent; it is a classical automated-negotiation/agentic project unless the implementation explicitly uses an LLM.
-- Do not add winner/first-place/finalist/IJCAI wording beyond evidence available for the 4th-place ranking.
+- Public project name is exactly `Agent-Nexus`.
+- Do not display `AgentNexus_2.0` as the project name.
+- Do not call it an LLM-based agent unless the implementation explicitly uses an LLM.
+- Bayesian-opponent-modeling, Pareto-optimal bidding, exact team/solo status, and IJCAI affiliation should not be stated without direct verification.
 
 # Professional Products and Projects
 
@@ -108,18 +101,18 @@ Boundary:
 
 Category: professional employment project  
 Company: Kauschke Engineering Services GmbH  
-Official project name: none; work was still in development
+Official project name: none
 
 Verified contribution:
 
 - C#/.NET SOLIDWORKS add-in
 - WPF companion client
 - SOLIDWORKS instance/version binding
-- Reconnect workflows
-- Active-assembly context handover
-- Component actions
-- Thread locking
-- Explicit resource cleanup
+- reconnect workflows
+- active-assembly context handover
+- component actions
+- thread locking
+- explicit resource cleanup
 
 ## Greenway Health EHR Application
 
@@ -130,10 +123,10 @@ Verified contribution:
 
 - C#/.NET
 - Microsoft SQL Server
-- Backend/full-stack product delivery
-- Angular and TypeScript UI work
-- Blazor contribution/exposure
-- SAFe Scrum environment
+- backend/full-stack delivery
+- Angular/TypeScript UI contribution
+- Blazor exposure/contribution
+- SAFe Scrum product environment
 
 ## FourNxt UAE RPA Delivery
 
@@ -144,18 +137,15 @@ Major clients: Emaar and DAMAC
 
 Verified contribution:
 
-- Technical project coordination
-- Agile RPA delivery support
+- technical project coordination
+- agile RPA delivery support
 - Python and C# automation utilities/supporting components
 - UiPath
 - Blue Prism
 - Automation Anywhere
-- Coordination with technical, solution-design, product, delivery, and business stakeholders
+- stakeholder/solution-design coordination
 
-Boundary:
-
-- Emaar and DAMAC were FourNxt clients, not employers.
-- Do not imply sole ownership of the client solutions.
+Boundary: Emaar and DAMAC were FourNxt clients, not employers.
 
 ## Grandcivitas
 
@@ -169,7 +159,8 @@ Verified contribution:
 - ASP.NET Core
 - PostgreSQL
 - Blazor
-- Architecture and delivery support
+- Vue.js
+- architecture/delivery support
 - Docker
 - Jenkins
 - Git
@@ -184,303 +175,174 @@ Verified contribution:
 
 - C#/.NET Framework
 - AutoCAD API
-- WPF / WinForms
+- WPF/WinForms
 - CAD scrutiny
-- Geometry computation and validation
-- Regulatory/domain-rule validation
-- Rule-based configuration/inference
-- SQL-backed workflows
+- geometry computation and validation
+- regulatory/domain-rule validation
+- rule-based configuration/inference
+- SQL-backed workflows and complex state processing
 - REST/application integration
-- Production support
+- production support
 - C++/VB6 modernization
 
-Current-period boundary:
-
-- After December 2023, only limited intermittent maintenance, fixes, and small enhancements for existing AutoPlan modules are supported.
+Current-period boundary: after December 2023, only limited intermittent maintenance/fixes/small enhancements for existing AutoPlan modules are supported.
 
 ## ArcGIS Prototype
 
 Category: professional prototype  
 Company context: IDSi Technologies
 
-Supported purpose:
-
-- Land-management or geospatial-workflow concept
-
-Boundary:
-
+- Land-management/geospatial-workflow concept.
 - Supports GIS-adjacent experience, not GIS-specialist positioning.
 
 ## Seven Seas Enterprise Applications
 
-Category: professional enterprise/custom-development portfolio  
-Company: Seven Seas Hi-Tech Systems India Pvt. Ltd.
+Category: professional enterprise/custom-development portfolio
 
 Areas:
 
 - ERP
-- Restaurant and hotel management
+- restaurant and hotel management
 - HRMS
-- Children's-park operations automation
-- Financial accounting
+- children's-park operations automation
+- financial accounting
 - POS
 - CRM
-- Related custom business applications
+- related custom applications
 
-Verified contribution:
-
-- C#
-- ASP.NET
-- WinForms
-- SQL
-- Debugging
-- Testing
-- Release support
-- Production support
-- Technical coordination
+Verified contribution: C#, ASP.NET, WinForms, SQL, debugging, testing, release support, production support, technical coordination.
 
 ## EDWinXP
 
 Category: professional EDA/CAD/CAE desktop suite  
 Company: Visionics India Pvt. Ltd.
 
-Verified contribution:
-
-- C++
-- C#/.NET
-- VB.NET
-- WinForms
-- TCP/IP licence-management integration
-- Debugging/performance work
-- Testing and release support
-- Partial .NET migration
+Verified contribution: C++, C#/.NET, VB.NET, WinForms, TCP/IP licence-management integration, debugging/performance work, testing/release support, partial .NET migration.
 
 ## Computer-Integrated Manufacturing System and CADXpert
 
 Category: professional early-career engineering software  
-Company: iSET, Industry Standard Embedded Technologies
+Company: iSET
 
-Verified contribution:
+Verified contribution: C/C++, Qt, OpenGL, Linux, cross-platform development, debugging, testing.
 
-- C / C++
-- Qt
-- OpenGL
-- Linux
-- Cross-platform development
-- Debugging
-- Testing
+# Additional Personal / Academic Projects
 
-# Additional Personal Projects
+These are documented in prior project material but are not the default three featured AI projects. Public status should be checked before prominent publication.
 
 ## BackupWorkbench / Backup Orchestrator
 
 Category: personal .NET desktop project  
 Documented direction: WPF/.NET 8
 
-Previously discussed technical themes:
+Discussed themes: modular-monolith structure, WPF MVVM, SQLite WAL, staged fingerprinting, quarantine-first handling, xUnit, ADRs.
 
-- Modular-monolith structure
-- WPF MVVM
-- SQLite with WAL
-- Staged fingerprinting
-- Quarantine-first handling
-- xUnit testing
-- Architecture Decision Records (ADRs)
-
-Boundary:
-
-- Verify current repository completeness and final feature status before publishing detailed claims.
+Boundary: verify current repository completeness and final feature status before detailed publication.
 
 ## CareerForge
 
 Category: personal full-stack/AI-enabled application  
-Documented stack: Next.js, TypeScript, NestJS, MongoDB, Docker  
-Documented purpose: CV and cover-letter tailoring, job tracking, and AI-provider abstraction/fallback
+Documented stack: Next.js, TypeScript, NestJS, MongoDB, Docker
 
-Boundary:
+Documented purpose: CV/cover-letter tailoring, job tracking, and AI-provider abstraction/fallback.
 
-- Do not call it a production SaaS without deployment and usage evidence.
-- Not used in the default three-project AI CV selection.
+Boundary: not a production SaaS claim and not included in default AI-job CV project selection.
 
 ## CodeArena
 
 Category: personal project  
 Documented stack: .NET 8, React, Monaco
 
-Boundary:
-
-- Repository completeness and public demo status should be verified before prominent publication.
+Boundary: verify repository completeness/public demo status.
 
 ## SmartOps
 
 Category: personal project  
 Documented stack: .NET 9, Angular 19
 
-Boundary:
-
-- Repository completeness and public demo status should be verified before prominent publication.
+Boundary: verify repository completeness/public demo status.
 
 ## StudyNexus
 
-Category: personal application initiative  
-Documented purpose:
+Category: personal application initiative
 
-- Study assistant for PDFs/notebooks
-- RAG
-- Structured learning
-- Extraction and revision
+Documented purpose: study assistant for PDFs/notebooks, RAG, structured learning, extraction, and revision.
 
-Boundary:
-
-- Present as in development unless release evidence is verified.
+Boundary: present as in development unless release evidence is verified.
 
 ## Web-GIS Practice / Web-GIS
 
-Category: academic/personal project  
-Primary stack: Leaflet
+Category: academic/personal  
+Stack: Leaflet
 
-Supported themes:
-
-- Web GIS
-- Leaflet
-- GeoJSON/XML-related exercises
-
-Boundary:
-
-- Coursework/project exposure, not professional GIS delivery.
+Supported themes: Web GIS, Leaflet, GeoJSON/XML-related exercises.
 
 ## ScrapVision-3D
 
-Category: personal/academic project  
+Category: personal/academic  
 Documented stack: PyQt5
 
-Boundary:
+Boundary: verify final scope/repository status.
 
-- Final scope and repository evidence should be verified before detailed publication.
+## Python MNIST / ML Learning Skeleton
 
-## Python MNIST / ML Skeleton
+Category: learning project
 
-Category: learning project  
-Supported purpose:
+Supported purpose: Python/ML experimentation and learning.
 
-- Python/ML experimentation and learning
-
-Boundary:
-
-- Keep clearly labelled as a learning exercise.
-
-# Academic and Technical Study Projects
+# Academic / Technical Study Work
 
 ## Recursive State Estimation
-
-Category: academic coursework/project work
 
 Methods/topics:
 
 - Kalman Filter
-- Extended Kalman Filter (EKF)
-- Iterated Extended Kalman Filter (IEKF)
-- Unscented Kalman Filter (UKF)
-- Ensemble Kalman Filter (EnKF)
+- Extended Kalman Filter
+- Iterated Extended Kalman Filter
+- Unscented Kalman Filter
+- Ensemble Kalman Filter
 - Particle Filter
 
-Languages/tools:
-
-- Python and/or MATLAB in academic contexts
-
-Boundary:
-
-- Not professional sensor-fusion or production state-estimation experience.
+Classification: academic coursework/project work; not professional state-estimation employment.
 
 ## Geodetic Data Analysis
 
-Category: MSc coursework  
-Period: May 2022–August 2023 coursework context
+Classification: MSc coursework.
 
 ## 3D Image Processing and Photogrammetric Computer Vision
 
-Category: MSc coursework
-
-Supported themes:
-
-- 3D image processing
-- Computer vision
-- Photogrammetric computer vision
+Classification: MSc coursework.
 
 ## Text Mining / Transformer-related Exercises
 
-Category: academic coursework
+Supported themes: text mining, BERT/MRPC-related academic work, NLP concepts.
 
-Supported themes:
+## Search / Minimax / Reinforcement-Learning Exercises
 
-- Text mining
-- BERT/MRPC-related work
-- NLP concepts
+Classification: academic/self-study technical work.
 
-## CS Search / Minimax / Reinforcement-Learning Exercises
-
-Category: academic/self-study technical work
-
-Supported themes:
-
-- Search algorithms
-- Minimax
-- Reinforcement-learning exercises
-
-# Experimental Competition Work
+# Experimental / Non-featured Competition Work
 
 ## RSNA Knee Abnormality Detection, Kaggle
 
 Category: experimental competition work  
-Primary stack: Python, PyTorch
+Stack: Python, PyTorch
 
 Public-safe description:
 
 > Developed patient-level validation and PyTorch training experiments for knee MRI abnormality classification using controlled train/validation protocols and AUC-based evaluation.
 
-Boundary:
+Boundary: no final competition submission or leaderboard result is claimed. This project should not be used in default CVs unless specifically relevant.
 
-- No final competition submission or leaderboard result is claimed.
-- This project is intentionally omitted from the default common/UAE CV and may be used only when medically relevant or specifically desired.
+# Resume-only Claims Requiring Confirmation Before Ingestion
 
-## Other AI/technical competitions discussed
+The Claude-generated `resume.txt` introduced the following items that are not corroborated by the canonical source pack or prior verified thread facts. They are intentionally excluded from the public factual project inventory until confirmed:
 
-- NVIDIA Nemotron reasoning work was explored; do not claim a completed submission/result unless the final evidence is checked.
-- Other challenge participation should remain out of the public portfolio until results and repositories are verified.
+- NexusAI multi-agent orchestration platform
+- AutoFlow IoT workflow automation platform
+- JobRadar multi-source job aggregator
+- detailed DocuMind UI/embedding/Groq feature claims
+- detailed TalentBot semantic-chunking and exact embedding-model claims
+- detailed Agent-Nexus Bayesian opponent modelling / Pareto-bidding claims
 
-# Planned / Exploratory Project Ideas
-
-These are not completed portfolio projects and must never be displayed as delivered work unless implementation evidence is added.
-
-## Last-Mile Route Optimization Platform
-
-Discussed direction:
-
-- Multi-stop delivery routing
-- Multiple delivery personnel
-- Shift/time constraints
-- Distance, travel time, fuel, public transport, and traffic considerations
-- Routing/optimization architecture
-
-Status: exploratory/planning
-
-## LLM Prompt Builder
-
-Discussed direction:
-
-- Prompt-building application
-- Multiple LLM providers
-- Modular architecture
-- Free/open-source deployment preference
-
-Status: exploratory/planning
-
-## Project-selection rule for the portfolio website
-
-Default featured projects for the AI/Python-facing website:
-
-1. TalentBot
-2. DocuMind
-3. Agent-Nexus
-
-Use professional products in the Experience section rather than mixing them with personal GitHub projects. Additional projects may appear in an "Other Projects" section only when their repository/status is verified.
+If these are genuine current repositories/projects, verify them separately and then promote them into the relevant project sections.

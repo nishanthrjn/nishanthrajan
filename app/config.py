@@ -17,14 +17,13 @@ class Settings(BaseSettings):
     embedding_model_name: str = "all-MiniLM-L6-v2"
 
     data_dir: Path = BASE_DIR / "data"
-    data_glob_patterns: tuple[str, ...] = ("*.txt", "*.md")
     faiss_index_dir: Path = BASE_DIR / "faiss_index"
     static_dir: Path = BASE_DIR / "static"
     templates_dir: Path = BASE_DIR / "templates"
 
     chunk_size: int = 500
     chunk_overlap: int = 50
-    retrieval_k: int = 4
+    retrieval_k: int = 6
     history_turns: int = 4
 
     cors_allow_origins: list[str] = ["*"]

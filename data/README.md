@@ -1,23 +1,70 @@
-# TalentBot Portfolio Knowledge Pack v2
+# TalentBot Knowledge Pack v3
 
-Use these files as the factual knowledge base for TalentBot and the portfolio website.
+This pack separates recruiter-facing RAG knowledge from comprehensive reference material.
 
-Recommended ingestion order:
+## IMPORTANT
 
-1. `resume.txt` — recruiter-friendly consolidated knowledge + FAQ
-2. `MasterCV.md` — comprehensive source of truth
-3. `career-history.md` — chronology and official titles
-4. `projects.md` — project descriptions and claim boundaries
-5. `skills.md` — skills separated by evidence level
-6. `education-and-upskilling.md` — education, coursework, continuing development
-7. `profile-statements.md` — reusable positioning and career-transition language
+Index ONLY the `ingest/` folder.
 
-`resume-audit.md` is for maintenance/review and does not need to be exposed publicly. It records why some Claude-generated claims were corrected or excluded.
+Do NOT index:
+- `reference/`
+- this README
+- old CVs
+- tailored CVs
+- cover letters
+- job descriptions
+- previous FAISS indexes
+- old `resume.txt` files
+- audit files
 
-RAG guidance:
+The `reference/` folder is for humans and application-generation workflows only.
 
-- Chunk by Markdown heading/section rather than arbitrary fixed character counts where possible.
-- Preserve section titles in chunk metadata.
-- Store source filename and heading in metadata for traceability.
-- Prefer canonical files over generated CVs when facts conflict.
-- Do not let TalentBot infer unsupported duration, proficiency level, production status, competition details, or work authorization.
+## Why this structure
+
+The previous knowledge pack repeated the same facts across `resume.txt`, `MasterCV.md`,
+`projects.md`, `skills.md`, and profile files. That creates duplicate retrieval candidates
+and makes it easier for an LLM to attach one project's technologies to another project.
+
+The v3 ingestion set uses one entity per document wherever possible.
+
+Examples:
+- TalentBot is one project document.
+- DocuMind is one project document.
+- Agent-Nexus is one project document.
+- Each employer/period is a separate experience document.
+
+This preserves entity boundaries even when a text splitter creates smaller chunks.
+
+## Required rebuild procedure
+
+1. Stop the TalentBot application.
+2. Delete the existing FAISS index AND its metadata/docstore files.
+3. Remove old knowledge files from the application's ingestion data directory.
+4. Copy only the contents of `ingest/` into the ingestion source directory.
+5. Rebuild the index from zero.
+6. Restart the application.
+7. Verify the corrected system prompt is actually loaded.
+8. Run retrieval diagnostics before judging the final LLM answer.
+
+## Recommended loader metadata
+
+For each loaded file store at least:
+- `source`
+- `entity_type`
+- `entity_name`
+
+The files themselves also contain ENTITY_TYPE and ENTITY_NAME fields so they remain
+understandable even if your current loader does not parse custom metadata.
+
+## Retrieval test
+
+Question:
+`What projects show your RAG experience?`
+
+Expected facts:
+- TalentBot demonstrates RAG.
+- DocuMind demonstrates RAG.
+- Agent-Nexus does NOT demonstrate RAG. It is a Python/NegMAS automated-negotiation project.
+
+If Agent-Nexus is returned as a RAG project after rebuilding, inspect the retrieved chunks.
+Do not tune the LLM first; fix retrieval or stale data first.

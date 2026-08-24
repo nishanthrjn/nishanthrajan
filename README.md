@@ -1,6 +1,6 @@
 # TalentBot 🤖 | AI-Powered Professional Portfolio
 
-**TalentBot** is a Retrieval-Augmented Generation (RAG) application that acts as an interactive AI surrogate for my professional background. Instead of reading a static PDF, recruiters and collaborators can have a real-time conversation with an AI grounded in my 15+ years of software engineering experience.
+**TalentBot** is a Retrieval-Augmented Generation (RAG) application that acts as an interactive AI surrogate for my professional background. Instead of reading a static PDF, recruiters and collaborators can have a real-time conversation with an AI grounded in more than a decade of professional software-development experience.
 
 ---
 
@@ -29,43 +29,45 @@
 
 ---
 
-## 🧠 How It Works (RAG Architecture)
+## 🧠 How It Works (Domain-Routed RAG)
 
 ```
 User Question
      │
      ▼
 ┌─────────────────────┐
-│  Embedding Model    │  ← HuggingFace all-MiniLM-L6-v2
-│  (Vectorize Query)  │
-└────────┬────────────┘
+│   Query Router       │  ← keyword classifier: project / experience /
+│  (classify_query)    │     skill / education / profile
+└────────┬─────────────┘
+         │  routes to ONE domain
+         ▼
+┌─────────────────────┐
+│  Domain FAISS Index  │  ← e.g. faiss_index/project/ only —
+│  (Retrieve Top-K)    │     never searches unrelated domains
+└────────┬─────────────┘
          │
          ▼
 ┌─────────────────────┐
-│   FAISS Vector DB   │  ← Similarity search over resume chunks
-│   (Retrieve Top-K)  │
-└────────┬────────────┘
+│  Context Injection   │  ← Retrieved chunks (each tagged with its
+└────────┬─────────────┘     entity_name + source) → System Prompt
          │
          ▼
 ┌─────────────────────┐
-│  Context Injection  │  ← Retrieved chunks → System Prompt
-└────────┬────────────┘
-         │
-         ▼
-┌─────────────────────┐
-│   Groq / Llama 3    │  ← Generates grounded, factual response
-│   (LLM Generation)  │
-└────────┬────────────┘
+│   Groq / Llama 3      │  ← Generates a grounded, factual response
+└────────┬─────────────┘
          │
          ▼
     Final Answer
 ```
 
-1. **Ingestion** — Resume and FAQ data are loaded and split into semantic chunks using `RecursiveCharacterTextSplitter`.
-2. **Vectorization** — Chunks are converted into embeddings and stored in a local FAISS index.
-3. **Retrieval** — User queries are embedded and matched against the index via cosine similarity search.
-4. **Augmentation** — The most relevant chunks are injected into a carefully crafted system prompt.
-5. **Generation** — Llama 3 (via Groq LPU) generates a factual, professional response grounded strictly in the retrieved context.
+1. **Ingestion** — Five canonical markdown files (`data/*.md`) are split heading-aware: each `##` section (one project, one role, one topic) becomes exactly one chunk, tagged with `source`/`doc_type`/`entity_name`/`category` metadata. A section is only split further if it exceeds the embedding model's context window — and every resulting sub-chunk still belongs to a single entity, never a blend of two.
+2. **Vectorization** — Each of the five domains is embedded and saved to its own FAISS index under `faiss_index/<domain>/`.
+3. **Routing** — A question is classified into exactly one domain before any retrieval happens, so a projects question never competes against skills-list chunks for the same top-K slots.
+4. **Retrieval** — The classified domain's index is searched via similarity search.
+5. **Augmentation** — Retrieved chunks are injected into the system prompt, each labeled with its source entity so the model can attribute facts correctly.
+6. **Generation** — Llama 3 (via Groq LPU) generates a response grounded strictly in the retrieved context, under an explicit rule not to name a project/employer/technology absent from that context.
+
+This exists because the earlier single-index design let a generic technology mention in one project's chunk get semantically confused with another project — see `data/README.md` for the specifics.
 
 ---
 
@@ -96,13 +98,13 @@ source venv/bin/activate       # On Windows: .\venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Ingest the resume data
+### 4. Ingest the canonical knowledge files
 
 ```bash
 python ingest.py
 ```
 
-This reads every `.txt`/`.md` file under `data/` (recursively), chunks them, generates embeddings, and saves the FAISS index locally. Drop additional resume/notes files into `data/` and re-run this to grow the chatbot's knowledge — no code changes needed.
+This reads `data/ingest/` — one markdown file per entity (one project, one employer, plus profile/education/skills/FAQ files), each with a small `KEY: value` header (`ENTITY_TYPE`, `ENTITY_NAME`, and for projects `CAPABILITY_TAGS`/`EXCLUDED_CAPABILITY_TAGS`) — and builds one FAISS index per domain under `faiss_index/`. To grow the knowledge base, add a new file under the right `data/ingest/` folder (or add a new domain in `app/rag/domains.py` for a genuinely new knowledge type), then re-run this. `data/reference/` (old flat files) and top-level `reference/` (`MasterCV.md`, `resume.txt`) are for humans and CV generation, not ingestion — see `data/README.md` and `data/manifest.json` for the full picture.
 
 ### 5. Run the application
 
@@ -123,16 +125,27 @@ TalentBot/
 ├── app/
 │   ├── config.py             # Settings (env-driven)
 │   ├── models.py              # Pydantic request/response models
-│   ├── rag/                   # Embeddings, LLM client, vector store, prompt
+│   ├── rag/
+│   │   ├── domains.py          # THE domain↔canonical-file mapping (single source of truth)
+│   │   ├── query_router.py     # classify_query(): routes a question to one domain
+│   │   ├── embeddings.py, llm.py, vector_store.py, prompt.py
 │   ├── services/
-│   │   └── chat_service.py    # Retrieval-augmented answer generation
+│   │   └── chat_service.py    # Domain-routed retrieval + grounded generation
 │   ├── api/
 │   │   └── routes.py          # FastAPI routes ("/", "/chat")
 │   └── ingestion/
-│       └── build_index.py     # Chunks every .txt/.md file under data/ → FAISS index
+│       └── build_index.py        # Parses data/ingest/ headers, builds one FAISS index per domain
 ├── data/
-│   └── *.txt, *.md          # Resume, CV, and notes — drop in more files freely
-├── faiss_index/             # Generated vector index (auto-created)
+│   ├── ingest/                 # THE indexed knowledge base — one file per entity
+│   │   ├── 00-profile.md, 30-education.md, 40-skills.md, 50-faq.md
+│   │   ├── experience/          # one file per role
+│   │   └── projects/            # one file per featured project
+│   ├── reference/              # old flat files, kept for history — NOT indexed
+│   ├── config/prompt.py        # source the live system prompt was merged from
+│   ├── manifest.json           # ingestion ground truth (do-not-index list, attribution)
+│   └── README.md               # explains all of the above
+├── reference/                 # MasterCV.md, resume.txt — human/CV-generation use, NOT indexed
+├── faiss_index/                # Generated per-domain indexes (auto-created): project/, experience/, ...
 ├── templates/
 │   └── portfolio.html       # Portfolio page (markup only)
 ├── static/

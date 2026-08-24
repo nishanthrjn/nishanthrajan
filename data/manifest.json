@@ -1,0 +1,38 @@
+{
+  "version": "3.0",
+  "generated": "2026-09-04",
+  "index_only": "ingest/",
+  "do_not_index": [
+    "reference/",
+    "README.md",
+    "config/"
+  ],
+  "featured_rag_projects": [
+    "TalentBot",
+    "DocuMind"
+  ],
+  "non_rag_project": "Agent-Nexus",
+  "project_attribution": {
+    "TalentBot": [
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "FAISS",
+      "Groq/Llama 3",
+      "RAG"
+    ],
+    "DocuMind": [
+      "C#/.NET 10",
+      "Microsoft Semantic Kernel",
+      "pgvector",
+      "local Llama 3.2",
+      "RAG"
+    ],
+    "Agent-Nexus": [
+      "Python",
+      "NegMAS",
+      "automated negotiation",
+      "multi-agent systems"
+    ]
+  }
+}

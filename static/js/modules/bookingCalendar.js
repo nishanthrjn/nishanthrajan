@@ -7,7 +7,7 @@ const AVAILABLE_DAYS = [4, 7, 8, 9, 10, 14, 15, 16, 17, 21, 22, 23, 24, 28, 29, 
 function requestBookingDay(day, cell) {
   const message = document.getElementById('contactMessage');
   if (message) {
-    message.value = `I'd like to schedule a call on July ${day}, 2026.`;
+    message.value = `I'd like to schedule a call on August ${day}, 2026.`;
     message.focus();
   }
   const form = document.getElementById('contactForm');
@@ -34,7 +34,7 @@ export function initBookingCalendar() {
     cell.className = 'cal-day' + (isAvailable ? ' avail' : '') + (day === TODAY ? ' today' : '');
     cell.textContent = day;
     if (isAvailable) {
-      cell.title = `Request July ${day}, 2026`;
+      cell.title = `Request August ${day}, 2026`;
       cell.addEventListener('click', () => requestBookingDay(day, cell));
     }
     grid.appendChild(cell);

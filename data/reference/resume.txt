@@ -1,0 +1,344 @@
+# NISHANTH RAJAN — SOFTWARE ENGINEER | C#/.NET, PYTHON | BACKEND & APPLIED AI
+
+## Contact and Availability
+
+- Location: Hannover, Germany
+- Phone: +49 163 833 2675
+- Email: nishanthrajandev@gmail.com
+- LinkedIn: linkedin.com/in/nishanthrajan
+- GitHub: github.com/nishanthrjn
+- Germany work authorization: EU Blue Card holder
+- Availability: Immediate
+- Relocation: Open to relocation; work authorization outside Germany must be assessed separately
+- Languages: English C1; German B1, speaking actively improving
+
+## Professional Summary
+
+Software Engineer with more than a decade of professional experience across backend systems, desktop applications, CAD-integrated engineering software, SQL-backed workflows, enterprise applications, application integration, modernization, debugging, and production support. Most commercial experience is in C#/.NET and SQL, with additional professional exposure to Angular/TypeScript, Blazor, RPA delivery, Docker/CI/CD, AWS/Linux delivery environments, and technical coordination.
+
+More recently, I have been extending this software-engineering foundation into Python and applied AI through structured study, personal projects, and competition work. Current hands-on areas include Python, FastAPI, RAG, LLM integration, Microsoft Semantic Kernel, LangChain, pgvector, FAISS, local/open-source LLM workflows, prompt engineering, and agentic systems.
+
+I am not positioning myself as a long-term commercial AI/ML specialist. My value is the combination of established software-engineering experience with deliberate, hands-on development in modern AI application engineering.
+
+## Key Highlights
+
+- More than a decade of professional software-development experience across engineering software, healthcare, SaaS, enterprise applications, RPA, backend, desktop, integration, and modernization contexts.
+- Built TalentBot, a Python/FastAPI RAG chatbot using LangChain, FAISS, and Groq/Llama 3.
+- Built DocuMind, a C#/.NET 10 document-intelligence and RAG project using Microsoft Semantic Kernel, pgvector, and local Llama 3.2.
+- Developed Agent-Nexus in Python using NegMAS for the ANAC 2026 automated-negotiation competition; Agent-Nexus placed 4th in the competition.
+- Professional CAD/engineering-software experience includes SOLIDWORKS API, AutoCAD API, WPF/WinForms, geometry validation, EDA/CAD/CAE, CAD/CAM, and legacy modernization.
+- Previous UAE-market delivery experience through FourNxt Technologies, including client engagements for Emaar and DAMAC.
+- German integration-language training completed through B1; English C1.
+
+## Technical Skills
+
+### Programming Languages
+
+- C# — established professional experience
+- Python — recent project, academic, automation, and limited professional-support context
+- C and C++ — historical professional engineering-software experience and academic use
+- TypeScript and JavaScript — professional full-stack contribution and project exposure
+- SQL — established professional experience
+- Additional historical/academic: VB.NET, VB6, MATLAB
+
+### C#/.NET and Backend
+
+- .NET Framework, .NET Core, ASP.NET Core, ASP.NET
+- REST APIs and application integration
+- Backend services and SQL-backed workflow components
+- WPF, XAML, WinForms
+- Microsoft SQL Server, PostgreSQL
+- Data-driven application features and workflow/state-processing systems
+- Debugging, defect analysis, application stabilization, release support, production support
+- Legacy modernization from C++/VB6 into .NET environments
+
+### Python and Applied AI
+
+Current project/academic/competition context:
+
+- Python
+- FastAPI
+- Retrieval-Augmented Generation (RAG)
+- LLM integration
+- Microsoft Semantic Kernel
+- LangChain
+- Embeddings and vector search
+- pgvector
+- FAISS
+- Llama-family models
+- Groq
+- Prompt engineering
+- Agentic workflows and multi-agent concepts
+- NegMAS and automated negotiation
+- PyTorch exposure through coursework/technical exercises
+- AI/ML and deep-learning foundations
+- NLP/text-mining concepts
+- Computer vision and 3D image-processing coursework
+
+### Full-Stack and Frontend
+
+Professional contribution/exposure:
+
+- Angular
+- TypeScript
+- JavaScript
+- HTML/CSS
+- Blazor
+- Vue.js
+
+Personal-project/exposure:
+
+- React
+- Node.js
+- Next.js
+- NestJS
+
+### CAD / CAE / Engineering Software
+
+- SOLIDWORKS API
+- AutoCAD API
+- CAD add-ins/plugins and companion-client workflows
+- CAD scrutiny and permit-processing systems
+- Geometry computation and validation
+- Rule-based regulatory/domain validation
+- COM interoperability and resource-lifecycle handling
+- EDA/CAD/CAE and CAD/CAM software
+- Qt, OpenGL, TCP/IP integration
+
+### DevOps, Delivery, and Automation
+
+- Git, Docker, Jenkins, CI/CD, Linux
+- GitHub/GitHub Actions exposure
+- AWS hosted/delivery-environment exposure
+- Agile, Scrum, SAFe Scrum
+- UiPath, Blue Prism, Automation Anywhere
+- n8n workflow experimentation
+
+## Featured AI / Software Projects
+
+### TalentBot
+
+Category: Personal AI/backend project  
+Stack: Python, FastAPI, LangChain, FAISS, Groq/Llama 3
+
+TalentBot is a RAG chatbot project combining LLM orchestration, vector retrieval, and a FastAPI backend for context-aware question answering. It is part of my current hands-on transition into Python-based AI application development.
+
+### DocuMind
+
+Category: Personal AI/document-intelligence project  
+Stack: C#/.NET 10, Microsoft Semantic Kernel, pgvector, local Llama 3.2
+
+DocuMind is a document-intelligence and RAG project exploring document ingestion, vector retrieval, LLM integration, and grounded question answering inside a modern .NET application architecture. It connects my established C#/.NET background with newer LLM/RAG engineering patterns.
+
+### Agent-Nexus
+
+Category: Competition / multi-agent project  
+Stack: Python, NegMAS  
+Repository: github.com/nishanthrjn/Agent-Nexus
+
+Agent-Nexus is an automated-negotiation agent and negotiation-strategy project developed in Python using NegMAS for the ANAC 2026 automated-negotiation competition. Agent-Nexus placed 4th in the competition.
+
+Important naming rule: use the public project name exactly as `Agent-Nexus`.
+
+## Professional Experience
+
+### Continuing Studies & Software Development, Part-time
+Hannover, Germany | December 2023–Present
+
+Classification: professional development, continuing studies, personal projects, and limited intermittent software support; not continuous full-time employment or continuous full-time freelance work.
+
+- Continued coursework and technical work in AI/ML, deep-learning concepts, LLM/RAG, agentic AI, recursive state estimation, computer vision, text mining, and selected Computer Science subjects.
+- Developed practical skills in Python, FastAPI, PostgreSQL, Docker, REST APIs, Git, and modern C#/.NET through structured study and personal software projects.
+- Built AI-assisted prototypes including RAG, LLM-integrated, backend, and agentic applications.
+- Explored self-hosted workflow automation using n8n.
+- Provided limited intermittent maintenance, fixes, and small enhancements for existing AutoPlan modules.
+- Completed German integration-language training through B1.
+
+### Software Engineer
+Kauschke Engineering Services GmbH | Munich, Germany, remote | September 2023–November 2023
+
+- Developed a C#/.NET SOLIDWORKS add-in and initiated a WPF companion client linked to the correct SOLIDWORKS instance and version.
+- Implemented reconnect workflows, active-assembly context handover, component actions, thread locking, and explicit resource cleanup.
+- Employment ended because of internal budget restructuring.
+
+### Relocation to Germany & MSc Studies
+Hannover, Germany | May 2022–August 2023
+
+Classification: relocation, study, and technical upskilling; not employment.
+
+- Relocated to Germany and continued MSc coursework in Geodesy and Geoinformatics.
+- Completed coursework/assignments in geodetic data analysis, 3D image processing, Web GIS, and related technical subjects.
+- Used Python, MATLAB, C, or C++ in academic contexts where applicable.
+
+### Principal Software Engineer
+Greenway Health India Pvt. Ltd. | India, remote, US market | November 2021–April 2022
+
+Technical lead in a SAFe Scrum team, contributing hands-on to backend and full-stack development.
+
+- Worked on the Greenway Health EHR application.
+- Developed data-driven product features using C#/.NET and Microsoft SQL Server.
+- Contributed to backend/full-stack delivery and UI work using Angular and TypeScript.
+- Blazor, JavaScript, HTML, and CSS contribution/exposure is supported.
+
+### Project Manager, RPA
+FourNxt Technologies LLP | India, remote, UAE market | May 2021–November 2021
+
+Technically oriented project management with hands-on Python and C# automation development.
+
+- Supported RPA delivery and agile project execution.
+- Contributed Python and C# programming support for automation utilities/supporting components.
+- Worked in delivery contexts involving UiPath, Blue Prism, and Automation Anywhere.
+- Major UAE client engagements included Emaar and DAMAC.
+- Coordinated with solution-design, technical, product, delivery, and business stakeholders.
+
+### Technical Project Manager, Backend / Full-stack
+Smartdale Technologies LLP | India | March 2020–May 2021
+
+Senior software engineer with architectural and delivery ownership, leading a small agile team.
+
+- Worked hands-on on Grandcivitas, a multi-tenant SaaS platform that was not released during my involvement.
+- Contributed using C#/.NET Core, ASP.NET Core, PostgreSQL, Blazor, and Vue.js.
+- Supported architecture and delivery using Docker, Jenkins, Git, AWS, and Linux-hosted environments.
+- Supported CI/CD and containerized delivery while remaining hands-on.
+
+### Software Engineer L3, later Associate Technical Project Manager
+IDSi Technologies India Pvt. Ltd. | India | February 2015–March 2020
+
+Hands-on software engineer responsible for system architecture, product development, and technical coordination.
+
+- Worked on AutoPlan, PlanPermit, and AgniPermit.
+- Developed C#/.NET, AutoCAD API, WPF/WinForms, REST, and SQL-backed applications for CAD scrutiny and permit workflows.
+- Implemented geometry computation/validation, regulatory and domain-rule validation, rule-based configuration/inference, and SQL-backed workflow processing with complex state transitions.
+- Developed application-integration components for building-permit and fire-approval workflows.
+- Supported debugging, defect analysis, application stabilization, production/release support, and long-term maintenance.
+- Maintained or modernized C++ and VB6 components within .NET environments.
+- Developed an ArcGIS prototype for a land-management/geospatial-workflow concept.
+
+### Career Break, Upskilling
+Cochin, India | August 2014–January 2015
+
+- Completed an intensive .NET skill refresh.
+- Built a small self-learning .NET game project.
+
+### Project Team Lead (Software Engineer)
+Seven Seas Hi-Tech Systems India Pvt. Ltd. | India | August 2011–July 2014
+
+Software engineer responsible for product development and technical coordination of a small team.
+
+- Developed and stabilized enterprise applications using C#, ASP.NET, WinForms, and SQL across ERP, hospitality, HRMS, children's-park operations, financial accounting, POS, CRM, and related custom systems.
+- Supported debugging, testing, defect resolution, release stabilization, production readiness, and production support while remaining hands-on.
+
+### Software Engineer
+Visionics India Pvt. Ltd. | India | November 2008–August 2011
+
+- Enhanced and maintained EDWinXP, a desktop EDA/CAD/CAE software suite, using C++, C#, .NET, VB.NET, WinForms, TCP/IP, and related engineering-software technologies.
+- Implemented TCP/IP client-server integration for licence-management components and supported debugging, performance improvement, testing, release support, and partial migration toward .NET.
+
+### Trainee, Research and Development
+iSET, Industry Standard Embedded Technologies | India | August 2007–November 2008
+
+- Contributed to a computer-integrated manufacturing system and CADXpert, a cross-platform 3D CAD/CAM tool.
+- Used C, C++, Qt, OpenGL, and Linux for cross-platform engineering-software development.
+- Supported development, debugging, and testing.
+
+## Education and Continuing Learning
+
+### MSc Studies in Geodesy and Geoinformatics, without degree
+Leibniz Universität Hannover, Germany | April 2022–September 2026
+
+Relevant studies included geodetic data analysis, Web GIS, 3D image processing, photogrammetric computer vision, recursive state estimation, AI/ML and deep-learning foundations, text mining, LLM-related and Agentic AI topics, and selected Computer Science subjects. Applied Python, MATLAB, and C++ to algorithm development, data analysis, scientific computing, and AI/ML-focused technical exercises.
+
+### German Integration Course, A1–B1
+Sprachakademie Hannover, Germany | May 2024–November 2024
+
+- Completed German integration-language training through B1.
+
+### Bachelor's Degree in Electronics and Communications Engineering
+Mahatma Gandhi University, Kerala, India | August 2003–July 2007
+
+## Academic / Technical Study Areas
+
+- Recursive state estimation: Kalman Filter, EKF, IEKF, UKF, EnKF, Particle Filter
+- 3D image processing and photogrammetric computer vision
+- Geodetic data analysis
+- Web GIS and Leaflet
+- AI/ML and deep-learning foundations
+- PyTorch exposure
+- Text mining and BERT/MRPC-related exercises
+- Search/minimax/reinforcement-learning exercises
+- Python/MATLAB/C/C++ academic programming where applicable
+
+## Career Transition Narrative
+
+My professional foundation is software engineering, primarily C#/.NET, backend systems, SQL, desktop/engineering software, integration, modernization, debugging, and production support. After relocating to Germany and during my recent development period, I deliberately expanded into Python and applied AI through university study, structured learning, and hands-on projects in FastAPI, RAG, LLM integration, vector retrieval, and agentic systems. I am seeking hands-on software roles where I can contribute established engineering experience while continuing to deepen these newer capabilities.
+
+## Learning, Curiosity, and Adaptability
+
+I work systematically through unfamiliar technologies and apply them pragmatically to concrete software problems. My recent move into Python, FastAPI, RAG, LLM integration, and agentic systems reflects a deliberate pattern of learning, building, testing, and evaluating new technical approaches rather than simply claiming familiarity with them.
+
+## Frequently Asked Questions
+
+### What is your primary technical background?
+
+My strongest professional background is C#/.NET software engineering, including backend systems, desktop applications, SQL-backed workflows, CAD/engineering software, application integration, debugging, modernization, and production support. Python and applied AI are newer hands-on areas developed through recent projects, study, and limited automation work.
+
+### Are you an AI/ML engineer with many years of commercial AI experience?
+
+No. I am an experienced software engineer transitioning hands-on into applied AI application engineering. My AI/ML evidence comes primarily from personal projects, coursework, technical exercises, and competition work rather than long-term commercial AI employment.
+
+### What AI projects have you built?
+
+My three preferred featured projects are TalentBot, DocuMind, and Agent-Nexus. TalentBot is a Python/FastAPI RAG chatbot, DocuMind is a .NET/Semantic Kernel document-RAG project, and Agent-Nexus is a Python/NegMAS automated-negotiation agent that placed 4th in ANAC 2026.
+
+### What is your experience with Microsoft Semantic Kernel?
+
+I have used Microsoft Semantic Kernel in recent personal .NET AI work, particularly DocuMind, to explore LLM orchestration inside a C#/.NET application architecture. This is project experience, not long-term commercial Semantic Kernel experience.
+
+### What is your Python experience?
+
+I have hands-on Python experience across RPA-support utilities, academic assignments, AI/ML coursework, automation, personal backend/AI projects, and competition work. I do not present myself as a long-term commercial Python specialist.
+
+### What is your cloud experience?
+
+I have AWS exposure from professional delivery environments at Smartdale, where Docker, Jenkins, Git, AWS, and Linux were part of the delivery context. I do not claim cloud-architecture expertise. I also have GitHub Actions exposure through recent development work.
+
+### What is your German level?
+
+German B1, with speaking actively improving. English is C1.
+
+### Are you immediately available?
+
+Yes. I am based in Hannover, hold an EU Blue Card for Germany, and am immediately available.
+
+### Are you open to relocation?
+
+Yes. I am open to relocation. Work authorization outside Germany depends on the destination and should be assessed separately.
+
+### What happened between December 2023 and the present?
+
+Since December 2023, I have combined continuing studies, structured upskilling, personal software projects, AI/ML and LLM/RAG work, German-language development, and limited intermittent AutoPlan maintenance support. It was not continuous full-time employment or continuous full-time freelance work.
+
+### Why are you moving toward Python and AI now?
+
+I see AI application engineering as a natural extension of my existing software-engineering background. Instead of treating AI as a separate discipline, I am learning how to integrate LLMs, retrieval, agentic workflows, APIs, databases, testing, and maintainable backend architecture into real software applications.
+
+### What is your salary expectation?
+
+I prefer to align salary expectations with the scope, responsibilities, location, and budgeted range for the specific role.
+
+## Public Claim Boundaries
+
+Do not claim the following unless new evidence is explicitly added:
+
+- 16+ years of C# or .NET expertise as a precise duration
+- long-term commercial Python, AI, ML, RAG, or LLM employment
+- production-grade RAG/agent systems or production AI impact
+- senior AI engineer, AI architect, or ML engineer identity
+- LLM fine-tuning experience
+- advanced MLOps
+- Kubernetes expertise
+- Azure cloud architecture or Azure delivery experience
+- production deep-learning expertise
+- unverified project metrics, user counts, performance numbers, or deployment claims
+- business-fluent German
+- work authorization outside Germany

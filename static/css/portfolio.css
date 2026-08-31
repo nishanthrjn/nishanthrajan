@@ -1,6 +1,6 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#050505;
+  --bg:#000000;
   --card:#11141c;
   --card2:#0d1018;
   --blue:#2563EB;
@@ -143,9 +143,11 @@ nav{
 .t-line{flex:1;width:1px;background:var(--border);margin-top:4px}
 .t-row:last-child .t-line{display:none}
 .t-co{font-size:0.82rem;font-weight:700}
+.t-period{font-size:0.62rem;color:var(--gray);font-family:var(--mono);margin:2px 0}
 .t-role{font-size:0.67rem;color:var(--yellow);margin:2px 0 4px}
 .t-desc{font-size:0.72rem;color:var(--gray);line-height:1.6}
 .about-phil{font-size:0.8rem;color:var(--gray);line-height:1.8}
+.edu-list{display:flex;flex-direction:column;gap:14px}
 .edu-row{display:flex;align-items:center;gap:12px}
 .edu-icon{width:36px;height:36px;border-radius:9px;background:rgba(37,99,235,0.08);border:1px solid var(--border-blue);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .edu-icon .ic{width:17px;height:17px}
@@ -365,6 +367,15 @@ footer{padding:26px 32px;border-top:1px solid var(--border);display:flex;justify
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .rv.vis{opacity:1;transform:none}
 
+/* Text and content width are almost entirely in rem/px sized for ~1440px-wide
+   viewports; on larger desktop monitors (1800px+ CSS pixels, e.g. a 2560x1440
+   display at 100% OS/browser zoom) that leaves the page looking undersized,
+   with most of the screen as empty margin outside .wrap's 1120px cap. Scale
+   both up together for wide viewports rather than relying on browser zoom. */
+@media(min-width:1800px){
+  html{font-size:clamp(16px,0.85vw,22px)}
+  .wrap{max-width:min(1600px,90vw)}
+}
 @media(max-width:900px){
   .hero-grid{grid-template-columns:1fr}
   .hero-illust{display:none}

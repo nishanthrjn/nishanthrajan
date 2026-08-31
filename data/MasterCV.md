@@ -70,7 +70,7 @@ Project/academic/competition context:
 - Microsoft Semantic Kernel
 - LangChain
 - RAG
-- LLM integration
+- LLM Orchestration 
 - embeddings and vector search
 - pgvector
 - FAISS

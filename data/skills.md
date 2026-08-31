@@ -108,7 +108,7 @@ Classification: current personal-project, academic, competition, and limited pro
 
 ### LLM / RAG / GenAI application development
 
-- LLM integration
+- LLM Orchestration 
 - Retrieval-Augmented Generation (RAG)
 - LangChain
 - Microsoft Semantic Kernel

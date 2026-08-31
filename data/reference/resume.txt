@@ -316,7 +316,7 @@ Yes. I am open to relocation. Work authorization outside Germany depends on the 
 
 ### What happened between December 2023 and the present?
 
-Since December 2023, I have combined continuing studies, structured upskilling, personal software projects, AI/ML and LLM/RAG work, German-language development, and limited intermittent AutoPlan maintenance support. It was not continuous full-time employment or continuous full-time freelance work.
+Since December 2023, I have combined continuing studies, structured upskilling, personal software projects, AI/ML and LLM/RAG work, German-language development, and limited intermittent freelance development maintenance support. It was not continuous full-time employment or continuous full-time freelance work.
 
 ### Why are you moving toward Python and AI now?
 

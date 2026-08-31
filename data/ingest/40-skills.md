@@ -98,7 +98,7 @@ unless a specific experience document states otherwise.
 - Python
 - FastAPI
 - PyTorch exposure
-- LLM integration
+- LLM Orchestration 
 - Retrieval-Augmented Generation (RAG)
 - LangChain
 - Microsoft Semantic Kernel

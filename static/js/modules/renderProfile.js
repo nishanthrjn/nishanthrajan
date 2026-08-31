@@ -57,10 +57,12 @@ function renderAbout(profile, timeline) {
 
   setText('aboutBio', profile.aboutBio);
 
-  setHtml('eduRow', `
-    <div class="edu-icon">${iconSvg(profile.education.icon)}</div>
-    <div><div class="edu-name">${profile.education.name}</div><div class="edu-sub">${profile.education.sub}</div></div>
-  `);
+  setHtml('eduRow', profile.education.map(edu => `
+    <div class="edu-row">
+      <div class="edu-icon">${iconSvg(edu.icon)}</div>
+      <div><div class="edu-name">${edu.name}</div><div class="edu-sub">${edu.sub}</div></div>
+    </div>
+  `).join(''));
 
   setHtml('langRow', profile.languages.map(lang => `
     <div class="lang-item">
@@ -72,7 +74,7 @@ function renderAbout(profile, timeline) {
   setHtml('timeline', timeline.map((entry, i) => `
     <div class="t-row">
       <div class="t-dotcol"><div class="t-mark"></div>${i < timeline.length - 1 ? '<div class="t-line"></div>' : ''}</div>
-      <div><div class="t-co">${entry.company}</div><div class="t-role">${entry.role}</div><div class="t-desc">${entry.desc}</div></div>
+      <div><div class="t-co">${entry.company}</div><div class="t-period">${entry.period}</div><div class="t-role">${entry.role}</div><div class="t-desc">${entry.desc}</div></div>
     </div>
   `).join(''));
 

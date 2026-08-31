@@ -82,7 +82,7 @@ Classification: continuing studies, structured upskilling, personal projects, an
 - Python for academic work, automation, and personal projects
 - FastAPI
 - PyTorch exposure
-- LLM integration
+- LLM Orchestration 
 - RAG
 - Embeddings and vector search
 - LangChain

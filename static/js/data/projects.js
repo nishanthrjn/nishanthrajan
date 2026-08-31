@@ -2,150 +2,671 @@ export const PROJECTS = [
   {
     id: 'talentbot', enabled: true, featured: true, historical: false, category: 'ai',
     numLabel: 'AI · RAG',
-    featDesc: 'RAG-powered portfolio chatbot grounded in over a decade of engineering knowledge.',
-    cardDesc: 'RAG-powered AI portfolio chatbot. Recruiters converse with an LLM grounded in over a decade of engineering knowledge.',
-    tags: [{ text: 'Python', variant: 'b' }, { text: 'FastAPI', variant: 'b' }, { text: 'LangChain', variant: 'b' }, { text: 'FAISS' }, { text: 'Groq' }],
-    icon: 'i-agent', color: '#60a5fa', bg: 'rgba(59,130,246,0.14)', title: 'TalentBot',
-    sub: 'AI · RAG Pipeline · Python / FastAPI', badge: '<span class="pm-badge">LIVE</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">RAG-powered AI portfolio chatbot. Recruiters converse with an LLM that retrieves semantically relevant context from resume data, answering naturally in under 2 seconds via Groq's LPU inference.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Architecture Flow</div><div class="pm-flow"><div class="pm-box">resume.txt</div><div class="pm-arr">→</div><div class="pm-box">Chunking</div><div class="pm-arr">→</div><div class="pm-box">all-MiniLM</div><div class="pm-arr">→</div><div class="pm-box">FAISS Index</div><div class="pm-arr">→</div><div class="pm-box">Retrieval</div><div class="pm-arr">→</div><div class="pm-box">Groq Llama 3</div><div class="pm-arr">→</div><div class="pm-box">Response</div></div></div>
-      <div class="pm-section"><div class="pm-section-title">Key Features</div><ul class="pm-list"><li>Semantic chunking with HuggingFace all-MiniLM-L6-v2 embeddings</li><li>FAISS vector store for cosine similarity retrieval</li><li>Groq LPU integration for sub-2s inference</li><li>Conversation history (last 4 turns) for contextual follow-up</li><li>FastAPI backend, served via portfolio frontend</li><li>Deployed on Hugging Face Spaces via Docker</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">Python</span><span class="pm-tag">FastAPI</span><span class="pm-tag">LangChain</span><span class="pm-tag">FAISS</span><span class="pm-tag">HuggingFace</span><span class="pm-tag">Groq Llama 3</span><span class="pm-tag">Docker</span></div></div>`,
+    featDesc: 'Python/FastAPI RAG chatbot combining LLM orchestration with FAISS vector retrieval.',
+    cardDesc: 'Personal RAG chatbot project for recruiter-facing, context-aware question answering.',
+    tags: [
+      { text: 'Python', variant: 'b' },
+      { text: 'FastAPI', variant: 'b' },
+      { text: 'LangChain', variant: 'b' },
+      { text: 'FAISS' },
+      { text: 'Groq/Llama 3' }
+    ],
+    icon: 'i-agent',
+    color: '#60a5fa',
+    bg: 'rgba(59,130,246,0.14)',
+    title: 'TalentBot',
+    sub: 'Applied AI · RAG · Python / FastAPI',
+    badge: '<span class="pm-badge">FEATURED</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          TalentBot is a personal RAG chatbot project combining LLM orchestration,
+          vector retrieval, and a FastAPI backend for context-aware question answering.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Architecture</div>
+        <div class="pm-flow">
+          <div class="pm-box">Knowledge Files</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">Chunking</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">FAISS</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">Retrieval</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">LLM</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">Grounded Response</div>
+        </div>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">What it demonstrates</div>
+        <ul class="pm-list">
+          <li>Python backend development with FastAPI</li>
+          <li>Retrieval-Augmented Generation</li>
+          <li>LangChain-based LLM orchestration</li>
+          <li>FAISS vector retrieval</li>
+          <li>Groq/Llama 3 integration</li>
+          <li>Context-aware question answering</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Stack</div>
+        <div class="pm-stack">
+          <span class="pm-tag">Python</span>
+          <span class="pm-tag">FastAPI</span>
+          <span class="pm-tag">LangChain</span>
+          <span class="pm-tag">FAISS</span>
+          <span class="pm-tag">Groq/Llama 3</span>
+        </div>
+      </div>
+    `,
   },
+
   {
     id: 'documind', enabled: true, featured: true, historical: false, category: 'ai',
-    numLabel: 'AI · DOCUMENT INTEL',
-    featDesc: 'NotebookLM-inspired RAG platform with inline [1][2] citations on every answer.',
-    cardDesc: 'NotebookLM-inspired RAG platform. Upload PDFs, chat with inline [1][2] citations showing exact source chunks.',
-    tags: [{ text: 'C# .NET 10', variant: 'b' }, { text: 'Blazor', variant: 'b' }, { text: 'Semantic Kernel' }, { text: 'pgvector' }],
-    icon: 'i-doc', color: '#38bdf8', bg: 'rgba(56,189,248,0.14)', title: 'DocuMind',
-    sub: 'AI · Document Intelligence · C# / .NET 10', badge: '<span class="pm-badge">FEATURED</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">NotebookLM-inspired RAG platform. Upload PDFs, chat with the content, and receive answers with inline citations [1][2] that open source-chunk popups. Built entirely in C# / .NET 10 with Blazor Server.</p></div>
-      <div class="pm-section"><div class="pm-section-title">RAG Pipeline</div><div class="pm-flow"><div class="pm-box">PDF Upload</div><div class="pm-arr">→</div><div class="pm-box">OCR / Extract</div><div class="pm-arr">→</div><div class="pm-box">Semantic Chunks</div><div class="pm-arr">→</div><div class="pm-box">pgvector</div><div class="pm-arr">→</div><div class="pm-box">Llama 3.2 (Ollama)</div><div class="pm-arr">→</div><div class="pm-box">[1][2] Cited Answer</div></div></div>
-      <div class="pm-section"><div class="pm-section-title">Key Features</div><ul class="pm-list"><li>Inline citation system — [1][2] with source popup overlays on hover</li><li>Conversation save/load with PostgreSQL persistence</li><li>Export conversations to Markdown</li><li>Multi-theme UI (time-based dark/light/evening themes)</li><li>Local Llama 3.2 via Ollama for privacy-first operation</li><li>pgvector for PostgreSQL-native vector search</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">C# / .NET 10</span><span class="pm-tag">Blazor Server</span><span class="pm-tag">Semantic Kernel</span><span class="pm-tag">pgvector</span><span class="pm-tag">PostgreSQL</span><span class="pm-tag">Ollama</span><span class="pm-tag">Llama 3.2</span></div></div>`,
+    numLabel: 'AI · DOCUMENT INTELLIGENCE',
+    featDesc: 'C#/.NET 10 document-intelligence and RAG project using Semantic Kernel and pgvector.',
+    cardDesc: 'Document ingestion, vector retrieval, LLM integration, and grounded question answering in .NET.',
+    tags: [
+      { text: 'C# .NET 10', variant: 'b' },
+      { text: 'Semantic Kernel', variant: 'b' },
+      { text: 'pgvector' },
+      { text: 'Llama 3.2' }
+    ],
+    icon: 'i-doc',
+    color: '#38bdf8',
+    bg: 'rgba(56,189,248,0.14)',
+    title: 'DocuMind',
+    sub: 'Applied AI · Document Intelligence · C# / .NET 10',
+    badge: '<span class="pm-badge">FEATURED</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          DocuMind is a personal document-intelligence and RAG project exploring
+          document ingestion, vector retrieval, LLM integration, and grounded
+          question answering inside a modern C#/.NET application architecture.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">RAG Flow</div>
+        <div class="pm-flow">
+          <div class="pm-box">Documents</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">Ingestion</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">Vector Retrieval</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">pgvector</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">LLM Integration</div>
+          <div class="pm-arr">→</div>
+          <div class="pm-box">Grounded Answer</div>
+        </div>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">What it demonstrates</div>
+        <ul class="pm-list">
+          <li>C#/.NET 10 AI application development</li>
+          <li>Microsoft Semantic Kernel project experience</li>
+          <li>PostgreSQL/pgvector vector retrieval</li>
+          <li>Local Llama 3.2 integration</li>
+          <li>Document ingestion and grounded question answering</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Stack</div>
+        <div class="pm-stack">
+          <span class="pm-tag">C# / .NET 10</span>
+          <span class="pm-tag">Semantic Kernel</span>
+          <span class="pm-tag">pgvector</span>
+          <span class="pm-tag">PostgreSQL</span>
+          <span class="pm-tag">Llama 3.2</span>
+        </div>
+      </div>
+    `,
   },
+
   {
-    id: 'nexusai', enabled: true, featured: false, historical: false, category: 'ai',
-    numLabel: 'AI · MULTI-AGENT',
-    featDesc: '5 specialist AI agents collaborating in real-time. Live Blazor pipeline visualization with distributed tracing.',
-    cardDesc: '5 specialist AI agents collaborating in real-time. Live Blazor pipeline visualization with distributed tracing.',
-    tags: [{ text: 'C# .NET 10', variant: 'b' }, { text: 'Semantic Kernel' }, { text: 'Tavily' }, { text: 'OpenTelemetry' }],
-    icon: 'i-llm', color: '#c084fc', bg: 'rgba(192,132,252,0.14)', title: 'NexusAI',
-    sub: 'AI · Multi-Agent Orchestration · C# / .NET 10', badge: '<span class="pm-badge">MULTI-AGENT</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">5 specialist AI agents collaborating in real-time to research and synthesize answers. Live Blazor pipeline visualization shows each agent's state as tasks execute. Distributed tracing via OpenTelemetry.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Agent Orchestration</div><div class="pm-flow"><div class="pm-box">User Query</div><div class="pm-arr">→</div><div class="pm-box">Coordinator</div><div class="pm-arr">→</div><div class="pm-box">WebSearch</div><div class="pm-arr">+</div><div class="pm-box">Document</div><div class="pm-arr">+</div><div class="pm-box">Analysis</div><div class="pm-arr">→</div><div class="pm-box">Report Agent</div><div class="pm-arr">→</div><div class="pm-box">Synthesized Answer</div></div></div>
-      <div class="pm-section"><div class="pm-section-title">Key Features</div><ul class="pm-list"><li>5 specialist agents: Coordinator, WebSearch, Document, Analysis, Report</li><li>Live Blazor pipeline visualization — real-time agent state display</li><li>Tavily web search integration for current information</li><li>OpenTelemetry distributed tracing for observability</li><li>Testcontainers integration tests</li><li>Semantic Kernel agent orchestration framework</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">C# / .NET 10</span><span class="pm-tag">Semantic Kernel</span><span class="pm-tag">Blazor</span><span class="pm-tag">Tavily</span><span class="pm-tag">OpenTelemetry</span><span class="pm-tag">Testcontainers</span></div></div>`,
+    id: 'nexusai',
+    enabled: false,
+    featured: false,
+    historical: false,
+    category: 'ai',
+    numLabel: 'PENDING VERIFICATION',
+    featDesc: 'Project details withheld until repository verification.',
+    cardDesc: 'Not currently displayed in the public portfolio.',
+    tags: [],
+    icon: 'i-llm',
+    color: '#c084fc',
+    bg: 'rgba(192,132,252,0.14)',
+    title: 'NexusAI',
+    sub: 'Pending verification',
+    badge: '',
+    body: ``,
   },
+
   {
     id: 'agentnexus', enabled: true, featured: true, historical: false, category: 'ai',
-    numLabel: 'AI · AUTONOMOUS NEGOTIATION',
-    featDesc: '4th place at ANAC 2026 (IJCAI) — solo, Bayesian negotiation agent.',
-    cardDesc: '4th place at ANAC 2026 (IJCAI). Bayesian opponent modeling, Pareto-optimal bidding. Competed solo as a student.',
-    tags: [{ text: 'Python', variant: 'b' }, { text: 'NegMAS', variant: 'b' }, { text: 'Bayesian AI' }, { text: 'Game Theory' }],
-    icon: 'i-trophy', color: 'var(--yellow)', bg: 'rgba(251,191,36,0.14)', title: 'Agent-Nexus — ANAC 2026',
-    sub: 'AI · Autonomous Negotiation · Python / NegMAS', badge: '<span class="pm-badge y">🏆 4th PLACE ANAC 2026 · IJCAI</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">Autonomous negotiation agent achieving 4th place at ANAC 2026 (Automated Negotiation Agents Competition), co-located with IJCAI 2026. Competed solo as a student at Leibniz Universität Hannover against multi-person research teams.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Negotiation Loop</div><div class="pm-flow"><div class="pm-box y">Receive Bid</div><div class="pm-arr">→</div><div class="pm-box y">Bayesian Model</div><div class="pm-arr">→</div><div class="pm-box y">Opponent Type</div><div class="pm-arr">→</div><div class="pm-box y">Concession Strategy</div><div class="pm-arr">→</div><div class="pm-box y">Pareto-Optimal Bid</div><div class="pm-arr">→</div><div class="pm-box y">Counter Offer</div></div></div>
-      <div class="pm-section"><div class="pm-section-title">Key Innovation</div><ul class="pm-list"><li>Bayesian opponent modeling — infers opponent type from bid history</li><li>Type-specific concession strategies per opponent profile</li><li>Pareto-optimal bid selection from utility space</li><li>Adaptive time pressure management</li><li>NegMAS framework (Python) for ANAC competition format</li><li>Solo entry as MSc student vs multi-person research teams</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">Python</span><span class="pm-tag">NegMAS</span><span class="pm-tag">Bayesian Inference</span><span class="pm-tag">Game Theory</span><span class="pm-tag">NumPy</span></div></div>`,
+    numLabel: 'AGENTIC · AUTOMATED NEGOTIATION',
+    featDesc: 'Python/NegMAS automated-negotiation project that placed 4th in ANAC 2026.',
+    cardDesc: 'Automated negotiation agent and strategy project built in Python using NegMAS.',
+    tags: [
+      { text: 'Python', variant: 'b' },
+      { text: 'NegMAS', variant: 'b' },
+      { text: 'Automated Negotiation' },
+      { text: 'Multi-Agent Systems' }
+    ],
+    icon: 'i-trophy',
+    color: 'var(--yellow)',
+    bg: 'rgba(251,191,36,0.14)',
+    title: 'Agent-Nexus',
+    sub: 'Agentic Systems · Automated Negotiation · Python / NegMAS',
+    badge: '<span class="pm-badge y">4th PLACE · ANAC 2026</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Agent-Nexus is an automated-negotiation agent and negotiation-strategy
+          project developed in Python using NegMAS for the ANAC 2026 competition.
+          Agent-Nexus placed 4th in the competition.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">What it demonstrates</div>
+        <ul class="pm-list">
+          <li>Python project development</li>
+          <li>NegMAS framework usage</li>
+          <li>Automated negotiation</li>
+          <li>Negotiation strategy and agent interaction</li>
+          <li>Multi-agent systems and competition evaluation</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Important distinction</div>
+        <p class="pm-desc">
+          Agent-Nexus is not a RAG project and is not presented as using LangChain,
+          FastAPI, Microsoft Semantic Kernel, pgvector, or FAISS.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Stack</div>
+        <div class="pm-stack">
+          <span class="pm-tag">Python</span>
+          <span class="pm-tag">NegMAS</span>
+        </div>
+      </div>
+    `,
   },
+
   {
-    id: 'autoflow', enabled: true, featured: false, historical: false, category: 'ai',
-    numLabel: 'AI · AUTOMATION',
-    featDesc: 'n8n-based AI automation workflow platform with LLM-powered decision routing and document processing pipelines.',
-    cardDesc: 'n8n-based AI automation workflow platform with LLM-powered decision routing and document processing pipelines.',
-    tags: [{ text: 'n8n', variant: 'b' }, { text: 'Python' }, { text: 'LLM' }, { text: 'REST APIs' }],
-    icon: 'i-bolt', color: '#60a5fa', bg: 'rgba(96,165,250,0.14)', title: 'AutoFlow',
-    sub: 'AI · Automation · n8n / Python', badge: '<span class="pm-badge">AUTOMATION</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">n8n-based AI automation workflow platform with LLM-powered decision routing. Automates document processing, email handling, and data transformation pipelines using AI-driven logic.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Key Features</div><ul class="pm-list"><li>n8n workflow automation with LLM decision nodes</li><li>AI-powered document classification and routing</li><li>REST API integration with external services</li><li>Python custom nodes for ML processing steps</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">n8n</span><span class="pm-tag">Python</span><span class="pm-tag">LLM APIs</span><span class="pm-tag">REST</span></div></div>`,
+    id: 'autoflow',
+    enabled: false,
+    featured: false,
+    historical: false,
+    category: 'ai',
+    numLabel: 'PENDING VERIFICATION',
+    featDesc: 'Project details withheld until repository verification.',
+    cardDesc: 'Not currently displayed in the public portfolio.',
+    tags: [],
+    icon: 'i-bolt',
+    color: '#60a5fa',
+    bg: 'rgba(96,165,250,0.14)',
+    title: 'AutoFlow',
+    sub: 'Pending verification',
+    badge: '',
+    body: ``,
   },
+
   {
-    id: 'jobradar', enabled: true, featured: false, historical: false, category: 'ai',
-    numLabel: 'AI · JOB INTELLIGENCE',
-    featDesc: 'AI-driven job market intelligence tool. Scrapes, classifies, and ranks job postings using NLP and semantic matching.',
-    cardDesc: 'AI-driven job market intelligence tool. Scrapes, classifies, and ranks job postings using NLP and semantic matching.',
-    tags: [{ text: 'Python', variant: 'b' }, { text: 'NLP' }, { text: 'FastAPI' }, { text: 'Semantic Search' }],
-    icon: 'i-target', color: '#34d399', bg: 'rgba(52,211,153,0.14)', title: 'JobRadar',
-    sub: 'AI · Job Intelligence · Python / NLP', badge: '<span class="pm-badge">NLP</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">AI-driven job market intelligence tool. Scrapes German and EU job portals, classifies postings using NLP, and ranks them by semantic similarity to a target candidate profile.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Key Features</div><ul class="pm-list"><li>Web scraping with structured data extraction</li><li>NLP-based job classification and tagging</li><li>Semantic similarity ranking vs candidate profile</li><li>FastAPI dashboard for filtered job browsing</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">Python</span><span class="pm-tag">FastAPI</span><span class="pm-tag">NLP</span><span class="pm-tag">Semantic Search</span><span class="pm-tag">BeautifulSoup</span></div></div>`,
+    id: 'jobradar',
+    enabled: false,
+    featured: false,
+    historical: false,
+    category: 'ai',
+    numLabel: 'PENDING VERIFICATION',
+    featDesc: 'Project details withheld until repository verification.',
+    cardDesc: 'Not currently displayed in the public portfolio.',
+    tags: [],
+    icon: 'i-target',
+    color: '#34d399',
+    bg: 'rgba(52,211,153,0.14)',
+    title: 'JobRadar',
+    sub: 'Pending verification',
+    badge: '',
+    body: ``,
   },
+
   {
     id: 'greenway', enabled: true, featured: false, historical: false, category: 'net',
-    numLabel: 'ENTERPRISE · EHR / US MARKET',
-    featDesc: 'Principal engineer on a SAFe-Scrum team building EHR product features for the US healthcare market.',
-    cardDesc: 'Principal engineer on a SAFe-Scrum team building EHR product features for the US healthcare market.',
-    tags: [{ text: 'C# .NET', variant: 'b' }, { text: 'Angular' }, { text: 'TypeScript' }, { text: 'SQL Server' }],
-    icon: 'i-hospital', color: '#f87171', bg: 'rgba(248,113,113,0.14)', title: 'Greenway Health — EHR Platform',
-    sub: 'Enterprise · EHR / Healthcare · US Market', badge: '<span class="pm-badge g">PRINCIPAL ENGINEER</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">Principal Software Engineer on a SAFe-Scrum team building EHR (Electronic Health Record) product features for the US healthcare market. Remote, India-based team serving US clients.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Contributions</div><ul class="pm-list"><li>Technical lead role in SAFe-Scrum delivery team</li><li>C# / .NET and SQL Server backend feature development</li><li>Angular and TypeScript frontend components</li><li>Blazor UI development for modern web workflows</li><li>Code review, architecture decisions, and mentoring</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">C# .NET</span><span class="pm-tag">SQL Server</span><span class="pm-tag">Angular</span><span class="pm-tag">TypeScript</span><span class="pm-tag">Blazor</span><span class="pm-tag">SAFe Scrum</span></div></div>`,
+    numLabel: 'ENTERPRISE · HEALTHCARE',
+    featDesc: 'Hands-on backend/full-stack contribution to a US-market EHR product in a SAFe Scrum team.',
+    cardDesc: 'C#/.NET and SQL Server product development with Angular/TypeScript UI contribution.',
+    tags: [
+      { text: 'C# .NET', variant: 'b' },
+      { text: 'SQL Server' },
+      { text: 'Angular' },
+      { text: 'TypeScript' }
+    ],
+    icon: 'i-hospital',
+    color: '#f87171',
+    bg: 'rgba(248,113,113,0.14)',
+    title: 'Greenway Health — EHR Application',
+    sub: 'Enterprise · Healthcare · US Market',
+    badge: '<span class="pm-badge g">PRINCIPAL SOFTWARE ENGINEER</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Worked as Principal Software Engineer in a SAFe Scrum team, contributing
+          hands-on to backend and full-stack development for the Greenway Health EHR
+          product serving the US market.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Contributions</div>
+        <ul class="pm-list">
+          <li>Technical lead responsibilities within a SAFe Scrum team</li>
+          <li>C#/.NET and Microsoft SQL Server data-driven product features</li>
+          <li>Angular and TypeScript UI contribution</li>
+          <li>Blazor, JavaScript, HTML and CSS contribution/exposure</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Context</div>
+        <div class="pm-stack">
+          <span class="pm-tag">C# / .NET</span>
+          <span class="pm-tag">SQL Server</span>
+          <span class="pm-tag">Angular</span>
+          <span class="pm-tag">TypeScript</span>
+          <span class="pm-tag">Blazor</span>
+          <span class="pm-tag">SAFe Scrum</span>
+        </div>
+      </div>
+    `,
   },
+
   {
     id: 'smartdale', enabled: true, featured: false, historical: false, category: 'net',
     numLabel: 'SAAS · MULTI-TENANT',
-    featDesc: 'Multi-tenant SaaS platform with C#/.NET Core, Blazor, and PostgreSQL. CI/CD via Docker, Jenkins, AWS.',
-    cardDesc: 'Multi-tenant SaaS platform with C#/.NET Core, Blazor, and PostgreSQL. CI/CD via Docker, Jenkins, AWS.',
-    tags: [{ text: 'C# .NET Core', variant: 'b' }, { text: 'Blazor' }, { text: 'PostgreSQL' }, { text: 'Docker' }],
-    icon: 'i-cloud', color: '#93c5fd', bg: 'rgba(147,197,253,0.14)', title: 'Smartdale SaaS Platform',
-    sub: 'Enterprise · Multi-Tenant SaaS · C# / .NET Core', badge: '<span class="pm-badge">TECH PROJECT MANAGER</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">Hands-on technical project manager and developer on a multi-tenant SaaS platform. Architect and delivery lead for a cloud-deployed C#/.NET Core system with Blazor frontend and PostgreSQL backend.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Key Achievements</div><ul class="pm-list"><li>Multi-tenant data isolation architecture design</li><li>Blazor Server frontend with real-time updates</li><li>PostgreSQL with EF Core for data persistence</li><li>CI/CD pipeline: Docker + Jenkins + AWS Linux</li><li>Delivery planning, sprint management, stakeholder reporting</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">C# .NET Core</span><span class="pm-tag">ASP.NET Core</span><span class="pm-tag">Blazor</span><span class="pm-tag">PostgreSQL</span><span class="pm-tag">Docker</span><span class="pm-tag">Jenkins</span><span class="pm-tag">AWS</span></div></div>`,
+    featDesc: 'Grandcivitas multi-tenant SaaS development with C#/.NET Core, PostgreSQL, Blazor and containerized delivery.',
+    cardDesc: 'Hands-on architecture and delivery contribution while leading a small agile team.',
+    tags: [
+      { text: 'C# .NET Core', variant: 'b' },
+      { text: 'ASP.NET Core' },
+      { text: 'PostgreSQL' },
+      { text: 'Blazor' },
+      { text: 'Docker' }
+    ],
+    icon: 'i-cloud',
+    color: '#93c5fd',
+    bg: 'rgba(147,197,253,0.14)',
+    title: 'Grandcivitas — Smartdale',
+    sub: 'Enterprise · Multi-Tenant SaaS · C# / .NET Core',
+    badge: '<span class="pm-badge">TECHNICAL PROJECT MANAGER</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Worked hands-on on Grandcivitas, a multi-tenant SaaS platform, with
+          architecture and delivery ownership while leading a small agile team.
+          The platform was not released during my involvement.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Contributions</div>
+        <ul class="pm-list">
+          <li>C#/.NET Core and ASP.NET Core application development</li>
+          <li>PostgreSQL data persistence</li>
+          <li>Blazor and Vue.js project exposure</li>
+          <li>Docker, Jenkins and Git for CI/CD and containerized delivery</li>
+          <li>AWS/Linux hosted-delivery environment exposure</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Context</div>
+        <div class="pm-stack">
+          <span class="pm-tag">C# .NET Core</span>
+          <span class="pm-tag">ASP.NET Core</span>
+          <span class="pm-tag">PostgreSQL</span>
+          <span class="pm-tag">Blazor</span>
+          <span class="pm-tag">Docker</span>
+          <span class="pm-tag">Jenkins</span>
+          <span class="pm-tag">Git</span>
+          <span class="pm-tag">AWS exposure</span>
+        </div>
+      </div>
+    `,
   },
+
+  {
+    id: 'fournxt', enabled: true, featured: false, historical: false, category: 'net',
+    numLabel: 'AUTOMATION · RPA / UAE',
+    featDesc: 'UAE-market RPA delivery with hands-on Python/C# automation support and technical project coordination.',
+    cardDesc: 'RPA delivery for UAE client engagements, including Emaar and DAMAC, using Python/C# support with UiPath, Blue Prism, and Automation Anywhere.',
+    tags: [
+      { text: 'Python', variant: 'b' },
+      { text: 'C#', variant: 'b' },
+      { text: 'UiPath' },
+      { text: 'Blue Prism' },
+      { text: 'Automation Anywhere' }
+    ],
+    icon: 'i-bolt',
+    color: '#60a5fa',
+    bg: 'rgba(96,165,250,0.14)',
+    title: 'FourNxt — UAE RPA Delivery',
+    sub: 'Automation · RPA · UAE Market',
+    badge: '<span class="pm-badge">PROJECT MANAGER, RPA</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Worked in a technically oriented RPA project-management role supporting
+          UAE-market automation delivery while remaining hands-on with Python and
+          C# automation utilities and supporting components.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Contributions</div>
+        <ul class="pm-list">
+          <li>Supported agile RPA project delivery</li>
+          <li>Provided hands-on Python and C# programming support for automation utilities and supporting components</li>
+          <li>Worked in delivery contexts involving UiPath, Blue Prism, and Automation Anywhere</li>
+          <li>Major UAE client engagements included Emaar and DAMAC</li>
+          <li>Coordinated with solution-design, technical, product, delivery, and business stakeholders</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Important Context</div>
+        <p class="pm-desc">
+          Emaar and DAMAC were client engagements through FourNxt Technologies,
+          not employers. This role should not be presented as advanced
+          RPA-bot-specialist or certified-RPA expertise.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Context</div>
+        <div class="pm-stack">
+          <span class="pm-tag">Python</span>
+          <span class="pm-tag">C#</span>
+          <span class="pm-tag">UiPath</span>
+          <span class="pm-tag">Blue Prism</span>
+          <span class="pm-tag">Automation Anywhere</span>
+        </div>
+      </div>
+    `,
+  },
+
   {
     id: 'sevenseas', enabled: true, featured: false, historical: true, historicalOrder: 3, historicalName: 'Seven Seas', category: 'net',
-    numLabel: 'ERP · HOSPITALITY / FINANCE',
-    featDesc: 'Full ERP, CRM, POS, financial accounting, and hospitality management system. Team lead, 5 developers.',
-    cardDesc: 'Full ERP, CRM, POS, financial accounting, and hospitality management system. Team lead, 5 developers.',
-    tags: [{ text: 'C# ASP.NET', variant: 'b' }, { text: 'WinForms' }, { text: 'SQL Server' }],
-    icon: 'i-hotel', color: 'var(--orange)', bg: 'rgba(251,146,60,0.14)', title: 'Seven Seas ERP / POS Suite',
-    sub: 'Enterprise · ERP / POS / Finance · C# ASP.NET', badge: '<span class="pm-badge">TEAM LEAD</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">Full ERP, CRM, POS, financial accounting, and hospitality management system suite. Team lead on a 5-developer team building and stabilizing business-critical software for hospitality and retail clients.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Modules Built</div><ul class="pm-list"><li>POS (Point of Sale) with real-time inventory sync</li><li>ERP modules: procurement, stock, supplier management</li><li>CRM: customer management, loyalty programs</li><li>Financial accounting: GL, AR/AP, bank reconciliation</li><li>Hospitality: room management, restaurant billing</li><li>Crystal Reports integration for financial reporting</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">C# ASP.NET</span><span class="pm-tag">WinForms</span><span class="pm-tag">SQL Server</span><span class="pm-tag">Crystal Reports</span><span class="pm-tag">VB.NET</span></div></div>`,
+    numLabel: 'ENTERPRISE · BUSINESS APPLICATIONS',
+    featDesc: 'Enterprise applications across ERP, hospitality, HRMS, finance, POS and CRM.',
+    cardDesc: 'Hands-on C#/ASP.NET/WinForms/SQL development plus technical coordination and production support.',
+    tags: [
+      { text: 'C# ASP.NET', variant: 'b' },
+      { text: 'WinForms' },
+      { text: 'SQL' }
+    ],
+    icon: 'i-hotel',
+    color: 'var(--orange)',
+    bg: 'rgba(251,146,60,0.14)',
+    title: 'Seven Seas Enterprise Applications',
+    sub: 'Enterprise · ERP / POS / Finance · C# / ASP.NET',
+    badge: '<span class="pm-badge">PROJECT TEAM LEAD</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Developed and stabilized enterprise/custom applications while handling
+          product development and technical coordination of a small team.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Application Areas</div>
+        <ul class="pm-list">
+          <li>ERP</li>
+          <li>Hospitality</li>
+          <li>HRMS</li>
+          <li>Children's-park operations</li>
+          <li>Financial accounting</li>
+          <li>POS</li>
+          <li>CRM</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Contribution</div>
+        <ul class="pm-list">
+          <li>C#, ASP.NET, WinForms and SQL development</li>
+          <li>Debugging and testing</li>
+          <li>Release stabilization and production support</li>
+          <li>Technical coordination while remaining hands-on</li>
+        </ul>
+      </div>
+    `,
   },
+
   {
     id: 'kauschke', enabled: true, featured: false, historical: true, historicalOrder: 4, historicalName: 'Kauschke', category: 'cad',
     numLabel: 'CAD · SOLIDWORKS ADD-IN',
-    featDesc: "C#/.NET SOLIDWORKS add-in with companion WPF client. Reconnect workflows and API reliability improvements.",
-    cardDesc: "C#/.NET SOLIDWORKS add-in with companion WPF client. Reconnect workflows and API reliability improvements.",
-    tags: [{ text: 'C# .NET', variant: 'b' }, { text: 'WPF' }, { text: 'SOLIDWORKS API' }],
-    icon: 'i-cube', color: '#f87171', bg: 'rgba(248,113,113,0.14)', title: 'Kauschke SOLIDWORKS Add-in',
-    sub: 'CAD · Desktop Engineering · C# / .NET', badge: '<span class="pm-badge">ENGINEERING</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">C#/.NET SOLIDWORKS add-in with a companion WPF desktop client. Adds custom engineering workflow functionality inside SOLIDWORKS with a reconnect-safe API architecture.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Key Achievements</div><ul class="pm-list"><li>SOLIDWORKS COM API integration via C#/.NET interop</li><li>WPF companion client with reconnect workflows</li><li>Thread-locking for API stability under concurrent use</li><li>Explicit resource cleanup to prevent memory leaks</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">C# .NET</span><span class="pm-tag">WPF</span><span class="pm-tag">SOLIDWORKS API</span><span class="pm-tag">COM Interop</span></div></div>`,
+    featDesc: 'C#/.NET SOLIDWORKS add-in with WPF companion client and reconnect/reliability workflows.',
+    cardDesc: 'Engineering-software integration using SOLIDWORKS API, WPF, thread locking, and explicit resource cleanup.',
+    tags: [
+      { text: 'C# .NET', variant: 'b' },
+      { text: 'WPF' },
+      { text: 'SOLIDWORKS API' }
+    ],
+    icon: 'i-cube',
+    color: '#f87171',
+    bg: 'rgba(248,113,113,0.14)',
+    title: 'Kauschke SOLIDWORKS Add-in',
+    sub: 'CAD · Desktop Engineering · C# / .NET',
+    badge: '<span class="pm-badge">SOFTWARE ENGINEER</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Developed a C#/.NET SOLIDWORKS add-in and initiated a WPF companion
+          client for engineering workflows.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Contributions</div>
+        <ul class="pm-list">
+          <li>SOLIDWORKS instance/version binding</li>
+          <li>WPF companion client</li>
+          <li>Reconnect workflows and active-assembly context handover</li>
+          <li>Component actions</li>
+          <li>Thread locking</li>
+          <li>Explicit resource cleanup</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Stack</div>
+        <div class="pm-stack">
+          <span class="pm-tag">C# / .NET</span>
+          <span class="pm-tag">WPF</span>
+          <span class="pm-tag">SOLIDWORKS API</span>
+        </div>
+      </div>
+    `,
   },
+
   {
     id: 'idsi', enabled: true, featured: false, historical: true, historicalOrder: 1, historicalName: 'IDSi', category: 'cad',
-    numLabel: 'CAD · WORKFLOW AUTOMATION',
-    featDesc: 'AutoCAD API-based CAD scrutiny and permit workflow automation. Rule-based validation, WPF and WinForms UI.',
-    cardDesc: 'AutoCAD API-based CAD scrutiny and permit workflow automation. Rule-based validation, WPF and WinForms UI.',
-    tags: [{ text: 'C# .NET', variant: 'b' }, { text: 'AutoCAD API' }, { text: 'WPF' }],
-    icon: 'i-cad', color: 'var(--orange)', bg: 'rgba(251,146,60,0.14)', title: 'IDSi AutoPlan CAD System',
-    sub: 'CAD · Workflow Automation · C# / AutoCAD API', badge: '<span class="pm-badge">SR. ENGINEER → ASSOC. PM</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">AutoCAD API-based CAD scrutiny and building permit workflow automation platform. Implements rule-based validation engines for architectural drawing compliance checking.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Key Achievements</div><ul class="pm-list"><li>AutoCAD API integration for automated drawing analysis</li><li>Rule-based validation engine for permit compliance</li><li>REST API backend with SQL Server data layer</li><li>WPF and WinForms enterprise desktop UI</li><li>Modernization: migrated legacy VBA macros to C# .NET</li><li>Promoted from Sr. Engineer to Associate Technical PM</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">C# .NET</span><span class="pm-tag">AutoCAD API</span><span class="pm-tag">WPF</span><span class="pm-tag">WinForms</span><span class="pm-tag">SQL Server</span><span class="pm-tag">REST APIs</span></div></div>`,
+    numLabel: 'CAD · PERMIT WORKFLOWS',
+    featDesc: 'AutoPlan, PlanPermit and AgniPermit — CAD scrutiny, geometry validation, rule-based processing and permit workflows.',
+    cardDesc: 'C#/.NET engineering applications using AutoCAD API, WPF/WinForms, REST integration and SQL.',
+    tags: [
+      { text: 'C# .NET', variant: 'b' },
+      { text: 'AutoCAD API' },
+      { text: 'WPF / WinForms' },
+      { text: 'SQL' }
+    ],
+    icon: 'i-cad',
+    color: 'var(--orange)',
+    bg: 'rgba(251,146,60,0.14)',
+    title: 'IDSi — AutoPlan / PlanPermit / AgniPermit',
+    sub: 'CAD · Permit Workflows · C# / AutoCAD API',
+    badge: '<span class="pm-badge">SOFTWARE ENGINEER L3 → ASSOC. TECHNICAL PM</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Worked on CAD-scrutiny and permit-processing products including AutoPlan,
+          PlanPermit, and AgniPermit using C#/.NET, AutoCAD API, WPF/WinForms,
+          REST integration, and SQL.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Contributions</div>
+        <ul class="pm-list">
+          <li>CAD drawing scrutiny and geometry computation/validation</li>
+          <li>Regulatory/domain-rule validation</li>
+          <li>Rule-based configuration and inference logic</li>
+          <li>SQL-backed workflow/state processing</li>
+          <li>Application integration for permit and fire-approval workflows</li>
+          <li>Debugging, release support and long-term maintenance</li>
+          <li>Modernization of C++/VB6 components into .NET environments</li>
+          <li>Developed an ArcGIS prototype for a land-management / geospatial-workflow concept</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Stack</div>
+        <div class="pm-stack">
+          <span class="pm-tag">C# / .NET Framework</span>
+          <span class="pm-tag">AutoCAD API</span>
+          <span class="pm-tag">WPF</span>
+          <span class="pm-tag">WinForms</span>
+          <span class="pm-tag">SQL</span>
+          <span class="pm-tag">REST</span>
+        </div>
+      </div>
+    `,
   },
+
   {
     id: 'visionics', enabled: true, featured: false, historical: true, historicalOrder: 2, historicalName: 'Visionics', category: 'cad',
-    numLabel: 'EDA · DESKTOP SUITE',
-    featDesc: 'EDA/CAD/CAE desktop suite. TCP/IP license manager integration, performance optimization, cross-compilation.',
-    cardDesc: 'EDA/CAD/CAE desktop suite. TCP/IP license manager integration, performance optimization, cross-compilation.',
-    tags: [{ text: 'C++ / C#', variant: 'b' }, { text: 'VB.NET' }, { text: 'TCP/IP' }],
-    icon: 'i-microscope', color: '#a78bfa', bg: 'rgba(167,139,250,0.14)', title: 'Visionics EDA/CAD/CAE Suite',
-    sub: 'Desktop Engineering · EDA · C++ / C# / VB.NET', badge: '<span class="pm-badge">SOFTWARE ENGINEER</span>',
-    body: `<div class="pm-section"><div class="pm-section-title">Overview</div><p class="pm-desc">EDA/CAD/CAE desktop application suite for electronics design automation. Extended an existing suite with TCP/IP license manager integration, significant performance optimizations, and multi-platform capability.</p></div>
-      <div class="pm-section"><div class="pm-section-title">Key Contributions</div><ul class="pm-list"><li>C++ / C# interop layer for extending native EDA tools</li><li>TCP/IP license manager client integration</li><li>Performance profiling and optimization (30%+ speed gains)</li><li>VB.NET scripting engine for user automation</li><li>Cross-platform Windows API abstraction layer</li></ul></div>
-      <div class="pm-section"><div class="pm-section-title">Tech Stack</div><div class="pm-stack"><span class="pm-tag">C++</span><span class="pm-tag">C# .NET</span><span class="pm-tag">VB.NET</span><span class="pm-tag">Windows API</span><span class="pm-tag">TCP/IP</span></div></div>`,
+    numLabel: 'EDA · DESKTOP ENGINEERING',
+    featDesc: 'EDWinXP EDA/CAD/CAE desktop suite with C++/.NET development and TCP/IP licence-management integration.',
+    cardDesc: 'Engineering-software development, debugging, performance improvement, testing, release support and partial .NET migration.',
+    tags: [
+      { text: 'C++ / C#', variant: 'b' },
+      { text: 'VB.NET' },
+      { text: 'WinForms' },
+      { text: 'TCP/IP' }
+    ],
+    icon: 'i-microscope',
+    color: '#a78bfa',
+    bg: 'rgba(167,139,250,0.14)',
+    title: 'Visionics — EDWinXP',
+    sub: 'Desktop Engineering · EDA/CAD/CAE · C++ / C#',
+    badge: '<span class="pm-badge">SOFTWARE ENGINEER</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Enhanced and maintained EDWinXP, an EDA/CAD/CAE desktop software suite,
+          using C++, C#/.NET, VB.NET, WinForms, TCP/IP, and related
+          engineering-software technologies.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Contributions</div>
+        <ul class="pm-list">
+          <li>TCP/IP client-server integration for licence-management components</li>
+          <li>Desktop engineering-software feature development and maintenance</li>
+          <li>Debugging and performance improvement</li>
+          <li>Testing and release support</li>
+          <li>Partial migration toward .NET</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Context</div>
+        <div class="pm-stack">
+          <span class="pm-tag">C++</span>
+          <span class="pm-tag">C# / .NET</span>
+          <span class="pm-tag">VB.NET</span>
+          <span class="pm-tag">WinForms</span>
+          <span class="pm-tag">TCP/IP</span>
+        </div>
+      </div>
+    `,
+  },
+
+  {
+    id: 'iset', enabled: true, featured: false, historical: true, historicalOrder: 5, historicalName: 'iSET', category: 'cad',
+    numLabel: 'CAD/CAM · CIM · CROSS-PLATFORM',
+    featDesc: 'Early-career R&D work on CADXpert, a cross-platform 3D CAD/CAM tool, and a computer-integrated manufacturing system.',
+    cardDesc: 'C/C++, Qt, OpenGL, and Linux development for cross-platform engineering software.',
+    tags: [
+      { text: 'C / C++', variant: 'b' },
+      { text: 'Qt' },
+      { text: 'OpenGL' },
+      { text: 'Linux' }
+    ],
+    icon: 'i-cube',
+    color: '#a78bfa',
+    bg: 'rgba(167,139,250,0.14)',
+    title: 'iSET — CADXpert / CIM Systems',
+    sub: 'Engineering Software · CAD/CAM · C/C++ / Qt / OpenGL',
+    badge: '<span class="pm-badge">TRAINEE, R&D</span>',
+    body: `
+      <div class="pm-section">
+        <div class="pm-section-title">Overview</div>
+        <p class="pm-desc">
+          Contributed to CADXpert, a cross-platform 3D CAD/CAM tool, and to a
+          computer-integrated manufacturing system during early-career R&D work at iSET.
+        </p>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Contributions</div>
+        <ul class="pm-list">
+          <li>Cross-platform engineering-software development</li>
+          <li>3D CAD/CAM application work</li>
+          <li>Computer-integrated manufacturing software work</li>
+          <li>Development, debugging, and testing using C, C++, Qt, OpenGL, and Linux</li>
+        </ul>
+      </div>
+
+      <div class="pm-section">
+        <div class="pm-section-title">Tech Context</div>
+        <div class="pm-stack">
+          <span class="pm-tag">C</span>
+          <span class="pm-tag">C++</span>
+          <span class="pm-tag">Qt</span>
+          <span class="pm-tag">OpenGL</span>
+          <span class="pm-tag">Linux</span>
+        </div>
+      </div>
+    `,
   },
 ];
 

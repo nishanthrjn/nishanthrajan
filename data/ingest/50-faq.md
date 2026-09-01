@@ -16,9 +16,7 @@ SQL-backed workflows, CAD/engineering software, application integration, debuggi
 modernization, release support, and production support.
 
 Q: Is Nishanth a long-term commercial AI/ML engineer?
-A: No. He is an experienced software engineer transitioning hands-on into applied AI
-application engineering. His current AI/ML evidence comes primarily from personal projects,
-coursework, technical exercises, and competition work.
+A: No. He is an experienced software engineer transitioning hands-on into applied AI application engineering. His current AI/ML evidence comes primarily from personal projects, coursework, technical exercises, and competition work.
 
 Q: What is Nishanth's Python experience?
 A: He has hands-on Python experience across RPA-support utilities, academic work,

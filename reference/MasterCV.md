@@ -238,7 +238,7 @@ India | August 2011–July 2014
 India | November 2008–August 2011
 
 - EDWinXP EDA/CAD/CAE desktop suite.
-- C++, C#/.NET, VB.NET, WinForms, TCP/IP licence-management integration.
+- C++, .NET, VB.NET, WinForms, TCP/IP licence-management integration.
 - Debugging, performance improvement, testing, release support, partial .NET migration.
 
 ### Trainee, Research and Development — iSET

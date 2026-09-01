@@ -231,7 +231,7 @@ Software engineer responsible for product development and technical coordination
 ### Software Engineer
 Visionics India Pvt. Ltd. | India | November 2008–August 2011
 
-- Enhanced and maintained EDWinXP, a desktop EDA/CAD/CAE software suite, using C++, C#, .NET, VB.NET, WinForms, TCP/IP, and related engineering-software technologies.
+- Enhanced and maintained EDWinXP, a desktop EDA/CAD/CAE software suite, using C++, .NET, VB.NET, WinForms, TCP/IP, and related engineering-software technologies.
 - Implemented TCP/IP client-server integration for licence-management components and supported debugging, performance improvement, testing, release support, and partial migration toward .NET.
 
 ### Trainee, Research and Development

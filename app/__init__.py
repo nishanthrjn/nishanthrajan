@@ -28,7 +28,6 @@ async def lifespan(app: FastAPI):
     app.state.chat_service = ChatService(
         vector_stores=vector_stores,
         llm=llm,
-        retrieval_k=settings.retrieval_k,
         history_turns=settings.history_turns,
     )
     yield

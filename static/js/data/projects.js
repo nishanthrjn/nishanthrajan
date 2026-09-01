@@ -575,7 +575,7 @@ export const PROJECTS = [
     featDesc: 'EDWinXP EDA/CAD/CAE desktop suite with C++/.NET development and TCP/IP licence-management integration.',
     cardDesc: 'Engineering-software development, debugging, performance improvement, testing, release support and partial .NET migration.',
     tags: [
-      { text: 'C++ / C#', variant: 'b' },
+      { text: 'C++', variant: 'b' },
       { text: 'VB.NET' },
       { text: 'WinForms' },
       { text: 'TCP/IP' }
@@ -584,14 +584,14 @@ export const PROJECTS = [
     color: '#a78bfa',
     bg: 'rgba(167,139,250,0.14)',
     title: 'Visionics — EDWinXP',
-    sub: 'Desktop Engineering · EDA/CAD/CAE · C++ / C#',
+    sub: 'Desktop Engineering · EDA/CAD/CAE · C++',
     badge: '<span class="pm-badge">SOFTWARE ENGINEER</span>',
     body: `
       <div class="pm-section">
         <div class="pm-section-title">Overview</div>
         <p class="pm-desc">
           Enhanced and maintained EDWinXP, an EDA/CAD/CAE desktop software suite,
-          using C++, C#/.NET, VB.NET, WinForms, TCP/IP, and related
+          using C++, .NET, VB.NET, WinForms, TCP/IP, and related
           engineering-software technologies.
         </p>
       </div>
@@ -611,7 +611,7 @@ export const PROJECTS = [
         <div class="pm-section-title">Tech Context</div>
         <div class="pm-stack">
           <span class="pm-tag">C++</span>
-          <span class="pm-tag">C# / .NET</span>
+          <span class="pm-tag">.NET</span>
           <span class="pm-tag">VB.NET</span>
           <span class="pm-tag">WinForms</span>
           <span class="pm-tag">TCP/IP</span>

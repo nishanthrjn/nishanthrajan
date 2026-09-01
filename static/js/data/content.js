@@ -64,7 +64,7 @@ export const TIMELINE = [
   { company: 'IDSi', period: '02/2015 – 03/2020', role: 'Software Engineer L3 → Associate Technical Project Manager', desc: 'AutoPlan, PlanPermit and AgniPermit — C#/.NET, AutoCAD API, WPF/WinForms, REST, SQL, rule-based validation and legacy modernization.' },
   { company: 'Personal Development', period: '08/2014 – 01/2015', role: 'Upskilling', desc: '.NET skill refresh and a small self-learning .NET game project.' },
   { company: 'Seven Seas', period: '08/2011 – 07/2014', role: 'Project Team Lead (Software Engineer)', desc: 'Enterprise applications across ERP, hospitality, HRMS, finance, POS and CRM — C#, ASP.NET, WinForms, SQL.' },
-  { company: 'Visionics', period: '11/2008 – 08/2011', role: 'Software Engineer', desc: 'EDWinXP EDA/CAD/CAE desktop suite — C++, C#/.NET, VB.NET, TCP/IP integration, debugging and modernization.' },
+  { company: 'Visionics', period: '11/2008 – 08/2011', role: 'Software Engineer', desc: 'EDWinXP EDA/CAD/CAE desktop suite — C++, .NET, VB.NET, TCP/IP integration, debugging and modernization.' },
   { company: 'iSET', period: '08/2007 – 11/2008', role: 'Trainee, R&D', desc: 'CIM and cross-platform 3D CAD/CAM development — C/C++, Qt, OpenGL, Linux.' },
 ];
 

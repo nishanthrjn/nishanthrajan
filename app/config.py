@@ -23,7 +23,6 @@ class Settings(BaseSettings):
 
     chunk_size: int = 500
     chunk_overlap: int = 50
-    retrieval_k: int = 6
     history_turns: int = 4
 
     cors_allow_origins: list[str] = ["*"]

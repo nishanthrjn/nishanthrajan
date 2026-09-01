@@ -5,6 +5,7 @@ from langchain_core.documents import Document
 from langchain_groq import ChatGroq
 
 from app.models import ChatTurn
+from app.rag.formatting import strip_markdown
 from app.rag.prompt import build_system_prompt
 from app.rag.query_router import classify_query
 
@@ -20,19 +21,37 @@ class ChatService:
     everything -- this keeps e.g. a projects question from pulling in
     unrelated skills-list chunks that happen to score similarly.
 
+    Once routed, the entire domain is retrieved rather than a similarity-
+    limited top-k: each domain is small by design (a handful of employer or
+    project documents), and a fixed k below the domain's chunk count silently
+    drops entries for any question that touches the whole domain (e.g. "how
+    many years of C# experience" needs every employer, not just the ones
+    whose chunks score closest to the literal words "C#"/"experience").
+
+    classify_query's "profile" result doubles as "no domain keyword/year
+    matched" (profile has no keyword list of its own -- it's the catch-all),
+    so a bare follow-up like "exactly how many" that carries no topic of its
+    own falls back to the previous turn's domain instead of resetting to
+    profile. This is a heuristic, not real topic tracking: an abrupt subject
+    change right after a keyword-bearing question (e.g. "where does he
+    live?" right after an IDSi question) will incorrectly stick to the prior
+    domain too. Acceptable for a small portfolio chatbot; a real fix would
+    rewrite the follow-up into a standalone question via an extra LLM call.
+
     Depends only on already-loaded vector stores and an LLM client, so it
     can be constructed once at startup and reused across requests, and
     swapped out for fakes in tests without touching FastAPI wiring.
     """
 
-    def __init__(self, vector_stores: dict[str, FAISS], llm: ChatGroq, retrieval_k: int, history_turns: int):
+    def __init__(self, vector_stores: dict[str, FAISS], llm: ChatGroq, history_turns: int):
         self._vector_stores = vector_stores
         self._llm = llm
-        self._retrieval_k = retrieval_k
         self._history_turns = history_turns
 
     def ask(self, question: str, history: list[ChatTurn]) -> str:
         domain = classify_query(question)
+        if domain == "profile" and history:
+            domain = classify_query(history[-1].user)
         docs = self._retrieve(domain, question)
         logger.debug(
             "domain=%s question=%r retrieved=%s",
@@ -42,13 +61,13 @@ class ChatService:
         context = self._format_context(docs)
         messages = self._build_messages(question, history, context)
         response = self._llm.invoke(messages)
-        return response.content
+        return strip_markdown(response.content)
 
     def _retrieve(self, domain: str, question: str) -> list[Document]:
         store = self._vector_stores.get(domain)
         if store is None:
             return []
-        return store.similarity_search(question, k=self._retrieval_k)
+        return store.similarity_search(question, k=store.index.ntotal)
 
     def _format_context(self, docs: list[Document]) -> str:
         blocks = []

@@ -118,7 +118,7 @@ Seven Seas Hi-Tech Systems India Pvt. Ltd. | India
 
 Visionics India Pvt. Ltd. | India
 
-- Enhanced and maintained EDWinXP, an EDA/CAD/CAE desktop suite, using C++, C#, .NET, VB.NET, WinForms, TCP/IP, and related technologies.
+- Enhanced and maintained EDWinXP, an EDA/CAD/CAE desktop suite, using C++, .NET, VB.NET, WinForms, TCP/IP, and related technologies.
 - Implemented TCP/IP client-server licence-management integration and supported debugging, performance improvement, testing, release support, and partial .NET migration.
 
 ## August 2007–November 2008 — Trainee, Research and Development

@@ -217,7 +217,7 @@ Verified contribution: C#, ASP.NET, WinForms, SQL, debugging, testing, release s
 Category: professional EDA/CAD/CAE desktop suite  
 Company: Visionics India Pvt. Ltd.
 
-Verified contribution: C++, C#/.NET, VB.NET, WinForms, TCP/IP licence-management integration, debugging/performance work, testing/release support, partial .NET migration.
+Verified contribution: C++, .NET, VB.NET, WinForms, TCP/IP licence-management integration, debugging/performance work, testing/release support, partial .NET migration.
 
 ## Computer-Integrated Manufacturing System and CADXpert
 

@@ -53,6 +53,7 @@ class ChatService:
         if domain == "profile" and history:
             domain = classify_query(history[-1].user)
         docs = self._retrieve(domain, question)
+        docs = self._sort_most_recent_first(docs)
         logger.debug(
             "domain=%s question=%r retrieved=%s",
             domain, question,
@@ -68,6 +69,19 @@ class ChatService:
         if store is None:
             return []
         return store.similarity_search(question, k=store.index.ntotal)
+
+    def _sort_most_recent_first(self, docs: list[Document]) -> list[Document]:
+        """Order retrieved chunks most-recent-first by their entity's period_end.
+
+        Asking the LLM to reorder a list of employers chronologically has the
+        same reliability problem as asking it to sum their durations -- it
+        gets scrambled. period_end (set at ingestion time from each entity's
+        "Period: ... - ..." line) makes this a stable sort instead of a task
+        left to the model. Entities with no period_end (e.g. the precomputed
+        C# total, or profile/skill/faq/project documents) sort first and keep
+        their relative retrieval order (Python's sort is stable).
+        """
+        return sorted(docs, key=lambda d: d.metadata.get("period_end", float("inf")), reverse=True)
 
     def _format_context(self, docs: list[Document]) -> str:
         blocks = []

@@ -20,11 +20,18 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
+// Single shared conversation, sent back on every request so the backend can
+// use prior turns (multi-turn context for the LLM, and its sticky-domain
+// fallback for topic-less follow-ups like "exactly how many"). One array
+// because the main and side chat panels mirror the same conversation
+// (see mirrorToOtherArea), not two independent ones.
+const conversationHistory = [];
+
 async function fetchReply(message) {
   const response = await fetch('/chat', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ message, history: [] }),
+    body: JSON.stringify({ message, history: conversationHistory }),
   });
   const data = await response.json();
   return data.reply;
@@ -63,6 +70,7 @@ export async function sendMsg(scope = 'main') {
   try {
     const reply = await fetchReply(message);
     botNode.innerHTML = BOT_LABEL + escapeHtml(reply).replace(/\n/g, '<br>');
+    conversationHistory.push({ user: message, bot: reply });
   } catch (err) {
     botNode.innerHTML = `${BOT_LABEL}Start <code>python main.py</code> to enable live responses.`;
   }

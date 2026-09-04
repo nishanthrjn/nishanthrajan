@@ -1,4 +1,5 @@
 import logging
+import re
 from pathlib import Path
 
 from langchain_community.vectorstores import FAISS
@@ -10,6 +11,35 @@ from app.rag.domains import DOMAIN_SOURCES
 from app.rag.embeddings import get_embeddings
 
 logger = logging.getLogger(__name__)
+
+_MONTHS = {
+    "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
+    "july": 7, "august": 8, "september": 9, "october": 10, "november": 11, "december": 12,
+}
+_PERIOD_RE = re.compile(
+    r"^Period:\s*[A-Za-z]+\s+\d{4}\s*[–-]\s*"
+    r"(?:(?P<end_month>[A-Za-z]+)\s+(?P<end_year>\d{4})|(?P<present>Present))",
+    re.MULTILINE,
+)
+
+
+def _parse_period_end(body: str) -> int | None:
+    """Extract a sortable YYYYMM end-date from a "Period: <start> - <end>" line.
+
+    Returns None when the body has no Period line (e.g. the precomputed
+    aggregate summary, or profile/skill/faq/project documents) -- chat_service
+    treats a missing value as "sort first", since an undated summary
+    naturally leads its section rather than landing at an arbitrary spot.
+    """
+    match = _PERIOD_RE.search(body)
+    if not match:
+        return None
+    if match.group("present"):
+        return 999999
+    month = _MONTHS.get(match.group("end_month").lower())
+    if month is None:
+        return None
+    return int(match.group("end_year")) * 100 + month
 
 # data/ingest/<file>.md uses a small header block (KEY: value lines, one per
 # line, terminated by the first blank line) before the markdown body -- see
@@ -65,6 +95,9 @@ def _build_domain_documents(settings: Settings, ingest_dir: Path, domain: str, s
             metadata["capability_tags"] = header["CAPABILITY_TAGS"]
         if "EXCLUDED_CAPABILITY_TAGS" in header:
             metadata["excluded_capability_tags"] = header["EXCLUDED_CAPABILITY_TAGS"]
+        period_end = _parse_period_end(body)
+        if period_end is not None:
+            metadata["period_end"] = period_end
 
         doc = Document(page_content=body, metadata=metadata)
         # A file can exceed the embedding model's context window (e.g.

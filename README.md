@@ -1,3 +1,15 @@
+---
+title: TalentBot
+emoji: 🤖
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: 6.26.0
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # Nishanth Rajan — Software Engineering Portfolio & TalentBot AI Assistant
 
 This repository contains my personal software engineering portfolio with an integrated **TalentBot** AI recruiter assistant.

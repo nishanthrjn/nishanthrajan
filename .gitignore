@@ -18,6 +18,9 @@ __pycache__/
 # We ignore the local FAISS folder because it's generated from the files in data/.
 # This forces the user (or your deployment) to run ingest.py.
 faiss_index/
+# Exception: hf_space_chat/ ships a prebuilt snapshot of the index since the
+# HF Space it's deployed to has no ingestion step of its own.
+!hf_space_chat/faiss_index/
 .ipynb_checkpoints/
 
 # --- IDEs & System Files ---

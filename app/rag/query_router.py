@@ -43,6 +43,11 @@ _PROJECT_KEYWORDS = (
     "talentbot", "documind", "agent-nexus", "agentnexus",
     "backupworkbench", "careerforge", "codearena", "smartops", "studynexus",
     "scrapvision", "web-gis", "webgis", "mnist", "rsna", "knee abnormality",
+    # Competition/venue names a question might use instead of the project
+    # name itself (e.g. "the ANAC 2026 result") -- without this, a bare
+    # year in the question (see _YEAR_RE below) would misroute it to
+    # experience, since "ANAC 2026" alone matches no other keyword here.
+    "anac",
 )
 _EXPERIENCE_KEYWORDS = (
     "experience", "worked", "company", "employer", "career", "job",

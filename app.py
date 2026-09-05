@@ -5,6 +5,7 @@ sources, not the generated (gitignored) faiss_index/ directory.
 """
 
 import gradio as gr
+import spaces
 
 from app.config import get_settings
 from app.ingestion.build_index import build_vector_index
@@ -41,7 +42,13 @@ def _to_turns(history: list[dict]) -> list[ChatTurn]:
     return turns
 
 
+@spaces.GPU(duration=60)
 def respond(message: str, history: list[dict]) -> str:
+    """@spaces.GPU is required for ZeroGPU hardware to start the Space at all
+    (it refuses to boot with no GPU-decorated function) even though nothing
+    here actually needs a GPU: query embedding is a cheap CPU op and
+    generation happens remotely via the Groq API.
+    """
     return chat_service.ask(message, _to_turns(history))
 
 

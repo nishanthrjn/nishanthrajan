@@ -32,8 +32,14 @@ async function fetchReply(message) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message, history: conversationHistory }),
-  });
-  const data = await response.json();
+    });
+      if (!response.ok) {
+        throw new Error('Chat service unavailable');
+      }
+      const data = await response.json();
+      if (typeof data?.reply !== 'string' || !data.reply.trim()) {
+        throw new Error('Chat service returned no reply');
+      }
   return data.reply;
 }
 
@@ -72,7 +78,7 @@ export async function sendMsg(scope = 'main') {
     botNode.innerHTML = BOT_LABEL + escapeHtml(reply).replace(/\n/g, '<br>');
     conversationHistory.push({ user: message, bot: reply });
   } catch (err) {
-    botNode.innerHTML = `${BOT_LABEL}Start <code>python main.py</code> to enable live responses.`;
+    botNode.innerHTML = `${BOT_LABEL}Unable to connect to TalentBot right now. Please try again in a moment.`;
   }
   area.scrollTop = area.scrollHeight;
 

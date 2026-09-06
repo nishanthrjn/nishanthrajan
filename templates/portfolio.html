@@ -215,17 +215,22 @@
       </div>
 
       <!-- Chat is always directly visible — never gated behind a click.
-           Runs on a separate Hugging Face Space (Gradio), embedded here,
-           since GitHub Pages only serves static files and can't run the
-           FastAPI /chat backend itself. -->
+           The agent itself is a separate Hugging Face Space (Gradio,
+           Groq/RAG); GitHub Pages can only serve static files, so it's
+           embedded via a plain iframe wrapped in our own header chrome so
+           it reads as part of the page rather than a bare embed. -->
       <div class="agent-panel" style="margin-top:22px">
         <div class="agent-badge"><svg class="ic"><use href="#i-bolt"/></svg>TALENTBOT AGENT DEMO</div>
-        <iframe
-          class="hf-chat-frame"
-          src="https://nishanthrajan-talentbot.hf.space"
-          title="TalentBot chat"
-          loading="lazy"
-        ></iframe>
+        <div class="hf-embed hf-embed-main">
+          <div class="chat-head">
+            <div class="chat-head-avatar"><svg class="ic"><use href="#i-bolt"/></svg></div>
+            <div>
+              <div class="chat-head-name">TalentBot</div>
+              <div class="chat-head-status"><span class="status-dot"></span>Online · Groq Llama 3 · RAG</div>
+            </div>
+          </div>
+          <iframe class="hf-frame" src="https://nishanthrajan-talentbot.hf.space" title="TalentBot chat" loading="lazy"></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -310,13 +315,16 @@
   </div>
   <div class="side-panel-body">
     <div class="side-tab-content active" id="side-chat">
-      <div class="side-chat-area">
-        <div class="cmsg cmsg-b">
-          <div class="b-head"><svg class="ic"><use href="#i-bolt"/></svg>TALENTBOT</div>
-          Hi! Ask me anything about Nishanth's projects, skills, or experience — I'm grounded in this whole portfolio. The full chat lives in the Ask NR section below.
+      <div class="hf-embed hf-embed-side">
+        <div class="chat-head chat-head-sm">
+          <div class="chat-head-avatar"><svg class="ic"><use href="#i-bolt"/></svg></div>
+          <div>
+            <div class="chat-head-name">TalentBot</div>
+            <div class="chat-head-status"><span class="status-dot"></span>Online</div>
+          </div>
         </div>
+        <iframe class="hf-frame" src="https://nishanthrajan-talentbot.hf.space" title="TalentBot chat" loading="lazy"></iframe>
       </div>
-      <a class="side-chat-jump" href="#chatbot" onclick="toggleSidePanel(false)">Open full chat →</a>
     </div>
     <div class="side-tab-content" id="side-contact">
       <div id="sideContactList"></div>

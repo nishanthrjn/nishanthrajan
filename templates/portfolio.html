@@ -214,31 +214,18 @@
         </div>
       </div>
 
-      <!-- Chat is always directly visible — never gated behind a click -->
+      <!-- Chat is always directly visible — never gated behind a click.
+           Runs on a separate Hugging Face Space (Gradio), embedded here,
+           since GitHub Pages only serves static files and can't run the
+           FastAPI /chat backend itself. -->
       <div class="agent-panel" style="margin-top:22px">
         <div class="agent-badge"><svg class="ic"><use href="#i-bolt"/></svg>TALENTBOT AGENT DEMO</div>
-        <div class="terminal">
-          <div class="t-bar">
-            <div class="t-dot" style="background:#FF5F57"></div><div class="t-dot" style="background:#FFBD2E"></div><div class="t-dot" style="background:#28C840"></div>
-            <span class="t-title">TALENTBOT · RAG · Groq Llama 3 · FAISS</span>
-          </div>
-          <div class="chat-area" id="chatArea">
-            <div class="cmsg cmsg-u">Can you give me an example of how you've used C# in an AI application?</div>
-            <div class="cmsg cmsg-b">
-              <div class="b-head"><svg class="ic"><use href="#i-bolt"/></svg>TALENTBOT</div>
-              One example is <strong>DocuMind</strong>, a personal C#/.NET 10 document-intelligence and RAG project. It uses Microsoft Semantic Kernel, pgvector, and a local Llama 3.2 workflow to explore document ingestion, vector retrieval, LLM integration, and grounded question answering inside a .NET application architecture.
-            </div>
-          </div>
-          <div class="chat-box">
-            <input class="chat-in" id="chatIn" placeholder="Ask about skills, projects, experience...">
-            <button class="chat-btn" onclick="sendMsg('main')">SEND →</button>
-          </div>
-        </div>
-        <div class="suggest-row">
-          <button class="suggest-chip" onclick="askSuggested('What projects show your RAG experience?','main')">What projects show your RAG experience?</button>
-          <button class="suggest-chip" onclick="askSuggested('Tell me about the ANAC 2026 result.','main')">Tell me about the ANAC 2026 result</button>
-          <button class="suggest-chip" onclick="askSuggested('What is your C#/.NET background?','main')">What's your C#/.NET background?</button>
-        </div>
+        <iframe
+          class="hf-chat-frame"
+          src="https://nishanthrajan-talentbot.hf.space"
+          title="TalentBot chat"
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   </div>
@@ -323,21 +310,13 @@
   </div>
   <div class="side-panel-body">
     <div class="side-tab-content active" id="side-chat">
-      <div class="side-chat-area" id="sideChatArea">
+      <div class="side-chat-area">
         <div class="cmsg cmsg-b">
           <div class="b-head"><svg class="ic"><use href="#i-bolt"/></svg>TALENTBOT</div>
-          Hi! Ask me anything about Nishanth's projects, skills, or experience — I'm grounded in this whole portfolio.
+          Hi! Ask me anything about Nishanth's projects, skills, or experience — I'm grounded in this whole portfolio. The full chat lives in the Ask NR section below.
         </div>
       </div>
-      <div class="side-suggest-row">
-        <button class="suggest-chip" onclick="askSuggested('What projects show your RAG experience?','side')">RAG projects?</button>
-        <button class="suggest-chip" onclick="askSuggested('What is your C#/.NET background?','side')">C#/.NET background?</button>
-      </div>
-      <div class="side-chat-box">
-        <input id="sideChatIn" placeholder="Ask a question...">
-        <button onclick="sendMsg('side')">SEND</button>
-      </div>
-      <a class="side-chat-jump" href="#chatbot" onclick="toggleSidePanel(false)">Jump to full Ask NR section →</a>
+      <a class="side-chat-jump" href="#chatbot" onclick="toggleSidePanel(false)">Open full chat →</a>
     </div>
     <div class="side-tab-content" id="side-contact">
       <div id="sideContactList"></div>
